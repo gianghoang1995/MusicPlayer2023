@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Loading praeconium, quaeso, exspecta...</string>
+    <string name="this_action_contains_ads">( Haec actio non continet praeconium )</string>
+</resources>

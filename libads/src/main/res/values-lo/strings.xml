@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">ກຳລັງໂຫລດໂຄສະນາ, ກະລຸນາລໍຖ້າ...</string>
+    <string name="this_action_contains_ads">(ການ​ປະ​ຕິ​ບັດ​ນີ້​ສາ​ມາດ​ປະ​ກອບ​ດ້ວຍ​ການ​ໂຄ​ສະ​ນາ​)</string>
+</resources>

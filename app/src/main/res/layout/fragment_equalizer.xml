@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"><!--  android:background="#e1e0e0"-->
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:background="@drawable/bg_border_save_equalizer"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintEnd_toStartOf="@id/swEqualizer"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@id/viewEqualizer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_save_preset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_8"
+            app:srcCompat="@drawable/ic_save" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_8"
+            android:background="#e1e0e0" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:dropDownWidth="wrap_content"
+            tools:listitem="@layout/custom_spinner_items" />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/swEqualizer"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_switch"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@android:color/transparent"
+        android:track="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@id/top"
+        app:layout_constraintBottom_toBottomOf="@id/top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewEqualizer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:background="@drawable/border_black_transparent_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top">
+
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.TitleBarEqualizer
+            android:id="@+id/titleTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            app:isTop="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:listTitle="@array/lisTitleTopEqua" />
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.SeekBarEqualizer
+            android:id="@+id/slider1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/titleBottom"
+            app:layout_constraintEnd_toStartOf="@id/slider2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTop" />
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.SeekBarEqualizer
+            android:id="@+id/slider2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/titleBottom"
+            app:layout_constraintEnd_toStartOf="@id/slider3"
+            app:layout_constraintStart_toEndOf="@id/slider1"
+            app:layout_constraintTop_toBottomOf="@id/titleTop" />
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.SeekBarEqualizer
+            android:id="@+id/slider3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/titleBottom"
+            app:layout_constraintEnd_toStartOf="@id/slider4"
+            app:layout_constraintStart_toEndOf="@id/slider2"
+            app:layout_constraintTop_toBottomOf="@id/titleTop" />
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.SeekBarEqualizer
+            android:id="@+id/slider4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/titleBottom"
+            app:layout_constraintEnd_toStartOf="@id/slider5"
+            app:layout_constraintStart_toEndOf="@id/slider3"
+            app:layout_constraintTop_toBottomOf="@id/titleTop" />
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.SeekBarEqualizer
+            android:id="@+id/slider5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/titleBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/slider4"
+            app:layout_constraintTop_toBottomOf="@id/titleTop" />
+
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.TitleBarEqualizer
+            android:id="@+id/titleBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            app:isTop="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:listTitle="@array/listBottomEqua" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

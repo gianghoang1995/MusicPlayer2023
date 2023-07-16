@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.seekbar.VerticalSeekBarWrapper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.seekbar.VerticalSeekBar
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="3000"
+            android:progress="500"
+            android:progressDrawable="@drawable/prgress_seekbar"
+            android:splitTrack="false"
+            android:thumb="@drawable/thumb_seekbar_scale"
+            app:layout_constraintBottom_toTopOf="@id/titleBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTop"
+            app:seekBarRotation="CW270" />
+    </com.downloadmp3player.musicdownloader.freemusicdownloader.widget.seekbar.VerticalSeekBarWrapper>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+plugins {
+  id "com.android.library"
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion 32
+
+  defaultConfig {
+    minSdkVersion 19
+    targetSdkVersion 32
+  }
+}

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="size8">8dp</dimen>
+    <dimen name="size2">2dp</dimen>
+</resources>

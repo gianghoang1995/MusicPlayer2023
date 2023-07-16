@@ -1,0 +1,331 @@
+<resources>
+    <string name="app_name" translatable="false">Music downloader</string>
+    <string name="ads_app_id" translatable="false">ca-app-pub-8347077932874205~7331248695</string>
+    <string name="applovin_sdk_key" translatable="false">HKq3PPClqZBdgSfBe5a1Ufbgva7Drz-6OFAspX55i8vo5kJ3ErHSMxBRz63idAbTytV7UbkuA1psBR6npnhVH4</string>
+    <string name="appvolin_full" translatable="false">8eb52dbe7f496c33</string>
+    <string name="appvolin_native" translatable="false">fcd03955b831dd01</string>
+
+  <!--  <string name="app_open_ads" translatable="false">ca-app-pub-8347077932874205/2408334316</string>
+
+    <string name="banner_01" translatable="false">ca-app-pub-8347077932874205/6161675248</string>
+    <string name="banner_02" translatable="false">ca-app-pub-8347077932874205/9065102387</string>
+
+    <string name="full_plash_01" translatable="false">ca-app-pub-8347077932874205/4700559382</string>
+    <string name="full_plash_02" translatable="false">ca-app-pub-8347077932874205/6417282968</string>
+
+    <string name="full_in_app_01" translatable="false">ca-app-pub-8347077932874205/2679797054</string>
+    <string name="full_in_app_02" translatable="false">ca-app-pub-8347077932874205/5389720873</string>
+
+    <string name="full_menu_01" translatable="false">ca-app-pub-8347077932874205/9053633719</string>
+    <string name="full_menu_02" translatable="false">ca-app-pub-8347077932874205/7740552048</string>
+
+    <string name="native_ads_home_01" translatable="false">ca-app-pub-8347077932874205/7469089304</string>
+    <string name="native_ads_home_02" translatable="false">ca-app-pub-8347077932874205/6156007630</string>
+
+    <string name="native_ads_01" translatable="false">ca-app-pub-8347077932874205/5104201294</string>
+    <string name="native_ads_02" translatable="false">ca-app-pub-8347077932874205/2825522319</string>
+
+    <string name="full_download_01" translatable="false">ca-app-pub-8347077932874205/7271199639</string>
+    <string name="full_download_02" translatable="false">ca-app-pub-8347077932874205/5114388706</string>
+
+    <string name="full_nowplaying_01" translatable="false">ca-app-pub-8347077932874205/3801307030</string>
+    <string name="full_nowplaying_02" translatable="false">ca-app-pub-8347077932874205/6786563021</string>
+-->
+    <string name="banner_01" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_02" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="full_plash_01" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_plash_02" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="full_in_app_01" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_in_app_02" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="full_menu_01" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_menu_02" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="native_ads_home_01" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_ads_home_02" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="native_ads_01" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_ads_02" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="app_open_ads" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="full_download_01" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_download_02" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="full_nowplaying_01" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="full_nowplaying_02" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="category_edm" translatable="false">EDM</string>
+    <string name="category_acoustic" translatable="false">Acoustic</string>
+    <string name="category_carmusic" translatable="false">Car EDM</string>
+    <string name="category_chill" translatable="false">Chill</string>
+    <string name="category_indie" translatable="false">Indie</string>
+    <string name="category_piano" translatable="false">Piano</string>
+    <string name="category_rain" translatable="false">Rain</string>
+    <string name="category_rock" translatable="false">Rock</string>
+    <string name="category_tiktok_remix" translatable="false">Tiktok Remix</string>
+    <string name="category_toursim" translatable="false">Toursim</string>
+    <string name="category_workout" translatable="false">Workout</string>
+    <string name="category_hiphop" translatable="false">Hiphop</string>
+
+    <string name="allowed_caller_log" translatable="false">
+        Caller has a valid certificate, but its package doesn\'t match any expected package for the
+        given certificate. To allow this caller, add the following to the allowed callers list:\n
+        <![CDATA[
+        <signature name=\"%1$s\" package=\"%2$s\">\n\t<key>%3$s</key>\n</signature>\n
+        ]]>
+    </string>
+
+    <string name="detail">Detail</string>
+    <string name="no_playlist_play">No playlist is being played</string>
+    <string name="txt_done">Done!</string>
+    <string name="success">Success</string>
+    <string name="song_info">Song information</string>
+    <string name="location">Location</string>
+    <string name="duration">Duration</string>
+    <string name="open_with">Open with</string>
+    <string name="duplicate_playlist">Playlist has existed!</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="chose_playlist">Choose playlist</string>
+    <string name="song_exits_playlist">The song exists in the playlist!</string>
+    <string name="delete_song_in_playlist">Delete the song from the playlist</string>
+    <string name="cant_delete_file">Cannot delete this file</string>
+    <string name="file_not_found">File not found !</string>
+    <string name="music_has_stop">Music will be stopped later</string>
+    <string name="minute">minutes</string>
+    <string name="second">seconds</string>
+    <string name="subject_share">Share the application</string>
+    <string name="content_share">I really like this app, download and use it</string>
+    <string name="unknow">Unknown</string>
+    <string name="internal">Internal memory</string>
+    <string name="external">External memory</string>
+    <string name="create_new_playlist">Create new playlist</string>
+    <string name="favorite_song">Favorite songs</string>
+    <string name="setting">Settings</string>
+    <string name="timer_stop_music">Music stop timer</string>
+    <string name="guide">Guide</string>
+    <string name="title_album">Albums</string>
+    <string name="title_artists">Artists</string>
+    <string name="title_songs">Songs</string>
+    <string name="title_folders">Folders</string>
+    <string name="title_playlist">Playlists</string>
+    <string name="new_preset_duplicate">Preset already exists</string>
+    <string name="save_preset_success">Preset saved successfully!</string>
+    <string name="cant_update">Cannot update the preset, please try again!</string>
+    <string name="preset_update_successfully">Preset updated successfully!</string>
+    <string name="empty_name">Empty preset name!</string>
+    <string name="error">Error</string>
+    <string name="please_chose_preset_to_update">Please select the effect you want to update</string>
+    <string name="search">Search</string>
+    <string name="next_song">Next song</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="set_ringtone">Set as ringtone</string>
+    <string name="privacy">Privacy policy</string>
+    <string name="share">Share</string>
+    <string name="more_app">More apps</string>
+    <string name="ask_save_lyric">Do you want to save the lyrics?</string>
+    <string name="save_lyric_done">The lyrics have been saved !</string>
+    <string name="invalid_lyric">Can\'t find the correct lyrics?</string>
+    <string name="find_on_gg">Please search on Google and replace.</string>
+    <string name="play">Play</string>
+    <string name="play_next">Next</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="add_to_queue">Add to queue</string>
+    <string name="pin_folder">Pin folder</string>
+    <string name="add_home_screen">Add to home screen</string>
+    <string name="add_songs">Add songs</string>
+    <string name="txt_continue">Continue</string>
+    <string name="sort">Sort by</string>
+    <string name="sort_name">Name</string>
+    <string name="get_permission">Get permission</string>
+    <string name="need_permission">You need permission to use the application</string>
+    <string name="per_1">Access Media File to take out the music</string>
+    <string name="per_manage_all_file">Permission to access all files to add, edit, delete, songs and lyrics</string>
+    <string name="no_song_play">No songs are currently playing!</string>
+    <string name="create_new">Create new</string>
+    <string name="enter_name">Enter a name</string>
+    <string name="create">Create</string>
+    <string name="chose_time">Choose time</string>
+    <string name="cancel">Cancel</string>
+    <string name="chose">Choose</string>
+    <string name="now_playing">Now playing</string>
+    <string name="bass_boster">Bass bosster</string>
+    <string name="virtual">3D effect</string>
+    <string name="title_equalizer">Equalizer</string>
+    <string name="tit_artist">Artist</string>
+    <string name="search_lyric">Search Lyrics</string>
+    <string name="tooltip_copy">Please select Lyrics and Copy to Clipboard</string>
+    <string name="select_preset">Select preset</string>
+    <string name="empty_preset">No preset, please create new preset</string>
+    <string name="save_or_update_preset">Save or update the preset</string>
+    <string name="update">Update</string>
+    <string name="tuto_unflug_headphone">Automatically stop when the headset is unplugged </string>
+    <string name="tuto_flug_headphone"> Automatically play when the headset is plugged in </string>
+    <string name="tuto_one_click">1 click to play/pause</string>
+    <string name="tuto_volumeup">Volume up</string>
+    <string name="tuto_two_click">2 click to move to the next</string>
+    <string name="show_block_folder">Show blocked folders</string>
+    <string name="unblock_folder">Unblock Folder</string>
+    <string name="blocked_folders">Hidden folders</string>
+    <string name="empty_block_content">No contents are blocked yet!</string>
+    <string name="song_path_not_exist">The song\'s path does not exist!</string>
+    <string name="block_album">Hide albums</string>
+    <string name="pin_album">Pin albums</string>
+    <string name="blocked_albums">Hidden albums</string>
+    <string name="sort_count">Songs number</string>
+    <string name="tuto_three_click">3 click to move to the previous </string>
+    <string name="tuto_volumedown">Volume down</string>
+    <string name="accept">Accept</string>
+    <string name="empty_playlist">No playlist name</string>
+    <string name="select_all">Select all</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="find_lyrics">Find Lyrics</string>
+    <string name="input_name_song">Enter the song\'s title</string>
+    <string name="load_lyric">Looking for the lyrics</string>
+    <string name="sort_album">Album</string>
+    <string name="sort_artist">Artist</string>
+    <string name="order_by">Order by</string>
+    <string name="order_ascending">Ascending</string>
+    <string name="order_descending">Descending</string>
+    <string name="block_folder">Hide folder</string>
+    <string name="unpin">Unpin</string>
+    <string name="cant_rename">Cannot rename</string>
+    <string name="ask_delete_song">Do you want to delete the file?</string>
+    <string name="unsupport_format">Unsupported Format</string>
+    <string name="edit_loading_text">Loading data…</string>
+    <string name="sort_year">Year released</string>
+    <string name="dialog_saving">Saving</string>
+    <string name="editor_starts">Start</string>
+    <string name="edtior_ends">End</string>
+    <string name="ringtone_cutter">Ringtone cutter</string>
+    <string name="cant_cut_this_song">Cannot cut the current track</string>
+    <string name="error_cutter_msg">The file\'s name contains special characters, Please change the file\'s name and try again.</string>
+    <string name="change_file_name">Please try to change file\'s name</string>
+    <string name="sort_duration">Duration</string>
+    <string name="skip_song_30s">Skip the songs which are less than 30 seconds</string>
+    <string name="skip_song_60s">Skip the songs which are less than 60 seconds</string>
+    <string name="skip_song_90s">Skip the songs which are less than 90 seconds</string>
+    <string name="start_scanning">Start scanning</string>
+    <string name="not_skip">Not skip</string>
+    <string name="scanned_songs">scanned songs</string>
+    <string name="scanning">Scanning…</string>
+    <string name="sort_playlist">Sort playlist</string>
+    <string name="block_artist">Hide artist</string>
+    <string name="pin_artist">Pin artist</string>
+    <string name="show_block_artist">Show blocked artists</string>
+    <string name="show_block_album">Show blocked albums</string>
+    <string name="sort_album_count">Album count</string>
+    <string name="blocked_artist">Hidden artists</string>
+    <string name="favorite_recent_added">Recently added</string>
+    <string name="favorite_last_playing">Recently played</string>
+    <string name="favorite_most_playing">Most played</string>
+    <string name="empty">Empty</string>
+    <string name="empty_song">No songs yet!</string>
+    <string name="go_album">Go to album</string>
+    <string name="go_artist">Go to artist</string>
+    <string name="go_folder">Go to folder</string>
+    <string name="scan_media">Scan media</string>
+    <string name="theme">Theme</string>
+    <string name="create_shortcut_already_exist">The shortcut already exist</string>
+    <string name="added_to_favorite">Added songs to favorites</string>
+    <string name="remove_song_from_favorite">Removed the song from favorites</string>
+    <string name="not_found_song">Did not find any songs</string>
+    <string name="no_song_to_play">There are no songs to play!</string>
+    <string name="no_song_selected">No songs have been selected!</string>
+    <string name="file_small">The file is too small</string>
+    <string name="title_rate">We are working hard to provide you with a best free app. Your 5-star rating is worth more than money.</string>
+    <string name="msg_rate">Please take a moment to write a nice review on Google Play to encourage us !</string>
+    <string name="text_rate">Rate us 5 stars!</string>
+    <string name="text_later">Later</string>
+    <string name="title_header_rate">Rate us</string>
+    <string name="unblock_album">Unlock album</string>
+    <string name="no_internet">No internet</string>
+    <string name="unblock_artist">Unblock artist</string>
+    <string name="hide_all_song_in_folder">Folders and related songs hidden</string>
+    <string name="name_contain_symbol">The song title cannot contain special characters</string>
+    <string name="blank_title_song">The song title cannot be left blank</string>
+    <string name="rename_successfull">Renamed successfully</string>
+    <string name="add_to">Add to</string>
+    <string name="browse_all">Browse all</string>
+    <string name="content_search_online">Artist, song, or podcast</string>
+    <string name="no_result">No result!</string>
+    <string name="load_more">Load more …</string>
+    <string name="please_try_again">Please try again !</string>
+    <string name="move_to_priority">( Move the song to the first position to prioritize )</string>
+    <string name="downloading">Downloading …</string>
+    <string name="download_success">Download file successful !</string>
+    <string name="recent_played_stream">Recently played stream</string>
+    <string name="wellcome_back">Welcome back!</string>
+    <string name="internet_disconected">Internet disconnected</string>
+    <string name="exit_app">Exit</string>
+    <string name="cut_new_ringtone">Cut new ringtone</string>
+    <string name="previous_ringtones">Previous ringtones</string>
+    <string name="preference">Preference</string>
+    <string name="shake_to_next">Shake your phone to change music</string>
+    <string name="shake_to_play_next">Shake to play next song</string>
+    <string name="pause_when_unplug">Pause when unplug headphone</string>
+    <string name="pause_headphone_content">Pause music playback when headphones are removed</string>
+    <string name="autoplay_when_call">Autoplay after call</string>
+    <string name="autoplay_call_content">If enabled the song will continue to play after the call ends</string>
+    <string name="play_on_lockscreen">Play on lock screen</string>
+    <string name="play_on_lockscreen_content">Allows displaying the player outside the lock screen</string>
+    <string name="other">Other</string>
+    <string name="play_all">Play all</string>
+    <string name="custom">Custom</string>
+    <string name="txt_default">Default</string>
+    <string name="hiden_folder">Hidden folder</string>
+    <string name="label_select_picture">Select picture</string>
+    <string name="search_from_youtube">Search songs from</string>
+    <string name="searching">Searching …</string>
+    <string name="check_connection">Check internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="notification_channel_description">Chanel music player desc</string>
+    <string name="notification_channel">Notification Chanel</string>
+    <string name="sleep_timer">Sleep timer</string>
+    <string name="save_themes">Saving themes …</string>
+    <string name="hour">hours</string>
+    <string name="could_not_find_right_lyric">Couldn\'t find the right lyrics .</string>
+    <string name="please_wait">Please wait …</string>
+    <string name="online">Online</string>
+    <string name="number_of_shake">Number of shakes</string>
+    <string name="set_ringtone_success">Set ringtone success</string>
+    <string name="ringtone_option">Ringtone option</string>
+    <string name="delete_success">Delete file successful</string>
+    <string name="off">Off</string>
+    <string name="lockscreen_play">Lockscreen Play</string>
+    <string name="slide_to_unlock">Slide to unlock</string>
+    <string name="backgroud_lockscreen">Background lock screen</string>
+    <string name="time_format">Time format</string>
+    <string name="tittle_off_lockscreen">Turn off play on lock screen</string>
+    <string name="change_font_size">Change font size</string>
+    <string name="large_font">Large font</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="enter_your_feedback">Please enter the comments or your request at here</string>
+    <string name="send">Send</string>
+    <string name="no_client_email">There is no email client installed.</string>
+    <string name="small_font">Small</string>
+    <string name="normal_font">Normal</string>
+    <string name="shake_one">Shake once</string>
+    <string name="shake_twice">Shake twice</string>
+    <string name="please_check_internet_connection">Please check  your internet connection !</string>
+    <string name="error_please_try_again">Something went wrong, please try again</string>
+    <string name="you_in_online_mode">Unsuccessful! You are in online music playback mode.</string>
+    <string name="this_action_can_contain_ads">This action can contains ads.</string>
+    <string name="message_off_lockscreen">You can enable this feature from: Settings -> Lock screen</string>
+    <string name="cover_album">Cover album</string>
+    <string name="format_12h">12 hour</string>
+    <string name="format_24h">24 hour</string>
+    <string name="shuffle_on">Shuffle</string>
+    <string name="loop_all">Loop all</string>
+    <string name="loop_one">Loop one</string>
+    <string name="save">Save</string>
+    <string name="blur">Blur</string>
+    <string name="overlay">Overlay</string>
+    <string name="no">No</string>
+    <string name="ask_cancel">Do you want to cancel the theme?</string>
+    <string name="waiting">Waiting …</string>
+    <string name="car_play">Carplay</string>
+</resources>

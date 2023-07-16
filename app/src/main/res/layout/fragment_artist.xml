@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/anchorPopup"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_gravity="end|top" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefreshArtist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+            android:id="@+id/rv_Artist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fastScrollAutoHide="true"
+            app:fastScrollAutoHideDelay="2500"
+            app:fastScrollPopupBackgroundSize="@dimen/dp_50"
+            app:fastScrollPopupBgColor="@android:color/transparent"
+            app:fastScrollPopupPosition="center"
+            app:fastScrollPopupTextColor="@color/white"
+            app:fastScrollPopupTextSize="32sp"
+            app:fastScrollPopupTextVerticalAlignmentMode="font_metrics"
+            app:fastScrollThumbColor="@android:color/transparent"
+            app:fastScrollTrackColor="@android:color/transparent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_album" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/baloo_bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/empty"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:drawableTopCompat="@drawable/ic_empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>

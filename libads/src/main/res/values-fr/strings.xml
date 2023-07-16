@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Chargement des annonces, veuillez patienter...</string>
+    <string name="this_action_contains_ads">(Cette action peut contenir des publicités)</string>
+</resources>

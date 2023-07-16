@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_16"
+    app:cardCornerRadius="@dimen/dp_16"
+    app:cardElevation="@dimen/dp_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:fontFamily="@font/baloo_bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/create_new"
+            android:textColor="#3a3a3a"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:background="@drawable/stroke_gray"
+            android:fontFamily="@font/baloo_regular"
+            android:text="@string/enter_name"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:padding="@dimen/dp_8"
+            android:textColor="#515151" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/baloo_bold"
+                android:padding="@dimen/dp_16"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/centerView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/centerView"
+                android:layout_width="0.5dp"
+                android:layout_height="0dp"
+                android:background="@color/gray_border"
+                app:layout_constraintBottom_toBottomOf="@id/tv_cancel"
+                app:layout_constraintEnd_toStartOf="@id/tv_create"
+                app:layout_constraintStart_toEndOf="@id/tv_cancel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/tv_create"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_16"
+                android:text="@string/create"
+                android:textAllCaps="false"
+                android:background="#007aff"
+                android:textColor="@color/white"
+                android:fontFamily="@font/baloo_bold"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/centerView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

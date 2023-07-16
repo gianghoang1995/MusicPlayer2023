@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuAddToHomeScreen"
+        android:title="@string/add_home_screen"/>
+    <item
+        android:id="@+id/menuEqualizer"
+        android:title="@string/title_equalizer"/>
+    <item
+        android:id="@+id/menuShowBlockFolder"
+        android:title="@string/show_block_folder"/>
+</menu>

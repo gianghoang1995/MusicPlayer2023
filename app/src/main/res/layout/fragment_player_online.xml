@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/theme_default">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/unLimitView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_border_thumb"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.7"
+            app:srcCompat="@drawable/ic_song_transparent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgAvt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.7"
+            app:srcCompat="@drawable/ic_song_transparent" />
+
+
+        <ImageButton
+            android:id="@+id/btnChangeThumb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_border_camera"
+            android:elevation="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imgAvt"
+            app:layout_constraintEnd_toEndOf="@id/imgAvt"
+            app:srcCompat="@drawable/ic_camera" />
+
+        <FrameLayout
+            android:id="@+id/frameAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.utils.adsloader.NativeAdGiftView
+                android:id="@+id/nativeAdsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="@dimen/dp_8" />
+
+            <RelativeLayout
+                android:id="@+id/appLovinNative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="@dimen/dp_8" />
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/unLimitView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="end|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_max="270dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/viewPlaying"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/play_button"
+            app:lottie_repeatCount="3"
+            app:lottie_speed="1.0" />
+
+        <TextView
+            android:id="@+id/tvNextUltimateSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/baloo_medium"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bold"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:singleLine="true"
+        android:text="@string/now_playing"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toTopOf="@id/optionView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvNameSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/baloo_bold"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="@dimen/dp_8"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toTopOf="@id/tvArtist"
+            app:layout_constraintEnd_toStartOf="@id/btn_NowPlaying"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/btnFavorite"
+            tools:ignore="EllipsizeMaxLines" />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/baloo_regular"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingBottom="@dimen/dp_8"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toTopOf="@id/seekPlayer"
+            app:layout_constraintEnd_toStartOf="@id/btn_NowPlaying"
+            app:layout_constraintStart_toEndOf="@id/btnFavorite"
+            tools:ignore="EllipsizeMaxLines" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/optionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/seekPlayer">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/btnFavorite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="favorite.json"
+            app:lottie_loop="false"
+            app:lottie_speed="1.0" />
+
+        <FrameLayout
+            android:id="@+id/viewReplace"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnTimer"
+            app:layout_constraintStart_toEndOf="@id/btnFavorite"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnAddToPlaylist"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="?attr/actionBarItemBackground"
+                android:contentDescription="@string/add_to_playlist"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_add_curent_to_playlist" />
+
+            <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.CustomLoadingDownloadView
+                android:id="@+id/downloadView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btnTimer"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/sleep_timer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_NowPlaying"
+            app:layout_constraintStart_toEndOf="@id/viewReplace"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_sleep_timer" />
+
+        <TextView
+            android:id="@+id/tvTimeRunning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_medium"
+            android:paddingTop="4dp"
+            android:text="--:--"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/btnTimer"
+            app:layout_constraintEnd_toEndOf="@id/btnTimer"
+            app:layout_constraintStart_toStartOf="@id/btnTimer" />
+
+        <ImageButton
+            android:id="@+id/btn_NowPlaying"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="50dp"
+            android:background="?selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_nowplaying"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvMaxDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/navControl"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvCurrentPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/navControl"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp" />
+
+    <SeekBar
+        android:id="@+id/seekPlayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:progressBackgroundTint="#FFF"
+        android:progressTint="#FFFFFE"
+        android:splitTrack="true"
+        android:thumb="@drawable/seekbar_thumb_white"
+        app:layout_constraintBottom_toTopOf="@id/tvMaxDuration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/navControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnLoop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_loop_off"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/btnPrive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/selector_prive_big"
+            tools:ignore="ContentDescription" />
+
+        <FrameLayout
+            android:id="@+id/frameTogglePlay"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@id/navControl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ProgressBar
+                android:id="@+id/bufferView"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/btnPlayPause"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_play_big"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/selector_next_big"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/btnEqualizer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/title_equalizer"
+            android:padding="22dp"
+            app:srcCompat="@drawable/ic_equalizer" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

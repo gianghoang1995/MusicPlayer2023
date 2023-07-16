@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">加载广告，请稍候...</string>
+    <string name="this_action_contains_ads">（此操作可以包含广告）</string>
+</resources>

@@ -1,0 +1,39 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url 'https://artifact.bytedance.com/repository/pangle'
+        }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://repo.clojars.org" }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://artifact.bytedance.com/repository/pangle'
+        }
+        maven { url "https://jitpack.io" }
+        maven { url "https://repo.clojars.org" }
+    }
+}
+
+rootProject.name = 'MusicPlayer2023'
+include ':app'
+include ':blurry'
+include ':jaudiotagger'
+include ':fastscrollalphabetindex'
+include ':recyclerview-fastscroll'
+include ':soundcutter'
+include ':circularSeekBar'
+include ':visualizer'
+include ':shadow'
+include ':downloadfile'
+include ':AppvolinAds'
+include ':libads'

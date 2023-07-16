@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:background="@drawable/theme_01"
+    tools:context=".ui.lyrics.LyricsFragment">
+
+    <!--Top-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgThumb"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_song"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/Shape4dp"
+            app:siRadius="8dp"
+            app:siSquare="false" />
+
+        <TextView
+            android:id="@+id/tvTitleLyric"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/baloo_bold"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@id/tvArtistLyric"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgThumb"
+            app:layout_constraintTop_toTopOf="@id/imgThumb"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvArtistLyric"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/baloo_medium"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgThumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgThumb"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleLyric"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@string/app_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Center-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center|bottom"
+        android:scrollbarThumbVertical="@android:color/white"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/top"
+        sothree:layout_constraintBottom_toTopOf="@id/bottomView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bold"
+                android:lineSpacingExtra="6dp"
+                android:textColor="#FFE9A7"
+                android:textSize="20sp"
+                android:transitionName="lyricView"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/invalid_lyric"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btnFindOtherLyric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bold"
+                android:gravity="center"
+                android:text="@string/find_on_gg"
+                android:textColor="@color/white"
+                android:textStyle="" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--BottomView-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/frameBannerAds">
+
+        <ProgressBar
+            android:id="@+id/progressTimer"
+            style="@style/CustomProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:progress="0"
+            app:layout_constraintBottom_toTopOf="@id/tvDurationLyric" />
+
+        <TextView
+            android:id="@+id/tvDurationLyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@id/frameTogglePlay"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTimeLyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@id/frameTogglePlay"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameTogglePlay"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ProgressBar
+                android:id="@+id/bufferView"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btnPlayPauseLyric"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_play_big"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Searchbox-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyricsSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bottomView"
+        app:layout_constraintTop_toBottomOf="@id/top">
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_empty"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/could_not_find_right_lyric"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_medium"
+            android:padding="8dp"
+            android:text="@string/input_name_song"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            sothree:layout_constraintTop_toBottomOf="@id/tvEmpty" />
+
+        <EditText
+            android:id="@+id/edtNameSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt"
+            android:text="@string/input_name_song"
+            android:imeActionLabel="@string/search"
+            android:inputType="textCapSentences"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="#949494"
+            android:textSize="16sp"
+            sothree:layout_constraintTop_toBottomOf="@id/tvContent" />
+
+        <TextView
+            android:id="@+id/btnCancelFindLyrics"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/baloo_bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            sothree:layout_constraintEnd_toStartOf="@id/btnFindLyrics"
+            sothree:layout_constraintStart_toStartOf="parent"
+            sothree:layout_constraintTop_toBottomOf="@id/edtNameSong" />
+
+        <TextView
+            android:id="@+id/btnFindLyrics"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/baloo_bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/find_lyrics"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            sothree:layout_constraintEnd_toEndOf="parent"
+            sothree:layout_constraintStart_toEndOf="@id/btnCancelFindLyrics"
+            sothree:layout_constraintTop_toBottomOf="@id/edtNameSong" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Loading view-->
+    <LinearLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bottomView"
+        app:layout_constraintTop_toBottomOf="@id/top">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bold"
+            android:padding="16dp"
+            android:text="@string/load_lyric"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameBannerAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

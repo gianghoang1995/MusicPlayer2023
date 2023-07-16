@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="@dimen/dp_16"
+    app:cardElevation="@dimen/dp_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/theme_default"
+            app:layout_constraintBottom_toBottomOf="@id/timerView"
+            app:layout_constraintTop_toTopOf="@id/timerView" />
+
+        <LinearLayout
+            android:id="@+id/timerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333A3A3A"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bold"
+                android:gravity="center|start"
+                android:padding="@dimen/dp_16"
+                android:text="@string/chose_time"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo_regular"
+                    android:gravity="center"
+                    android:text="@string/hour"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baloo_regular"
+                    android:gravity="center"
+                    android:text="@string/minute"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvHour"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_weight="1"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_time_picker" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/baloo_bold"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMinute"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_weight="1"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_time_picker" />
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/tv15m"
+                    style="@style/TextStopWatch"
+                    android:text="15m"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv30m"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv30m"
+                    style="@style/TextStopWatch"
+                    android:text="30m"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv45m"
+                    app:layout_constraintStart_toEndOf="@id/tv15m"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv45m"
+                    style="@style/TextStopWatch"
+                    android:text="45m"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv60m"
+                    app:layout_constraintStart_toEndOf="@id/tv30m"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv60m"
+                    style="@style/TextStopWatch"
+                    android:text="60m"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv45m"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_border_cancel"
+                    android:fontFamily="@font/baloo_bold"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="@dimen/dp_12"
+                    android:paddingRight="24dp"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#3a3a3a"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@id/btnChose"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/btnChose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_border_gradient_radius"
+                    android:fontFamily="@font/baloo_bold"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="@dimen/dp_12"
+                    android:paddingRight="24dp"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:text="@string/chose"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btnCancel"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

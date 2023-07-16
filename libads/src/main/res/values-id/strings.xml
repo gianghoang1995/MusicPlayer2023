@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Memuat iklan, harap tunggu ...</string>
+    <string name="this_action_contains_ads">(Tindakan ini dapat berisi iklan)</string>
+</resources>

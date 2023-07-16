@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvFastFolder"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:drawableLeft="@drawable/ic_right_light"
+    android:drawablePadding="@dimen/dp_8"
+    android:fontFamily="@font/baloo_bold"
+    android:gravity="center"
+    android:padding="@dimen/dp_8"
+    android:text="@string/title_folders"
+    android:textColor="@color/text_primary" />

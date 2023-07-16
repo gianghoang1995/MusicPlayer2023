@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Načítavajú sa reklamy, čakajte prosím...</string>
+    <string name="this_action_contains_ads">(Táto akcia môže obsahovať reklamy)</string>
+</resources>

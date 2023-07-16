@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <Switch
+            android:id="@+id/swBass"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_switch"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:thumb="@android:color/transparent"
+            android:track="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/swBass"
+            app:layout_constraintWidth_max="400dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLine"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <ImageView
+                android:id="@+id/style_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_16"
+                android:padding="@dimen/dp_16"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bg_arc"
+                app:layout_constraintBottom_toBottomOf="@id/bassSlider"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/bassSlider"
+                app:layout_constraintStart_toStartOf="@id/bassSlider"
+                app:layout_constraintTop_toTopOf="@id/bassSlider" />
+
+            <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.bassview.Croller
+                android:id="@+id/bassSlider"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                app:back_circle_color="#EDEDED"
+                app:indicator_color="#FFB300"
+                app:indicator_disable_color="#C0C0C0"
+                app:indicator_width="10"
+                app:is_continuous="false"
+                app:label="@string/bass_boster"
+                app:label_color="@color/white"
+                app:label_disabled_color="#C0C0C0"
+                app:label_size="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:main_circle_color="#FFFFFF"
+                app:max="10"
+                app:min="0"
+                app:progress_primary_circle_size="10"
+                app:progress_primary_color="#FFB300"
+                app:progress_primary_disable_color="@color/gray"
+                app:progress_secondary_circle_size="8"
+                app:progress_secondary_color="#A89C81"
+                app:progress_secondary_disable_color="#C0C0C0" />
+
+            <ImageView
+                android:id="@+id/style_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_16"
+                android:padding="@dimen/dp_16"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bg_arc"
+                app:layout_constraintBottom_toBottomOf="@id/virtualSlider"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/virtualSlider"
+                app:layout_constraintStart_toStartOf="@id/virtualSlider"
+                app:layout_constraintTop_toTopOf="@id/virtualSlider" />
+
+            <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.bassview.Croller
+                android:id="@+id/virtualSlider"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                app:back_circle_color="#EDEDED"
+                app:indicator_color="#FFB300"
+                app:indicator_disable_color="#C0C0C0"
+                app:indicator_width="10"
+                app:is_continuous="false"
+                app:label="@string/virtual"
+                app:label_color="@color/white"
+                app:label_disabled_color="#C0C0C0"
+                app:label_size="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideLine"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:main_circle_color="#FFFFFF"
+                app:max="10"
+                app:min="0"
+                app:progress_primary_circle_size="10"
+                app:progress_primary_color="#FFB300"
+                app:progress_primary_disable_color="@color/gray"
+                app:progress_secondary_circle_size="8"
+                app:progress_secondary_color="#A89C81"
+                app:progress_secondary_disable_color="#C0C0C0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

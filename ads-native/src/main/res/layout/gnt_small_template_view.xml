@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/native_ad_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gnt_rounded_corners_shape"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ad_notification_view"
+                android:layout_width="@dimen/gnt_ad_indicator_width"
+                android:layout_height="@dimen/gnt_ad_indicator_height"
+                android:gravity="center"
+                android:text="Ad"
+                android:textColor="#ff695b"
+                android:textSize="@dimen/gnt_ad_indicator_text_size"
+                android:textStyle="bold" />
+
+            <com.google.android.gms.ads.formats.MediaView
+                android:id="@+id/media_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="@dimen/gnt_default_margin"
+                android:layout_marginRight="@dimen/gnt_default_margin"
+                android:background="@color/gnt_white"
+                android:src="#bebebe" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gnt_white"
+                    android:lines="1"
+                    android:text="@string/test"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="@dimen/gnt_text_size_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tertiary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gnt_white"
+                    android:lines="1"
+                    android:text="@string/test"
+                    android:textColor="@color/gnt_gray"
+                    android:textSize="@dimen/gnt_text_size_large"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_button_cta"
+                android:clickable="false"
+                android:lines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="6dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="6dp"
+                android:text="cta"
+                android:textColor="@color/gnt_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.gms.ads.nativead.NativeAdView>

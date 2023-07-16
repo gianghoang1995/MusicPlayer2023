@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Reklaamide laadimine, palun oodake...</string>
+    <string name="this_action_contains_ads">( See toiming võib sisaldada reklaame )</string>
+</resources>

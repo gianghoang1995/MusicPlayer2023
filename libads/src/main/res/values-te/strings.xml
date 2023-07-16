@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">ప్రకటనలు లోడ్ అవుతోంది, దయచేసి వేచి ఉండండి...</string>
+    <string name="this_action_contains_ads">(ఈ చర్యలో ప్రకటనలు ఉండవచ్చు)</string>
+</resources>

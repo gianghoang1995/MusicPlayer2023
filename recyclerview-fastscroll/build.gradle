@@ -1,0 +1,25 @@
+plugins {
+    id "com.android.library"
+    id 'org.jetbrains.kotlin.android'
+}
+android {
+    compileSdkVersion 32
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 32
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    // AppCompat
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+}

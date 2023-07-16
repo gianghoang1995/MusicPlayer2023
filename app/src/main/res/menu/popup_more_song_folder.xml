@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuPlayNext"
+        android:title="@string/play_next"/>
+    <item
+        android:id="@+id/menuAddToPlaylist"
+        android:title="@string/add_to_playlist"/>
+    <item
+        android:id="@+id/menuShareSong"
+        android:title="@string/share"/>
+    <item
+        android:id="@+id/menuSetRingtone"
+        android:title="@string/set_ringtone"/>
+</menu>

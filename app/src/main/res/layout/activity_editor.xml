@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_theme_header_support"
+        android:id="@+id/supportThemes"/>
+
+
+    <LinearLayout
+        android:id="@+id/editor_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:tag="layout"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back_white" />
+
+            <TextView
+                android:id="@+id/Editor_song_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/baloo_bold"
+                android:gravity="center"
+                android:text="@string/ringtone_cutter"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/tvArtist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnBack"
+                app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+            <TextView
+                android:id="@+id/tvArtist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/baloo_regular"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/btnBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnBack"
+                app:layout_constraintTop_toBottomOf="@id/Editor_song_title"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/editor_waveform_bg_color">
+
+            <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.WaveformView
+                android:id="@+id/waveform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/Editor_Waveform_Marginleft"
+                android:layout_marginEnd="@dimen/Editor_Waveform_MarginRight"
+                android:layout_marginBottom="@dimen/Editor_Waveform_MarginBottom" />
+
+            <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.MarkerView
+                android:id="@+id/startmarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@+id/endmarker" />
+
+            <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.MarkerView
+                android:id="@+id/endmarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@+id/endmarker"
+                app:setRotation="180" />
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/zoom_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_zoom"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_zoom_out" />
+
+                <ImageView
+                    android:id="@+id/zoom_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_zoom"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_zoom_in" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                app:layout_constraintBottom_toTopOf="@id/btnSetRingTone"
+                app:layout_constraintTop_toBottomOf="@id/top">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mark_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/editor_starts"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/Editor_End_Marker_textsize"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/starttext"
+                        android:layout_width="@dimen/Editor_StartText_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:inputType="number|numberDecimal"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/Editor_StartText_TextSize" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.PlayPauseView
+                        android:id="@+id/Play_Pause_View"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:contentDescription="@null"
+                        android:focusable="true"
+                        android:scaleType="center"
+                        app:PlayPauseArrow_color="@color/editor_playpause_arrow_color"
+                        app:PlayPauseView_distance="-1dp"
+                        app:PlayPauseView_height="@dimen/_16sdp"
+                        app:PlayPauseView_width="@dimen/_8sdp"
+                        app:backgroundcolor="@color/editor_playpause_background" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mark_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/edtior_ends"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/Editor_End_Marker_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/endtext"
+                        android:layout_width="@dimen/editor_textview_shape_width"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:inputType="number|numberDecimal"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/Editor_End_Marker_Numbers_Textsize" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSetRingTone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/next_button_unpressed"
+                android:text="@string/set_ringtone"
+                android:textColor="@color/editor_save_text_color"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintBottom_toTopOf="@id/frameBannerAds" />
+
+            <FrameLayout
+                android:id="@+id/frameBannerAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

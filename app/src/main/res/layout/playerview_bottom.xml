@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_player_view"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgThumb"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@drawable/ic_song_transparent"
+        app:layout_constraintBottom_toTopOf="@id/progressTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/baloo_bold"
+        android:gravity="start"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toTopOf="@id/tvArtist"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrive"
+        app:layout_constraintStart_toEndOf="@id/imgThumb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/baloo_regular"
+        android:lines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/progressTimer"
+        app:layout_constraintEnd_toStartOf="@id/btnPrive"
+        app:layout_constraintStart_toEndOf="@id/imgThumb"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/btnPrive"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/selector_prive_small"
+        app:layout_constraintBottom_toBottomOf="@id/btnPlayPause"
+        app:layout_constraintEnd_toStartOf="@id/btnPlayPause"
+        app:layout_constraintTop_toTopOf="@id/btnPlayPause" />
+
+    <ImageButton
+        android:id="@+id/btnPlayPause"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_play_big"
+        app:layout_constraintBottom_toTopOf="@id/progressTimer"
+        app:layout_constraintEnd_toStartOf="@id/btnNext"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/selector_next_small"
+        app:layout_constraintBottom_toBottomOf="@id/btnPlayPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnPlayPause" />
+
+
+    <ProgressBar
+        android:id="@+id/progressTimer"
+        style="@style/CustomProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

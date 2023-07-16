@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lisTitleTopEqua">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="listBottomEqua">
+        <item>60Hz</item>
+        <item>230Hz</item>
+        <item>910Hz</item>
+        <item>3.6kHz</item>
+        <item>14kHz</item>
+    </string-array>
+
+</resources>

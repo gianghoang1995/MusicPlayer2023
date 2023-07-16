@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_sort"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_bold"
+        android:text="@string/sort"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/groupSort"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:inputType="text"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/ckbCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="@color/checkbox_tint"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            android:text="@string/custom"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_custom"/>
+
+        <RadioButton
+            android:id="@+id/ckbSortByName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="@color/checkbox_tint"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            android:text="@string/sort_name"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_name"/>
+
+        <RadioButton
+            android:id="@+id/ckbSortByAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="@color/checkbox_tint"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            android:text="@string/sort_album"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_album"/>
+
+        <RadioButton
+            android:id="@+id/ckbSortByArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="@color/checkbox_tint"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            android:text="@string/sort_artist"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_sort_artist"/>
+
+        <RadioButton
+            android:id="@+id/ckbSortByDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="@color/checkbox_tint"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            android:text="@string/sort_duration"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_duration"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_bold"
+        android:text="@string/order_by"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/groupOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/ckbOrderAsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="#03A8F3"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            android:text="@string/order_ascending"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_sort_ascending"/>
+
+        <RadioButton
+            android:id="@+id/ckbOrderDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:buttonTint="#03A8F3"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            android:text="@string/order_descending"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_sort_descending"/>
+    </RadioGroup>
+</LinearLayout>

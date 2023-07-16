@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">در حال بارگیری تبلیغات، لطفا صبر کنید...</string>
+    <string name="this_action_contains_ads">(این عمل می تواند حاوی تبلیغات باشد)</string>
+</resources>

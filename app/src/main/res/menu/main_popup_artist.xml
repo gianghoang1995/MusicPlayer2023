@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuShowBlockArtist"
+        android:title="@string/show_block_artist"/>
+    <item
+        android:id="@+id/menuEqualizer"
+        android:title="@string/title_equalizer"/>
+
+    <item
+        android:id="@+id/menuSort"
+        android:title="@string/sort">
+
+        <menu>
+            <group
+                android:id="@+id/group_sort"
+                android:checkableBehavior="single"
+                android:orderInCategory="1">
+                <item
+                    android:id="@+id/artistSortByArtist"
+                    android:title="@string/sort_artist"/>
+                <item
+                    android:id="@+id/artistSortByCountSong"
+                    android:title="@string/sort_count"/>
+                <item
+                    android:id="@+id/artistSortAlbumCount"
+                    android:title="@string/sort_album_count"/>
+            </group>
+
+            <group
+                android:id="@+id/group_order"
+                android:checkableBehavior="single"
+                android:orderInCategory="1">
+                <item
+                    android:checkable="false"
+                    android:enabled="false"
+                    android:title="@string/order_by"/>
+                <item
+                    android:id="@+id/artistOrderAsc"
+                    android:checked="true"
+                    android:title="@string/order_ascending"/>
+                <item
+                    android:id="@+id/artistOrderDesc"
+                    android:title="@string/order_descending"/>
+            </group>
+        </menu>
+
+    </item>
+</menu>

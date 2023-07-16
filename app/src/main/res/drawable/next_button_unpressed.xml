@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/whiteHintLight">
+
+    <solid android:color="@color/editor_save_button_color"/>
+    <corners android:radius="@dimen/_25sdp"/>
+    <stroke
+        android:width="1sp"
+        android:color="@color/editor_save_button_color"/>
+
+</shape>

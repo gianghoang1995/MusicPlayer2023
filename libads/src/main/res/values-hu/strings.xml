@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Hirdetések betöltése, kérem várjon...</string>
+    <string name="this_action_contains_ads">( Ez a művelet tartalmazhat hirdetéseket )</string>
+</resources>

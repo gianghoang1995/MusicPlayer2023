@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgThemeThumb"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/viewSelectedTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/Shape4dp"
+        tools:src="@drawable/theme_default" />
+
+    <ImageView
+        android:id="@+id/imgAddLocal"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgThemeThumb"
+        app:layout_constraintEnd_toEndOf="@id/imgThemeThumb"
+        app:layout_constraintStart_toStartOf="@id/imgThemeThumb"
+        app:layout_constraintTop_toTopOf="@id/imgThemeThumb" />
+
+    <View
+        android:id="@+id/viewSelectedTheme"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_select_theme"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

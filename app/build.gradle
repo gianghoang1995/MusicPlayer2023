@@ -1,0 +1,199 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdk 32
+    defaultConfig {
+        applicationId "com.downloadmp3player.musicdownloader.freemusicdownloader"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName 'v1.0.1'
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        def filesAuthority = applicationId + ".wtfprovider"
+        manifestPlaceholders = [filesAuthority: filesAuthority]
+        buildConfigField("String", "FILES_AUTHORITY", "\"${filesAuthority}\"")
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        def date = new Date()
+        def formattedDate = date.format('dd-MM')
+        Calendar calendar = GregorianCalendar.getInstance()
+        def hour = calendar.get(Calendar.HOUR_OF_DAY)
+        def minute = calendar.get(Calendar.MINUTE)
+        setProperty("archivesBaseName", "MusicPlayer2023" + versionCode + "__" + versionName + "__${formattedDate}__${hour}h${minute}")
+    }
+
+    buildTypes {
+
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "URL_CONFIG_APP", '"https://raw.githubusercontent.com/ladygaga121/ConfigApp/main/musicdownloader2023v1.json"'
+        }
+        debug {
+            buildConfigField "String", "URL_CONFIG_APP", '"https://raw.githubusercontent.com/ladygaga121/ConfigApp/main/musicdownloader2023v1.json"'
+        }
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+        encoding 'utf-8'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        disable 'NonConstantResourceId'
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        def appName = "MusicPlayer2023"
+        def date = new Date()
+        def formattedDate = date.format('dd-MM')
+        outputFileName = appName + "__${variant.versionName}" + "__${formattedDate}" + ".apk"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-service:2.5.1'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.2'
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+//    implementation 'com.android.support:multidex:2.0.1'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.palette:palette-ktx:1.0.0'
+    implementation 'com.google.firebase:firebase-perf:20.3.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    /*Admob*/
+    implementation 'com.google.android.gms:play-services-ads:22.2.0'
+
+    implementation 'androidx.mediarouter:mediarouter:1.3.1'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.7'
+    implementation 'com.daimajia.easing:library:2.4@aar'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'org.greenrobot:eventbus:3.3.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+//    kapt  'com.github.bumptech.glide:compiler:3.8.0'
+
+    implementation 'io.github.everythingme:overscroll-decor-android:1.1.1'
+
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    kapt 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    implementation 'com.beardedhen:androidbootstrap:2.3.2'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+    //volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'org.jsoup:jsoup:1.16.1'
+    implementation 'com.mig35:carousellayoutmanager:1.4.6'
+
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+    implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true
+    }
+    implementation 'com.airbnb.android:lottie:6.0.0'
+
+    /**Common Lang*/
+    implementation 'org.apache.commons:commons-lang3:3.11'
+
+    /**UCrop*/
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+
+    /**Media*/
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2'
+    implementation 'androidx.media:media:1.6.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.1'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.18.1'
+    implementation 'com.google.android.exoplayer:extension-cast:2.18.1'
+
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    // Reactive extensions for Java VM
+    implementation "io.reactivex.rxjava3:rxjava:3.0.13"
+    implementation "io.reactivex.rxjava3:rxandroid:3.0.0"
+    implementation "com.jakewharton.rxbinding4:rxbinding:4.0.0"
+
+    implementation('androidx.room:room-runtime:2.4.3')
+    kapt('androidx.room:room-compiler:2.4.3')
+
+    implementation 'com.github.TeamNewPipe:nanojson:1d9e1aea9049fc9f85e68b43ba39fe7be1c1f751'
+    implementation 'com.github.TeamNewPipe:NewPipeExtractor:d961d349c35c93c53ae419935d93fa4533fe71ca'
+
+    implementation 'com.github.amitshekhariitbhu:Fast-Android-Networking:1.0.2'
+
+    implementation 'com.beardedhen:androidbootstrap:2.3.2'
+
+    implementation 'com.android.billingclient:billing-ktx:6.0.1'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    /*Permission*/
+    implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
+
+
+    implementation 'com.google.ads.mediation:facebook:6.14.0.0'
+    implementation 'com.google.ads.mediation:applovin:11.10.1.0'
+    implementation 'com.pangle.global:ads-sdk:5.3.0.4'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.google.ads.mediation:pangle:5.3.0.4.0'
+
+    implementation project(':visualizer')
+    implementation project(':shadow')
+    implementation project(':libads')
+    implementation project(':recyclerview-fastscroll')
+    implementation project(':jaudiotagger')
+    implementation project(':blurry')
+    implementation project(':circularSeekBar')
+    implementation project(':downloadfile')
+    implementation project(':AppvolinAds')
+}

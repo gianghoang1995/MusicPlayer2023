@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_bottom_sheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/ringtone_option"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/btnSetRingtone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_set_ringtone"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/baloo_medium"
+        android:gravity="center|start"
+        android:padding="16dp"
+        android:text="@string/set_ringtone"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/btnShareRingtone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_share"
+        android:drawablePadding="8dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/baloo_medium"
+        android:gravity="center|start"
+        android:padding="16dp"
+        android:text="@string/share"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnSetRingtone"/>
+
+    <TextView
+        android:id="@+id/btnDeleteRingtone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_delete"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/baloo_medium"
+        android:gravity="center|start"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnShareRingtone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

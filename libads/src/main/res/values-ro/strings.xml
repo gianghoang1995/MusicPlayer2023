@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Se încarcă anunțuri, așteptați...</string>
+    <string name="this_action_contains_ads">(Această acțiune poate conține reclame)</string>
+</resources>

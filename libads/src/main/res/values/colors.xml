@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#43A047</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="stroke_color">#261E88E5</color>
+    <color name="bg_header_text">#1A039BE5</color>
+</resources>

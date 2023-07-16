@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Učitavanje oglasa, pričekajte...</string>
+    <string name="this_action_contains_ads">(Ova radnja može sadržavati oglase)</string>
+</resources>

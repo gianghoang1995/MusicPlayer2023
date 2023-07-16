@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingDownload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_colorFilter="@color/white"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ios_loading" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btnDownload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="6dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/download_blue" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/successDownloadView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="12dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/ic_success" />
+
+    <!--   <ImageButton
+           android:id="@+id/btnDownload"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:background="?attr/selectableItemBackgroundBorderless"
+           android:src="@drawable/ic_download_white"
+           android:visibility="gone"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

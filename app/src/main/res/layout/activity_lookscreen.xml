@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBGLockScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/theme_default" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <ImageButton
+            android:id="@+id/btnMoreLockScreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more" />
+
+        <TextView
+            android:id="@+id/tvLockScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/baloo_regular"
+            android:gravity="center"
+            android:text="@string/lockscreen_play"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_lock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.CustomDigitalClock
+            android:id="@+id/digitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bold"
+            android:textColor="@color/white"
+            android:textSize="55sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLockScreen"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_medium"
+            android:gravity="center"
+            android:text="aas"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/digitalClock" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgThumbLock"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@id/seekBarLock"
+            app:layout_constraintEnd_toEndOf="@id/seekBarLock"
+            app:layout_constraintStart_toStartOf="@id/seekBarLock"
+            app:layout_constraintTop_toTopOf="@id/seekBarLock"
+            app:shapeAppearance="@style/ShapeCircleLockScreen"
+            app:srcCompat="@drawable/ic_song_transparent" />
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/seekBarLock"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center_horizontal"
+            app:cs_circle_color="#80000000"
+            app:cs_circle_progress_color="@color/white"
+            app:cs_circle_stroke_width="7dp"
+            app:cs_circle_style="round"
+            app:cs_negative_enabled="false"
+            app:cs_pointer_color="@color/white"
+            app:cs_pointer_halo_color="@color/white"
+            app:cs_move_outside_circle = "false"
+            app:cs_lock_enabled = "true"
+            app:cs_pointer_halo_color_ontouch="@color/blue"
+            app:cs_pointer_halo_width="10dp"
+            app:cs_pointer_stroke_width="16dp"
+            app:layout_constraintBottom_toTopOf="@id/tvTitleSong"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDate"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvTitleSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/baloo_bold"
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:singleLine="true"
+            android:text="Con đường xưa em đi"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/tvDuration" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/baloo_regular"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:text="11:11"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/controlView"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <LinearLayout
+            android:id="@+id/controlView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:itemIconSize="@dimen/dp_20"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toTopOf="@id/tvSlideToUnlock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <ImageButton
+                android:id="@+id/btnShuffle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_shuffle_off_lock"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/btnPrive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_prive_lockscreen"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/btnPlayPause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="@id/navControl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_play_lockscreen"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_next_lockscreen"
+                tools:ignore="ContentDescription" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/btnFavorite"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toTopOf="@id/seekPlayer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="favorite.json"
+                app:lottie_loop="false"
+                app:lottie_speed="1.0" />
+
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/swipeView"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvSlideToUnlock"
+            app:layout_constraintEnd_toStartOf="@id/tvSlideToUnlock"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvSlideToUnlock"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="swipe_right.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1.0" />
+
+        <TextView
+            android:id="@+id/tvSlideToUnlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/baloo_medium"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/slide_to_unlock"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/swipeView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

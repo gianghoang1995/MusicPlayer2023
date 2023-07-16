@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Naglo-load ng mga ad, mangyaring maghintay ...</string>
+    <string name="this_action_contains_ads">(Ang pagkilos na ito ay maaaring maglaman ng mga ad)</string>
+</resources>

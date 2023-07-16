@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuPlayNext"
+        android:title="@string/play_next"/>
+    <item
+        android:id="@+id/menuAddQueue"
+        android:title="@string/add_to_queue"/>
+    <item
+        android:id="@+id/menuAddToPlaylist"
+        android:title="@string/add_to_playlist"/>
+
+    <item
+        android:id="@+id/menuSetRingtone"
+        android:title="@string/set_ringtone"/>
+    <item
+        android:id="@+id/menuGoAlbum"
+        android:title="@string/go_album"/>
+    <item
+        android:id="@+id/menuGoArtist"
+        android:title="@string/go_artist"/>
+    <item
+        android:id="@+id/menuGoFolder"
+        android:title="@string/go_folder"/>
+    <item
+        android:id="@+id/menuRename"
+        android:title="@string/rename"/>
+    <item
+        android:id="@+id/menuDelete"
+        android:title="@string/delete"/>
+</menu>

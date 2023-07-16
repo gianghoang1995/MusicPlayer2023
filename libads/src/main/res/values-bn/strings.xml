@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">বিজ্ঞাপন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</string>
+    <string name="this_action_contains_ads">(এই কর্মে বিজ্ঞাপন থাকতে পারে)</string>
+</resources>

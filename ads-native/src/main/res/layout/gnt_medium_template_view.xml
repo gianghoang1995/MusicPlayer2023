@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/native_ad_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/gnt_rounded_corners_shape">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <com.google.android.gms.ads.nativead.MediaView
+                android:id="@+id/media_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/ad_notification_view"
+                android:layout_width="@dimen/gnt_ad_indicator_width"
+                android:layout_height="@dimen/gnt_ad_indicator_height"
+                android:layout_gravity="left|top"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/gnt_ad_indicator_top_margin"
+                android:background="@drawable/bg_ads"
+                android:gravity="center"
+                android:text="Ad"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/gnt_ad_indicator_text_size"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ads_bg_bottom"
+            android:gravity="center"
+            android:layout_margin="1dp">
+
+            <ImageView
+                android:id="@+id/ad_app_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/test"
+                    android:textColor="#000"
+                    android:textSize="@dimen/gnt_text_size_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tertiary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="@string/test"
+                    android:textColor="#000"
+                    android:textSize="@dimen/gnt_text_size_large"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="#007aff"
+                android:clickable="false"
+                android:lines="1"
+                android:textColor="@color/gnt_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.gms.ads.nativead.NativeAdView>

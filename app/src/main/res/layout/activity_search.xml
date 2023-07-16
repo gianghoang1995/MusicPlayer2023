@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/supportThemes"
+        layout="@layout/layout_theme_header_support" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".ui.activity.search.SearchActivity">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_back_white" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edt_search"
+                android:fontFamily="@font/baloo_medium"
+                android:hint="@string/search"
+                android:imeActionLabel="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:padding="@dimen/dp_8"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#C7C7C7"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btn_closeSearch"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_close" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/searchViewSong"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/frameBannerAds"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <TextView
+                style="@style/TitleSearchText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_songs" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSearchSongs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_song" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <FrameLayout
+            android:id="@+id/frameBannerAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/baloo_bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/not_found_song"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:drawableTopCompat="@drawable/ic_empty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

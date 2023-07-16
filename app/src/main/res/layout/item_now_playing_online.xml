@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <FrameLayout
+        android:id="@+id/startView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieNextSong"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/yellow"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/next_arrow"
+            app:lottie_speed="1.0" />
+
+        <ImageView
+            android:id="@+id/btnDrag"
+            android:layout_width="30dp"
+            android:layout_height="55dp"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_drag" />
+    </FrameLayout>
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgThumb"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="6dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_song_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/startView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/Shape4dp" />
+
+    <TextView
+        android:id="@+id/tv_album_name"
+        style="@style/BoldText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_duration"
+        app:layout_constraintEnd_toStartOf="@id/tvBitrate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imgThumb"
+        app:layout_constraintTop_toTopOf="@id/imgThumb"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="EllipsizeMaxLines" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        style="@style/NormalText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="12 song"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/imgThumb"
+        app:layout_constraintEnd_toStartOf="@+id/tvBitrate"
+        app:layout_constraintStart_toEndOf="@id/imgThumb"
+        app:layout_constraintTop_toBottomOf="@id/tv_album_name" />
+
+    <TextView
+        android:id="@+id/tvBitrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bitrate"
+        android:fontFamily="@font/baloo_medium"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="2dp"
+        android:text="256k"
+        android:textColor="@color/yellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/viewDel"
+        app:layout_constraintEnd_toStartOf="@id/viewDel"
+        app:layout_constraintTop_toTopOf="@id/viewDel" />
+
+    <FrameLayout
+        android:id="@+id/viewDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_dialog_close_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/equalizer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="equalizer.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1.0" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

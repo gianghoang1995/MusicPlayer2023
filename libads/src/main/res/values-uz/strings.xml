@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Reklamalar yuklanmoqda, kuting...</string>
+    <string name="this_action_contains_ads">(Ushbu amalda reklamalar boʻlishi mumkin)</string>
+</resources>

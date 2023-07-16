@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_16"
+    app:cardCornerRadius="@dimen/dp_16"
+    app:cardElevation="@dimen/dp_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:fontFamily="@font/baloo_bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/save_or_update_preset"
+            android:textColor="#3a3a3a"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:background="@drawable/stroke_gray"
+            android:fontFamily="@font/baloo_regular"
+            android:text="@string/enter_name"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_8"
+            android:textColor="#515151">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bold"
+                android:text="@string/select_preset"
+                android:textColor="#3a3a3a" />
+
+            <TextView
+                android:id="@+id/tv_empty_preset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_regular"
+                android:paddingTop="@dimen/dp_8"
+                android:text="@string/empty_preset"
+                android:textColor="#3a3a3a" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_equalizer"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:listitem="@layout/item_equalizer" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/baloo_bold"
+                android:padding="@dimen/dp_16"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/centerView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/centerView"
+                android:layout_width="0.5dp"
+                android:layout_height="0dp"
+                android:background="@color/gray_border"
+                app:layout_constraintBottom_toBottomOf="@id/btn_update"
+                app:layout_constraintEnd_toStartOf="@id/btn_Create"
+                app:layout_constraintStart_toEndOf="@id/btn_update"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_Create"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:fontFamily="@font/baloo_bold"
+                android:padding="@dimen/dp_16"
+                android:text="@string/create"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/centerView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

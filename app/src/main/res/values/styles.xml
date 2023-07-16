@@ -1,0 +1,196 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.ThemeLockScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/black_tsp_30</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.FullActivityBG" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/black_tsp_30</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/baloo_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Shape4dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="Shape8dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeCircleLockScreen" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="cornerSize">125dp</item>
+    </style>
+
+    <style name="BoldText" parent="TextAppearance.AppCompat">
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:fontFamily">@font/baloo_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="TitleSearchText" parent="TextAppearance.AppCompat">
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/baloo_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="NormalText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/baloo_regular</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="SettingText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/baloo_regular</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="ButtonDialogStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawablePadding">@dimen/dp_16</item>
+        <item name="android:fontFamily">@font/baloo_medium</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="NestedScrollBarStyle">
+        <item name="android:scrollbarFadeDuration">2</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <!-- Animation for dialog box -->
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/baloo_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="TextPreferenceLarge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/baloo_medium</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextPreferenceSmall">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/baloo_regular</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStopWatch" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_border_stop_watch</item>
+        <item name="android:drawableTop">@drawable/ic_stopwatch</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:fontFamily">@font/baloo_bold</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <declare-styleable name="PlayPauseView">
+        <attr name="PlayPauseView_width" format="dimension" />
+        <attr name="PlayPauseView_distance" format="dimension" />
+        <attr name="PlayPauseView_height" format="dimension" />
+        <attr name="PlayPauseArrow_color" format="color" />
+        <attr name="backgroundcolor" format="color" />
+    </declare-styleable>
+
+    <dimen name="sp_18">18sp</dimen>
+    <color name="black_tsp_30">#4D000000</color>
+</resources>

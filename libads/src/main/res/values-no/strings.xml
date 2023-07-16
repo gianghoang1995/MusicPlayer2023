@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Laster inn annonser, vennligst vent ...</string>
+    <string name="this_action_contains_ads">(Denne handlingen kan inneholde annonser)</string>
+</resources>

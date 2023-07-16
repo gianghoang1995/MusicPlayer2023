@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_theme_header_support"
+        android:id="@+id/supportThemes"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_white"
+            app:title="@string/scan_media"
+            app:titleTextColor="@color/white" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewScanning"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/btnStartScan"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <FrameLayout
+                android:id="@+id/frameBannerAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/scanning"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@id/groupCheckbox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frameBannerAds"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="radar.json"
+                app:lottie_loop="true"
+                app:lottie_speed="1.5" />
+
+            <RadioGroup
+                android:id="@+id/groupCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="0"
+                android:gravity="center|left"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scanning">
+
+                <RadioButton
+                    android:id="@+id/rd0s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#63D2CC"
+                    android:padding="8dp"
+                    android:text="@string/not_skip"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rd30s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#63D2CC"
+                    android:padding="8dp"
+                    android:text="@string/skip_song_30s"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rd60s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#63D2CC"
+                    android:padding="8dp"
+                    android:text="@string/skip_song_60s"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rd90s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#63D2CC"
+                    android:padding="8dp"
+                    android:text="@string/skip_song_90s"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/btnStartScan"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/successAnim"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="success.json"
+                app:lottie_loop="false"
+                app:lottie_speed="1" />
+
+            <TextView
+                android:id="@+id/tvScanCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_success"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/baloo_bold"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/scanned_songs"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/successAnim" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnStartScan"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/next_button_unpressed"
+            android:text="@string/start_scanning"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

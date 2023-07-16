@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Đang tải quảng cáo, vui lòng đợi...</string>
+    <string name="this_action_contains_ads">(Hành động này có thể chứa quảng cáo)</string>
+</resources>

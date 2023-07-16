@@ -1,0 +1,4 @@
+<resources>
+    <string name="loading_ads">Жарнамалар жүктелуде, күте тұрыңыз...</string>
+    <string name="this_action_contains_ads">(Бұл әрекетте жарнама болуы мүмкін)</string>
+</resources>
