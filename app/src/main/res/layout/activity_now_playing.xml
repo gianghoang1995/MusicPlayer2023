@@ -46,38 +46,6 @@
                 android:background="#C5C5C5"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/guideOnline"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="gone"
-                app:layout_constraintTop_toBottomOf="@id/guideline1">
-
-                <TextView
-                    android:id="@+id/tvNextSong"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/baloo_bold"
-                    android:padding="8dp"
-                    android:text="@string/next_song"
-                    android:textColor="@color/yellow"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tvMove"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/baloo_regular"
-                    android:paddingLeft="8dp"
-                    android:paddingRight="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="@string/move_to_priority"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@id/tvNextSong" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvNowPlaying"
                 android:layout_width="match_parent"
@@ -85,7 +53,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toTopOf="@id/btnAddAllToPlaylist"
-                app:layout_constraintTop_toBottomOf="@id/guideOnline"
+                app:layout_constraintTop_toBottomOf="@id/guideline1"
                 tools:listitem="@layout/item_now_playing" />
 
             <Button

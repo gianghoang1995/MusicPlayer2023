@@ -42,7 +42,6 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.mai
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.album.adapter.AdapterUnblockAlbums
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.artist.ArtistFragment
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.artist.adapter.AdapterUnblockArtist
-import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.online.OnlineFragment
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.playlist.PlaylistFragment
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.query_folder.QueryFolderFragment
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.query_folder.adapter.AdapterUnblockFolder
@@ -52,7 +51,6 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.mai
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.*
 import com.utils.adsloader.InterstitialPreloadAdManager
 import com.utils.adsloader.NativeAdGiftView
-import com.utils.adsloader.NativeAdMediumView
 import com.utils.adsloader.NativeAdsManager
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 import org.greenrobot.eventbus.EventBus

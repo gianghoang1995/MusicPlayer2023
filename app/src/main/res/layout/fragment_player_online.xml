@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/unLimitView"
+        app:layout_constraintBottom_toTopOf="@id/text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -84,39 +84,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:id="@+id/unLimitView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:gravity="end|center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintWidth_max="270dp">
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/viewPlaying"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:visibility="invisible"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="false"
-            app:lottie_rawRes="@raw/play_button"
-            app:lottie_repeatCount="3"
-            app:lottie_speed="1.0" />
-
-        <TextView
-            android:id="@+id/tvNextUltimateSong"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="marquee"
-            android:fontFamily="@font/baloo_medium"
-            android:padding="8dp"
-            android:singleLine="true"
-            android:textColor="@color/white" />
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/text"
@@ -207,15 +174,7 @@
                 android:layout_height="@dimen/dp_50"
                 android:background="?attr/actionBarItemBackground"
                 android:contentDescription="@string/add_to_playlist"
-                android:visibility="gone"
                 app:srcCompat="@drawable/ic_add_curent_to_playlist" />
-
-            <com.downloadmp3player.musicdownloader.freemusicdownloader.widget.CustomLoadingDownloadView
-                android:id="@+id/downloadView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center" />
         </FrameLayout>
 
         <ImageButton
@@ -333,13 +292,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <ProgressBar
-                android:id="@+id/bufferView"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center"
-                android:visibility="visible" />
-
             <ImageView
                 android:id="@+id/btnPlayPause"
                 android:layout_width="@dimen/dp_70"
@@ -349,7 +301,6 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:focusable="true"
-                android:visibility="gone"
                 app:srcCompat="@drawable/ic_play_big"
                 tools:ignore="ContentDescription" />
         </FrameLayout>

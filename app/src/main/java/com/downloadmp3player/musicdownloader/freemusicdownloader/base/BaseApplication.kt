@@ -23,25 +23,17 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.service.receive
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.plashscreen.PlashScreenActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppConstants.testDevices
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
-import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.newpipe.DownloaderImpl
-import com.androidnetworking.AndroidNetworking
 import com.applovin.sdk.AppLovinMediationProvider
 import com.applovin.sdk.AppLovinSdk
 import com.downloadmp3player.musicdownloader.freemusicdownloader.service.ObverseDownloadServiceUtils
 import com.google.android.gms.ads.*
-import com.google.android.gms.ads.admanager.AdManagerAdView
 import com.liulishuo.filedownloader.FileDownloader
 import com.liulishuo.filedownloader.connection.FileDownloadUrlConnection
-import com.utils.adsloader.AdaptiveBannerManager
 import com.utils.adsloader.AppOpenAdManager
 import com.utils.adsloader.InterstitialPreloadAdManager
 import com.utils.adsloader.InterstitialSingleReqAdManager
-import com.utils.adsloader.utils.DialogLoadingAds
 import com.utils.adsloader.utils.DialogLoadingOpenAds
 import okhttp3.OkHttpClient
-import org.schabi.newpipe.extractor.NewPipe
-import org.schabi.newpipe.extractor.downloader.Downloader
-import org.schabi.newpipe.extractor.localization.Localization
 import java.util.*
 
 
@@ -93,8 +85,6 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
             }
         }
 
-        NewPipe.init(getDownloader(), Localization("Vi", "vi"))
-
         MobileAds.initialize(this) {
             MobileAds.setAppMuted(true)
             val requestConfiguration =
@@ -118,8 +108,6 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
         favoriteDao.insertFavorite(FavoriteSqliteHelperDB.TABLE_MOST_PLAYING)
         addDefaultEqualizer(this, equalizerDao)
         refreshBitmapBackground()
-        val okHttpClient = OkHttpClient().newBuilder().build()
-        AndroidNetworking.initialize(applicationContext, okHttpClient)
 
         FileDownloader.setupOnApplicationOnCreate(this).connectionCreator(
             FileDownloadUrlConnection.Creator(
@@ -175,11 +163,6 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
         return isLockScreenRunning
     }
 
-    private fun getDownloader(): Downloader? {
-        return DownloaderImpl.init(null)
-    }
-
-
     fun refreshBitmapBackground() {
         bmImg = if (AppUtils.getThemePath(this).isNotEmpty()) {
             BitmapFactory.decodeFile(AppUtils.getThemePath(this))
@@ -188,7 +171,6 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
             bit.let { AppUtils.blurStack(it, 100, false) }
         }
     }
-
 
     private fun addDefaultEqualizer(context: Context, eqDao: EqualizerDaoDB) { /*size =11*/
         eqDao.insertPreset(

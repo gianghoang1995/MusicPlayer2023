@@ -88,20 +88,7 @@ class BrowserLyricAct : BaseActivity<ActivityBrowserLyricBinding>(), OnBinderSer
 
     private fun saveLyric() {
         binding.askSaveLyric.visibility = View.GONE
-        if (musicPlayerService!!.isPlayingOnline) {
-            musicPlayerService!!.updateLyricData(null, lyric)
-            val item = musicPlayerService!!.getCurrentOnline()
-            val lyricsOnline = LyricsOnline()
-            lyricsOnline.nameSong = item!!.title
-            lyricsOnline.pathSong = item.videoID
-            lyricsOnline.lyricData = lyric
-            lyricsOnline.typeLyric = LyricsHelperDB.TYPE_COPPY
-            if (mLyricsDao!!.isContain(item.videoID)) {
-                mLyricsDao!!.updateLyric(lyricsOnline)
-            } else {
-                mLyricsDao!!.insertLyric(lyricsOnline)
-            }
-        } else {
+
             val lyricsOnline = LyricsOnline()
             lyricsOnline.nameSong = song!!.title
             lyricsOnline.pathSong = song!!.songPath
@@ -113,7 +100,6 @@ class BrowserLyricAct : BaseActivity<ActivityBrowserLyricBinding>(), OnBinderSer
                 } else {
                     mLyricsDao!!.insertLyric(lyricsOnline)
                 }
-            }
         }
         getAppInstance().adsFullInApp?.showAds(this, {
             Toast.makeText(

@@ -10,9 +10,6 @@ class ObverseMusicUtils(var context: Context) {
     var _exoPlayer = MutableLiveData<ExoPlayer?>(null)
     val getPlayer: LiveData<ExoPlayer?> get() = _exoPlayer
 
-    var isLoading = MutableLiveData(false)
-    val getLoading: LiveData<Boolean> get() = isLoading
-
     var currentItemAudio = MutableLiveData<Any?>(null)
     val getCurrentItemAudio: LiveData<Any?> get() = currentItemAudio
 
@@ -39,7 +36,6 @@ class ObverseMusicUtils(var context: Context) {
 
     fun resetObverse(){
         _exoPlayer.postValue(null)
-        isLoading.postValue(false)
         currentItemAudio.postValue(null)
         playbackState.postValue(-1)
         listData.postValue(null)

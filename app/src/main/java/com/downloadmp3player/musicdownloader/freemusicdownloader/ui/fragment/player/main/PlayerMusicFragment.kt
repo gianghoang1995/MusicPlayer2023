@@ -105,7 +105,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
     override fun onResume() {
         super.onResume()
         updateStateLoopMode()
-        checkDownloadStatus()
     }
 
     override fun onStop() {
@@ -113,24 +112,9 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
         cancelTimer()
     }
 
-    private fun checkDownloadStatus() {
-        if (musicPlayerService?.isPlayingOnline == true) {
-            val currentItem = musicPlayerService?.getCurrentOnline()
-            if (currentItem != null) {
-                if (AppUtils.isMusicDownloaded(requireContext(), currentItem)) {
-                    binding.downloadView.successDownload()
-                } else {
-                    binding.downloadView.cancelLoading()
-                }
-            }
-        }
-    }
-
     fun init() {
         setBindListener(this)
         initNativeAds()
-        binding.downloadView.isGone =
-            ConfigApp.getInstance(requireContext())?.isShowDownload ?: false
         songListSqliteHelper = PlaylistSongSqLiteHelperDB(
             requireContext(), FavoriteSqliteHelperDB.DEFAULT_FAVORITE
         )
@@ -138,16 +122,9 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
             songListSqliteHelper
         )
         binding.tvNameSong.isSelected = true
-        binding.tvNextUltimateSong.isSelected = true
         thumbStoreDB = AppDatabase(requireContext())
         onClick()
         playerViewModel._isNewThumb.observe(this) {}
-
-        BaseApplication.mInstance?.obverseDownloadServiceUtils?._downloadingStatus?.observe(this) {
-            if (it == 999) {
-                checkDownloadStatus()
-            }
-        }
     }
 
     private fun initObverse() {
@@ -155,15 +132,8 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
             if (!it) requireActivity().finish()
         }
 
-        visibleView()
         musicPlayerService?.obverseMusicUtils?.getPlayer?.observe(this) {
             exoPlayer = it
-            if (exoPlayer != null) {
-                checkDownloadStatus()
-            } else {
-                binding.downloadView.showLoading()
-            }
-
             binding.tvMaxDuration.text = AppUtils.convertDuration(exoPlayer?.duration ?: 0)
             binding.tvCurrentPosition.text =
                 AppUtils.convertDuration(exoPlayer?.currentPosition ?: 0)
@@ -172,16 +142,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
             binding.seekPlayer.postDelayed(
                 runnableUpdateDuration, AppConstants.INTERVAL_UPDATE_PROGRESS
             )
-        }
-
-        musicPlayerService?.obverseMusicUtils?.getLoading?.observe(this) {
-            if (it) {
-                binding.bufferView.isVisible = true
-                binding.btnPlayPause.isGone = true
-            } else {
-                binding.bufferView.isGone = true
-                binding.btnPlayPause.isVisible = true
-            }
         }
 
         musicPlayerService?.obverseMusicUtils?.getCurrentItemAudio?.observe(this) {
@@ -213,46 +173,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
             }
         }
 
-        musicPlayerService?.obverseMusicUtils?.getListData?.observe(this) {
-            if (it != null) {
-                if (it.size > 0) {
-                    val item = it[0]
-                    if (item is ItemMusicOnline) {
-                        if (!item.title.equals(binding.tvNextUltimateSong.text)) {
-                            if (binding.tvNextUltimateSong.text.isEmpty()) {
-                                if (binding.unLimitView != null) {
-                                    YoYo.with(Techniques.SlideInRight).duration(750).onStart {
-                                        binding.tvNextUltimateSong.text = item.title
-                                        binding.unLimitView.setBackgroundResource(R.drawable.bg_next_song)
-                                        binding.viewPlaying.isVisible = true
-                                        binding.viewPlaying.playAnimation()
-                                    }.onEnd {
-
-                                    }.onCancel {
-
-                                    }.playOn(binding.unLimitView)
-                                }
-                            } else {
-                                if (binding.unLimitView != null) {
-                                    YoYo.with(Techniques.SlideInRight).duration(750).onStart {
-                                        binding.tvNextUltimateSong.text = item.title
-                                        binding.unLimitView.setBackgroundResource(R.drawable.bg_next_song)
-                                        binding.viewPlaying.isVisible = true
-                                        binding.viewPlaying.playAnimation()
-                                    }.playOn(binding.unLimitView)
-                                }
-                            }
-                        }
-                    }
-                }
-            } else {
-                YoYo.with(Techniques.SlideOutRight).duration(350).onEnd {
-                    binding.unLimitView.setBackgroundResource(0)
-                    binding.viewPlaying.isVisible = false
-                }.playOn(binding.unLimitView)
-            }
-        }
-
         musicPlayerService?.obverseMusicUtils?._isRunningTimer?.observe(this) {
             if (it) {
                 binding.tvTimeRunning.isVisible = true
@@ -269,20 +189,7 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
     }
 
     private fun visibleView() {
-        if (musicPlayerService?.isPlayingOnline == true) {
-            binding.btnAddToPlaylist.isVisible = false
-            binding.downloadView.isGone =
-                ConfigApp.getInstance(requireContext())?.isShowDownload == false
-            binding.viewReplace.isGone =
-                ConfigApp.getInstance(requireContext())?.isShowDownload == false
-
-//            btnChangeThumb.isVisible = false
-        } else {
-            binding.downloadView.isGone = true
-            binding.btnAddToPlaylist.isVisible = true
-//            btnChangeThumb.isVisible = true
-            binding.unLimitView.isVisible = false
-        }
+        binding.btnAddToPlaylist.isVisible = true
     }
 
     private fun cancelTimer() {
@@ -342,61 +249,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
     }
 
     fun onClick() {
-        binding.viewPlaying.setOnClickListener {
-            dialogLoadingAds?.showDialogLoading()
-            BaseApplication.getAppInstance().adsFullNowPlaying?.showAds(requireActivity(),
-                onLoadAdSuccess = {
-                    dialogLoadingAds?.dismissDialog()
-                }, onAdClose = {
-                    musicPlayerService?.nextSongUnLimited()
-                }, onAdLoadFail = {
-                    MaxIntertitial.ShowIntertitialApplovinMax(
-                        requireActivity(), getString(R.string.appvolin_full)
-                    ) {
-                        dialogLoadingAds?.dismissDialog()
-                        musicPlayerService?.nextSongUnLimited()
-                    }
-                })
-        }
-
-        /*        downloadView.setOnClickDownloadListener(object :
-                    CustomLoadingDownloadView.OnDownloadButtonClickListener {
-                    override fun onClickDownload() {
-                        if (AppUtils.isOnline(requireContext())) showDialogDownloadQuality()
-                        else {
-                            showMessage(getString(R.string.please_check_internet_connection))
-                        }
-                    }
-                })*/
-
-        binding.downloadView.setOnClickDownloadListener(object :
-            CustomLoadingDownloadView.OnDownloadButtonClickListener {
-            override fun onClickDownload() {
-                if (AppUtils.isOnline(requireContext())) {
-                    dialogLoadingAds?.showDialogLoading()
-                    BaseApplication.getAppInstance().adsFullDownload?.showAds(requireActivity(),
-                        onLoadAdSuccess = {
-                            dialogLoadingAds?.dismissDialog()
-                        }, onAdClose = {
-                            actionStartDownload()
-                        }, onAdLoadFail = {
-                            MaxIntertitial.ShowIntertitialApplovinMax(
-                                requireActivity(), getString(R.string.appvolin_full)
-                            ) {
-                                dialogLoadingAds?.dismissDialog()
-                                actionStartDownload()
-                            }
-                        })
-                } else {
-                    showMessage(getString(R.string.please_check_internet_connection))
-                }
-            }
-        })
-
-        binding.tvNextUltimateSong.setOnClickListener {
-            musicPlayerService?.nextSongUnLimited()
-        }
-
         /*     btnHideAds.setOnClickListener {
                  if (nativeAdsView.visibility == View.VISIBLE) {
                      YoYo.with(Techniques.FadeIn).duration(300).repeat(0).onStart {}
@@ -443,40 +295,17 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
         binding.btnFavorite.setOnClickListener {
             binding.btnFavorite.cancelAnimation()
             if (musicPlayerService != null) {
-                if (musicPlayerService?.isPlayingOnline == true) {
-                    val item = musicPlayerService?.getCurrentOnline()
-                    if (songListDao?.isContainsItemOnline(item) != null) {
-                        binding.btnFavorite.progress = 0f
-                        showMessage(getString(R.string.remove_song_from_favorite))
-                        if (item != null) {
-                            songListDao?.deleteOnlineSong(item)
-                            musicPlayerService?.obverseMusicUtils?.insertFavoriteStream?.postValue(
-                                true
-                            )
-                        }
-                    } else {
-                        showMessage(getString(R.string.added_to_favorite))
-                        binding.btnFavorite.playAnimation()
-                        if (item != null) {
-                            songListDao?.insertItemOnlineToPlaylist(item)
-                            musicPlayerService?.obverseMusicUtils?.insertFavoriteStream?.postValue(
-                                true
-                            )
-                        }
+                if (songListDao?.isContainsItemLocal(musicPlayerService?.getCurrentSong()) != null) {
+                    binding.btnFavorite.progress = 0f
+                    showMessage(getString(R.string.remove_song_from_favorite))
+                    if (musicPlayerService?.getCurrentSong() != null) {
+                        songListDao?.deleteLocalSong(musicPlayerService?.getCurrentSong())
                     }
                 } else {
-                    if (songListDao?.isContainsItemLocal(musicPlayerService?.getCurrentSong()) != null) {
-                        binding.btnFavorite.progress = 0f
-                        showMessage(getString(R.string.remove_song_from_favorite))
-                        if (musicPlayerService?.getCurrentSong() != null) {
-                            songListDao?.deleteLocalSong(musicPlayerService?.getCurrentSong())
-                        }
-                    } else {
-                        showMessage(getString(R.string.added_to_favorite))
-                        binding.btnFavorite.playAnimation()
-                        if (musicPlayerService?.getCurrentSong() != null) {
-                            songListDao?.insertToLocalPlaylist(musicPlayerService?.getCurrentSong())
-                        }
+                    showMessage(getString(R.string.added_to_favorite))
+                    binding.btnFavorite.playAnimation()
+                    if (musicPlayerService?.getCurrentSong() != null) {
+                        songListDao?.insertToLocalPlaylist(musicPlayerService?.getCurrentSong())
                     }
                 }
             }

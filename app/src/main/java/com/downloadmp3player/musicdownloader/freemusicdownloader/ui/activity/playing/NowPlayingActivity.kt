@@ -83,10 +83,6 @@ class NowPlayingActivity : BaseActivity<ActivityNowPlayingBinding>(), OnClickSon
             }
         }
 
-        musicPlayerService?.obverseMusicUtils?._isServiceRunning?.observe(this) {
-            binding.guideOnline.isVisible = musicPlayerService?.isPlayingOnline == true
-        }
-
         musicPlayerService?.obverseMusicUtils?.getCurrentItemAudio?.observe(this) {
             nowPlayingAdapter.setIndexSongPlayer(it, musicPlayerService?.songPos ?: 0)
         }

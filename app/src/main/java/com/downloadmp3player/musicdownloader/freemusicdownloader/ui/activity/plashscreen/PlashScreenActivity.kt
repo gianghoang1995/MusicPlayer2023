@@ -14,10 +14,6 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.ConfigApp
 import com.aliendroid.alienads.AliendroidInitialize
 import com.aliendroid.alienads.MaxIntertitial
-import com.androidnetworking.AndroidNetworking
-import com.androidnetworking.common.Priority
-import com.androidnetworking.error.ANError
-import com.androidnetworking.interfaces.JSONObjectRequestListener
 import com.downloadmp3player.musicdownloader.freemusicdownloader.BuildConfig
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.databinding.ActivityPlashBinding
@@ -43,25 +39,7 @@ class PlashScreenActivity : BaseActivity<ActivityPlashBinding>() {
     }
 
     private fun requestCheckUpdate() {
-        if (AppUtils.isOnline(this)) {
-            AndroidNetworking.get(BuildConfig.URL_CONFIG_APP)
-                .setTag(this)
-                .setPriority(Priority.HIGH)
-                .build()
-                .getAsJSONObject(object : JSONObjectRequestListener {
-                    override fun onResponse(response: JSONObject) {
-                        val data = response.toString()
-                        ConfigApp.getInstance(this@PlashScreenActivity)?.putConfigApp(data)
-                        checkFinishPermission()
-                    }
-
-                    override fun onError(anError: ANError?) {
-                        checkFinishPermission()
-                    }
-                })
-        } else {
-            checkFinishPermission()
-        }
+        checkFinishPermission()
     }
 
     fun checkFinishPermission() {

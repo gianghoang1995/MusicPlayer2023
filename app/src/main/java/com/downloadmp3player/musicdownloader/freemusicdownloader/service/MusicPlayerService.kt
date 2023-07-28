@@ -39,8 +39,6 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.database.playli
 import com.downloadmp3player.musicdownloader.freemusicdownloader.database.thumnail.AppDatabase
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.CustomPresetItem
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.MusicItem
-import com.downloadmp3player.musicdownloader.freemusicdownloader.net.utilsonline.GenerateUrlCallback
-import com.downloadmp3player.musicdownloader.freemusicdownloader.net.utilsonline.GenerateUrlMusicUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.ItemMusicOnline
 import com.downloadmp3player.musicdownloader.freemusicdownloader.sensor.ShakeDetector
 import com.downloadmp3player.musicdownloader.freemusicdownloader.service.player_ext.PlayerNotification
@@ -55,8 +53,7 @@ import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
-class MusicPlayerService : MediaBrowserServiceCompat(),
-    GenerateUrlCallback {
+class MusicPlayerService : MediaBrowserServiceCompat() {
     var urlPlayer: String? = null
     var urlLosslessDownload: String? = null
     private var currentOnlineItem: ItemMusicOnline? = null
@@ -70,7 +67,6 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     var listPreviousOnline: ArrayList<ItemMusicOnline?> = ArrayList()
     var listEqualizer = ArrayList<CustomPresetItem>()
 
-    var isPlayingOnline = false
     var isServiceRunning = false
 
     var isDurationSet = false
@@ -100,7 +96,6 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     private var playerListener: PlayerEventListener = PlayerEventListener()
 
     var exoPlayer: ExoPlayer? = null
-    var generateUrlMusicUtils: GenerateUrlMusicUtils? = null
 
     lateinit var obverseMusicUtils: ObverseMusicUtils
 
@@ -116,7 +111,6 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
 
     override fun onCreate() {
         super.onCreate()
-        generateUrlMusicUtils = GenerateUrlMusicUtils(this, this)
         thumbStoreDB = AppDatabase(this)
         setBroadcast()
 
@@ -302,78 +296,64 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
         val action = intent?.action
         if (intent != null && action != null) {
             when (action) {
-                AppConstants.ACTION_SET_DATA_ONLINE -> {
-                    val item =
-                        intent.getParcelableExtra<ItemMusicOnline>(AppConstants.ACTION_SET_DATA_ONLINE)
-                    isServiceRunning = true
-                    obverseMusicUtils.isServiceRunning.postValue(true)
-                    isPlayingOnline = true
-                    currentItemSong = null
-                    if (!parseRunning) {
-                        currentOnlineItem = item
-                        playerNotification?.hideNotification()
-                        stopPlayer()
-                        obverseMusicUtils.isLoading.postValue(true)
-                        obverseMusicUtils.listData.postValue(null)
-                        obverseMusicUtils.currentItemAudio.postValue(currentOnlineItem)
-                        bitmapDefault =
-                            item?.resourceThumb?.let { AppUtils.drawableToBitmap(this, it) }
-                        listPreviousOnline.add(item)
-                        urlPlayer = null
-                        generateUrlMusicUtils?.getUrlAudio(item)
-                    } else {
-                        Toast.makeText(this, getString(R.string.please_wait), Toast.LENGTH_SHORT)
-                            .show()
-                    }
-                }
-
                 AppConstants.ACTION_SET_DATA_PLAYER -> {
-                    isPlayingOnline = false
                     isDurationSet = false
                     isServiceRunning = true
                     obverseMusicUtils.isServiceRunning.postValue(true)
                     setDataSource()
                 }
+
                 AppConstants.ACTION_TOGGLE_PLAY -> {
                     togglePlay()
                 }
+
                 AppConstants.ACTION_RESTART -> {
                     restart()
                 }
+
                 AppConstants.ACTION_NEXT -> {
                     next()
                 }
+
                 AppConstants.ACTION_PRIVE -> {
                     prive()
                 }
+
                 AppConstants.EQUALIZER_STATUS -> {
                     enableEqualizer()
                 }
+
                 AppConstants.ACTION_CHANGE_PRESET_EQUALIZER -> {
                     val presetNumber = intent.getIntExtra(
                         AppConstants.ACTION_CHANGE_PRESET_EQUALIZER, 0
                     )
                     changePresetEqualizer(presetNumber)
                 }
+
                 AppConstants.EQUALIZER_SLIDER_CHANGE -> {
                     val band = intent.getIntExtra(AppConstants.EQUALIZER_SLIDER_CHANGE, 0)
                     val progress = intent.getIntExtra(AppConstants.EQUALIZER_SLIDER_VALUE, 0)
                     changeSliderEqualizer(band, progress)
                 }
+
                 AppConstants.VIRTUALIZER_STATUS -> {
                     enableVirtuarl()
                 }
+
                 AppConstants.VIRTUALIZER_STRENGTH -> {
                     val presetNumber = intent.getIntExtra(AppConstants.VIRTUALIZER_STRENGTH, 0)
                     setStrengthVirtuarl(presetNumber)
                 }
+
                 AppConstants.BASSBOSSTER_STATUS -> {
                     enableBassBoster()
                 }
+
                 AppConstants.BASSBOSSTER_STRENGTH -> {
                     val presetNumber = intent.getIntExtra(AppConstants.BASSBOSSTER_STRENGTH, 0)
                     setStrengthBassBoster(presetNumber)
                 }
+
                 AppConstants.SET_TIMER -> {
                     if (isServiceRunning) {
                         val timeText = intent.getStringExtra(AppConstants.TIMER_TEXT)
@@ -398,6 +378,7 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
                         showMessage(getString(R.string.no_playlist_play))
                     }
                 }
+
                 AppConstants.ACTION_SHAKE -> {
                     if (PreferenceUtils.getValueBoolean(AppConstants.PREF_SHAKE)) {
                         initShakeReceiver()
@@ -405,6 +386,7 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
                         offShake()
                     }
                 }
+
                 AppConstants.ACTION_STOP -> {
                     keepSerrvice = START_NOT_STICKY
                     stopServiceAndCloseNotification()
@@ -652,20 +634,14 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     }
 
     fun getCurrentItem(): Any? {
-        return if (isPlayingOnline) {
-            currentOnlineItem
-        } else {
-            if (lstAudio.isEmpty())
-                null
-            else
-                currentItemSong ?: lstAudio[songPos] as MusicItem
-        }
+        return if (lstAudio.isEmpty())
+            null
+        else
+            currentItemSong ?: lstAudio[songPos] as MusicItem
     }
 
+
     fun getCurrentSong(): MusicItem? {
-        if (isPlayingOnline) {
-            return null
-        }
         return (getCurrentItem() as MusicItem?)
     }
 
@@ -702,142 +678,63 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     }
 
     fun next() {
-        if (isPlayingOnline) {
-            isDurationSet = false
-            if (lstAudio.isNotEmpty()) {
-                if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == Player.REPEAT_MODE_ONE) {
-                    if (exoPlayer != null) {
-                        exoPlayer?.seekTo(0)
-                        if (exoPlayer?.playWhenReady == false) {
-                            togglePlay()
-                        }
-                    }
-                } else {
-                    if (!parseRunning) {
-                        addLastItemToListPrevious()
-                        currentOnlineItem = lstAudio[0] as ItemMusicOnline
-                        obverseMusicUtils.currentItemAudio.postValue(getCurrentItem())
-                        obverseMusicUtils.listData.postValue(null)
-                        obverseMusicUtils.isLoading.postValue(true)
-                        bitmapDefault = currentOnlineItem?.resourceThumb?.let {
-                            AppUtils.drawableToBitmap(
-                                this, it
-                            )
-                        }
-                        generateUrlMusicUtils?.getUrlAudio(currentOnlineItem)
-                        parseRunning = true
-                        urlPlayer = null
-                    } else {
-                        Toast.makeText(this, getString(R.string.please_wait), Toast.LENGTH_SHORT)
-                            .show()
-                    }
-                }
-            }
+        isDurationSet = false
+        if (lstAudio.isEmpty()) {
+            getString(R.string.no_playlist_play)
         } else {
-            isDurationSet = false
-            if (lstAudio.isEmpty()) {
-                getString(R.string.no_playlist_play)
-            } else {
-                if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == Player.REPEAT_MODE_ONE) {
-                    if (exoPlayer != null) {
-                        exoPlayer?.seekTo(0)
-                        if (exoPlayer?.playWhenReady == false) {
-                            togglePlay()
-                        }
-                    }
-                } else {
-                    if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == AppConstants.LOOP.LOOP_SHUFFLE) {
-                        songPos = AppUtils.getRandomNumber(lstAudio.size - 1)
-                    } else {
-                        if (songPos == lstAudio.size - 1) {
-                            songPos = 0
-                        } else
-                            songPos++
-                    }
-                    setDataSource()
-                    obverseMusicUtils.isLoading.postValue(false)
-                    if (exoPlayer?.playWhenReady == false) {
-                        exoPlayer?.playWhenReady = true
-                    }
-                }
-            }
-            EventBus.getDefault().postSticky(EventCloseDialog(true))
-        }
-        obverseMusicUtils.isEndSong.postValue(true)
-    }
-
-    private fun prive() {
-        if (isPlayingOnline) {
             if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == Player.REPEAT_MODE_ONE) {
                 if (exoPlayer != null) {
                     exoPlayer?.seekTo(0)
-                    if (!isPlaying()) {
+                    if (exoPlayer?.playWhenReady == false) {
                         togglePlay()
                     }
                 }
             } else {
-                stopPlayer()
-                if (listPreviousOnline.isNotEmpty()) {
-                    if (!parseRunning) {
-                        if (listPreviousOnline.size != 1) {
-                            currentOnlineItem = listPreviousOnline[listPreviousOnline.size - 1]
-                            obverseMusicUtils.currentItemAudio.postValue(getCurrentItem())
-                            obverseMusicUtils.listData.postValue(null)
-                            obverseMusicUtils.isLoading.postValue(true)
-                            bitmapDefault = currentOnlineItem?.resourceThumb?.let {
-                                AppUtils.drawableToBitmap(
-                                    this, it
-                                )
-                            }
-                            listPreviousOnline.removeAt(listPreviousOnline.size - 1)
-                        } else {
-                            currentOnlineItem = listPreviousOnline[0]
-                            obverseMusicUtils.currentItemAudio.postValue(getCurrentItem())
-                            obverseMusicUtils.isLoading.postValue(true)
-                            bitmapDefault = currentOnlineItem?.resourceThumb?.let {
-                                AppUtils.drawableToBitmap(
-                                    this, it
-                                )
-                            }
-                        }
-                        generateUrlMusicUtils?.getUrlAudio(currentOnlineItem)
-                        parseRunning = true
-                        urlPlayer = null
-                    } else {
-                        Toast.makeText(this, getString(R.string.please_wait), Toast.LENGTH_SHORT)
-                            .show()
-                    }
-                }
-            }
-        } else {
-            if (lstAudio.isEmpty()) {
-                getString(R.string.no_playlist_play)
-            } else {
-                if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == Player.REPEAT_MODE_ONE) {
-                    if (exoPlayer != null) {
-                        exoPlayer?.seekTo(0)
-                        if (exoPlayer?.playWhenReady == false) {
-                            togglePlay()
-                        }
-                    }
+                if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == AppConstants.LOOP.LOOP_SHUFFLE) {
+                    songPos = AppUtils.getRandomNumber(lstAudio.size - 1)
                 } else {
-                    if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == AppConstants.LOOP.LOOP_SHUFFLE) {
-                        songPos = AppUtils.getRandomNumber(lstAudio.size - 1)
-                    } else {
-                        if (songPos == 0) {
-                            songPos = lstAudio.size - 1
-                        } else
-                            songPos--
-                    }
-                    setDataSource()
-                    obverseMusicUtils.isLoading.postValue(false)
-                    if (exoPlayer?.playWhenReady == false) {
-                        exoPlayer?.playWhenReady = true
-                    }
+                    if (songPos == lstAudio.size - 1) {
+                        songPos = 0
+                    } else
+                        songPos++
+                }
+                setDataSource()
+                if (exoPlayer?.playWhenReady == false) {
+                    exoPlayer?.playWhenReady = true
                 }
             }
-            EventBus.getDefault().postSticky(EventCloseDialog(true))
         }
+        EventBus.getDefault().postSticky(EventCloseDialog(true))
+        obverseMusicUtils.isEndSong.postValue(true)
+    }
+
+    private fun prive() {
+        if (lstAudio.isEmpty()) {
+            getString(R.string.no_playlist_play)
+        } else {
+            if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == Player.REPEAT_MODE_ONE) {
+                if (exoPlayer != null) {
+                    exoPlayer?.seekTo(0)
+                    if (exoPlayer?.playWhenReady == false) {
+                        togglePlay()
+                    }
+                }
+            } else {
+                if (PreferenceUtils.getValueInt(AppConstants.LOOP_MODE) == AppConstants.LOOP.LOOP_SHUFFLE) {
+                    songPos = AppUtils.getRandomNumber(lstAudio.size - 1)
+                } else {
+                    if (songPos == 0) {
+                        songPos = lstAudio.size - 1
+                    } else
+                        songPos--
+                }
+                setDataSource()
+                if (exoPlayer?.playWhenReady == false) {
+                    exoPlayer?.playWhenReady = true
+                }
+            }
+        }
+        EventBus.getDefault().postSticky(EventCloseDialog(true))
         obverseMusicUtils.isEndSong.postValue(true)
     }
 
@@ -848,22 +745,6 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
                     listPreviousOnline.add(currentOnlineItem)
                 }
             }
-        }
-    }
-
-    fun nextSongUnLimited() {
-        obverseMusicUtils.isEndSong.postValue(true)
-        if (!parseRunning) {
-            addLastItemToListPrevious()
-            currentOnlineItem = lstAudio[0] as ItemMusicOnline
-            obverseMusicUtils.currentItemAudio.postValue(getCurrentItem())
-            obverseMusicUtils.listData.postValue(null)
-            obverseMusicUtils.isLoading.postValue(true)
-            generateUrlMusicUtils?.getUrlAudio(currentOnlineItem)
-            parseRunning = true
-            urlPlayer = null
-        } else {
-            Toast.makeText(this, getString(R.string.please_wait), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -890,18 +771,6 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
         mediaSessionConnector?.invalidateMediaSessionPlaybackState()
     }
 
-    fun setDataSource(url: String?) {
-        stopPlayer()
-        if (exoPlayer == null) {
-            initExoPlayer()
-        }
-        addSongToHistoryDb()
-        val mediaItem = url?.let { MediaItem.fromUri(it) }
-        mediaItem?.let { exoPlayer?.setMediaItem(it) }
-        exoPlayer?.playWhenReady = true
-        exoPlayer?.prepare()
-    }
-
     fun setDataSource() {
         stopPlayer()
         if (exoPlayer == null) {
@@ -918,45 +787,30 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     }
 
     private fun addSongToHistoryDb() {
-        if (isPlayingOnline) {
-            songListSqliteHelper =
-                PlaylistSongSqLiteHelperDB(
-                    this,
-                    FavoriteSqliteHelperDB.TABLE_LAST_PLAYING
-                )
-            songListDao =
-                PlaylistSongDaoDB(
-                    songListSqliteHelper
-                )
-            songListDao?.insertItemOnlineToPlaylist(getCurrentOnline())
-            obverseMusicUtils.insertRecentlyPlayed.postValue(true)
-        } else {
-            songListSqliteHelper =
-                PlaylistSongSqLiteHelperDB(
-                    this,
-                    FavoriteSqliteHelperDB.TABLE_LAST_PLAYING
-                )
-            songListDao =
-                PlaylistSongDaoDB(
-                    songListSqliteHelper
-                )
-            songListDao?.insertToLocalPlaylist(getCurrentSong())
+        songListSqliteHelper =
+            PlaylistSongSqLiteHelperDB(
+                this,
+                FavoriteSqliteHelperDB.TABLE_LAST_PLAYING
+            )
+        songListDao =
+            PlaylistSongDaoDB(
+                songListSqliteHelper
+            )
+        songListDao?.insertToLocalPlaylist(getCurrentSong())
 
-            songListSqliteHelper =
-                PlaylistSongSqLiteHelperDB(
-                    this,
-                    FavoriteSqliteHelperDB.TABLE_MOST_PLAYING
-                )
-            songListDao =
-                PlaylistSongDaoDB(
-                    songListSqliteHelper
-                )
-            songListDao?.insertSongToMostPlayingLocal(getCurrentSong())
-        }
+        songListSqliteHelper =
+            PlaylistSongSqLiteHelperDB(
+                this,
+                FavoriteSqliteHelperDB.TABLE_MOST_PLAYING
+            )
+        songListDao =
+            PlaylistSongDaoDB(
+                songListSqliteHelper
+            )
+        songListDao?.insertSongToMostPlayingLocal(getCurrentSong())
     }
 
     fun setListSong(context: Context, list: ArrayList<MusicItem>, position: Int) {
-        isPlayingOnline = false
         stopPlayer()
         songPos = position
         lstAudio.clear()
@@ -968,7 +822,6 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     }
 
     fun shuffleListSong(lstSong: ArrayList<MusicItem>, context: Context?) {
-        isPlayingOnline = false
         stopPlayer()
         lstAudio.clear()
         lstAudio.addAll(lstSong)
@@ -981,44 +834,32 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     }
 
     fun insertNextTrack(song: MusicItem) {
-        if (!isPlayingOnline) {
-            if (lstAudio.size > 0) {
-                lstAudio.addAll(songPos + 1, listOf(song))
-                obverseMusicUtils.listData.postValue(lstAudio)
-                getString(R.string.txt_done)
-            } else {
-                setListSong(applicationContext, arrayListOf(song), 0)
-            }
+        if (lstAudio.size > 0) {
+            lstAudio.addAll(songPos + 1, listOf(song))
+            obverseMusicUtils.listData.postValue(lstAudio)
+            getString(R.string.txt_done)
         } else {
-            showMessage(getString(R.string.you_in_online_mode))
+            setListSong(applicationContext, arrayListOf(song), 0)
         }
     }
 
     fun insertListNextTrack(lstSong: ArrayList<MusicItem>) {
-        if (!isPlayingOnline) {
-            if (lstAudio.size > 0) {
-                lstAudio.addAll(songPos + 1, lstSong)
-                obverseMusicUtils.listData.postValue(lstAudio)
-                getString(R.string.txt_done)
-            } else {
-                setListSong(applicationContext, lstSong, 0)
-            }
+        if (lstAudio.size > 0) {
+            lstAudio.addAll(songPos + 1, lstSong)
+            obverseMusicUtils.listData.postValue(lstAudio)
+            getString(R.string.txt_done)
         } else {
-            showMessage(getString(R.string.you_in_online_mode))
+            setListSong(applicationContext, lstSong, 0)
         }
     }
 
     fun addToQueue(lstSong: ArrayList<MusicItem>) {
-        if (!isPlayingOnline) {
-            if (lstAudio.size > 0) {
-                lstAudio.addAll(lstSong)
-                obverseMusicUtils.listData.postValue(lstAudio)
-                getString(R.string.txt_done)
-            } else {
-                setListSong(applicationContext, lstSong, 0)
-            }
+        if (lstAudio.size > 0) {
+            lstAudio.addAll(lstSong)
+            obverseMusicUtils.listData.postValue(lstAudio)
+            getString(R.string.txt_done)
         } else {
-            showMessage(getString(R.string.you_in_online_mode))
+            setListSong(applicationContext, lstSong, 0)
         }
     }
 
@@ -1045,31 +886,11 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
     }
 
     fun checkFavorite(): Boolean {
-        return if (isPlayingOnline) {
-            songListSqliteHelper =
-                PlaylistSongSqLiteHelperDB(
-                    this,
-                    FavoriteSqliteHelperDB.DEFAULT_FAVORITE
-                )
-            songListDao =
-                PlaylistSongDaoDB(
-                    songListSqliteHelper
-                )
-            if (getCurrentOnline() != null) songListDao?.isContainsItemOnline(getCurrentOnline()) != null
-            else false
-        } else {
-            songListSqliteHelper =
-                PlaylistSongSqLiteHelperDB(
-                    this,
-                    FavoriteSqliteHelperDB.DEFAULT_FAVORITE
-                )
-            songListDao =
-                PlaylistSongDaoDB(
-                    songListSqliteHelper
-                )
-            if (getCurrentSong() != null) songListDao?.isContainsItemLocal(getCurrentSong()) != null
-            else false
-        }
+        songListSqliteHelper =
+            PlaylistSongSqLiteHelperDB(this, FavoriteSqliteHelperDB.DEFAULT_FAVORITE)
+        songListDao = PlaylistSongDaoDB(songListSqliteHelper)
+        return if (getCurrentSong() != null) songListDao?.isContainsItemLocal(getCurrentSong()) != null
+        else false
     }
 
     inner class QueueNavigator(
@@ -1078,26 +899,14 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
         override fun getMediaDescription(
             player: Player, windowIndex: Int
         ): MediaDescriptionCompat {
-            if (isPlayingOnline) {
-                if (getCurrentItem() != null) return MediaDescriptionCompat.Builder()
-                    .setTitle(getCurrentOnline()?.title).setSubtitle(getString(R.string.app_name))
-                    .setDescription(getString(R.string.app_name)).setIconBitmap(bitmapDefault)
-                    .build()
-
-            } else {
-                val uriArt = (getCurrentItem() as MusicItem?)?.id?.let {
-                    ArtworkUtils.getArtworkFromSongID(
-                        it
-                    )
-                }
-                return MediaDescriptionCompat.Builder().setTitle(getCurrentSong()?.title)
-                    .setSubtitle(getCurrentSong()?.artist)
-                    .setDescription(getCurrentSong()?.album.toString()).setIconUri(uriArt).build()
-
+            val uriArt = (getCurrentItem() as MusicItem?)?.id?.let {
+                ArtworkUtils.getArtworkFromSongID(
+                    it
+                )
             }
-            return MediaDescriptionCompat.Builder().setTitle(getString(R.string.app_name))
-                .setSubtitle(getString(R.string.app_name))
-                .setDescription(getString(R.string.app_name)).setIconBitmap(bitmapDefault).build()
+            return MediaDescriptionCompat.Builder().setTitle(getCurrentSong()?.title)
+                .setSubtitle(getCurrentSong()?.artist)
+                .setDescription(getCurrentSong()?.album.toString()).setIconUri(uriArt).build()
         }
     }
 
@@ -1163,13 +972,8 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
         override fun onPlaybackStateChanged(playbackState: Int) {
             super.onPlaybackStateChanged(playbackState)
             when (playbackState) {
-                Player.STATE_BUFFERING -> {
-                    obverseMusicUtils.isLoading.postValue(true)
-                }
-
                 Player.STATE_READY -> {
                     obverseMusicUtils._exoPlayer.postValue(exoPlayer)
-                    obverseMusicUtils.isLoading.postValue(false)
                     if (!isDurationSet) {
                         initPrepare()
                         exoPlayer?.let {
@@ -1235,50 +1039,9 @@ class MusicPlayerService : MediaBrowserServiceCompat(),
         }
 
         override fun onPlayerError(error: PlaybackException) {
-            obverseMusicUtils.isLoading.postValue(false)
-            if (isPlayingOnline) {
-                stopServiceAndCloseNotification()
-                when (error.errorCode) {
-                    ERROR_CODE_IO_NETWORK_CONNECTION_FAILED -> {
-                        showMessage(getString(R.string.please_check_internet_connection))
-                    }
-                    ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT -> {
-                        showMessage(getString(R.string.error_please_try_again))
-                    }
-                }
-
-            } else {
-                next()
-                exoPlayer?.prepare()
-            }
+            next()
+            exoPlayer?.prepare()
         }
-    }
-
-    override fun onGenerateUrlSuccess(
-        url: String?,
-        urlLossless: String?,
-        lstRecomend: ArrayList<ItemMusicOnline>?
-    ) {
-        obverseMusicUtils.isLoading.postValue(false)
-        urlPlayer = url
-        urlLosslessDownload = urlLossless
-        setDataSource(urlPlayer)
-        parseRunning = false
-        if (lstRecomend?.isNotEmpty() == true) {
-            lstAudio.clear()
-            lstAudio.addAll(lstRecomend.shuffled())
-            obverseMusicUtils.listData.postValue(lstAudio)
-        }
-    }
-
-    override fun onGenerateUrlError() {
-        parseRunning = false
-        urlPlayer = null
-        Toast.makeText(
-            applicationContext, getString(R.string.please_try_again), Toast.LENGTH_SHORT
-        ).show()
-        obverseMusicUtils.resetObverse()
-        stopServiceAndCloseNotification()
     }
 
     inner class CustomMediaSeasionCallback : MediaSessionCompat.Callback() {

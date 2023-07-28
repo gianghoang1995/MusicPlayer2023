@@ -33,7 +33,6 @@ import org.greenrobot.eventbus.ThreadMode
 
 class PlayerMusicActivity : BaseActivity<ActivityPlayerBinding>(), OnBinderServiceConnection {
     override fun onBindServiceMusicSuccess() {
-        binding.btnMore.isInvisible = musicPlayerService?.isPlayingOnline == true
     }
 
 
