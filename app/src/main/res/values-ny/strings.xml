@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Tsatanetsatane</string>
   <string name="no_playlist_play">Palibe playlist ikuseweredwa</string>
@@ -153,7 +155,7 @@
   <string name="theme">Mutu</string>
   <string name="create_shortcut_already_exist">Njira yachidule ilipo kale</string>
   <string name="added_to_favorite">Anawonjezera nyimbo zokonda</string>
-  <string name="remove_song_from_favorite">Nyimboyi yachotsedwa ku zokonda</string>
+  <string name="remove_song_from_favorite">Nyimboyi idachotsedwa pazokonda</string>
   <string name="not_found_song">Sindinapeze nyimbo zilizonse</string>
   <string name="no_song_to_play">Palibe nyimbo zosewera!</string>
   <string name="no_song_selected">Palibe nyimbo zomwe zasankhidwa!</string>
@@ -248,6 +250,23 @@
   <string name="overlay">Kukuta</string>
   <string name="no">Ayi</string>
   <string name="ask_cancel">Kodi mukufuna kuletsa mutuwu?</string>
-  <string name="waiting">Tikuyembekezera…</string>
+  <string name="waiting">Kudikirira…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Chiyankhulo</string>
+  <string name="apply">Ikani</string>
+  <string name="use_device_language">Chilankhulo chafoni</string>
+  <string name="english">Chingerezi</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Chihindi</string>
+  <string name="spanish">Chisipanishi</string>
+  <string name="french">Chifalansa</string>
+  <string name="arabic">Chiarabu</string>
+  <string name="bengali">Chibengali</string>
+  <string name="russian">Chirasha</string>
+  <string name="italian">Chitaliyana</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Chijeremani</string>
+  <string name="korean">Chikorea</string>
+  <string name="default_1">Zosasintha</string>
+  <string name="japanese">Chijapani</string>
 </resources>

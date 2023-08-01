@@ -129,7 +129,7 @@
         android:id="@+id/bottomView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/frameBannerAds">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ProgressBar
             android:id="@+id/progressTimer"
@@ -170,11 +170,10 @@
             android:clickable="true"
             android:elevation="4dp"
             android:focusable="true"
-            android:visibility="gone"
-            app:srcCompat="@drawable/ic_play_big"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_play_big" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -215,11 +214,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_edt"
-            android:text="@string/input_name_song"
             android:imeActionLabel="@string/search"
             android:inputType="textCapSentences"
             android:padding="16dp"
             android:singleLine="true"
+            android:text="@string/input_name_song"
             android:textColor="@color/white"
             android:textColorHint="#949494"
             android:textSize="16sp"
@@ -288,10 +287,4 @@
             android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/frameBannerAds"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

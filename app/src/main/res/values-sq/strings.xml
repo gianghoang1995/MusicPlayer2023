@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detaj</string>
   <string name="no_playlist_play">Nuk po luhet asnjë listë për luajtje</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Dëshiron ta anulosh temën?</string>
   <string name="waiting">Ne pritje …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Gjuhe</string>
+  <string name="apply">Aplikoni</string>
+  <string name="use_device_language">Gjuha e telefonit</string>
+  <string name="english">Anglisht</string>
+  <string name="vietnamese">Vietnameze</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanjisht</string>
+  <string name="french">Frëngjisht</string>
+  <string name="arabic">Arabisht</string>
+  <string name="bengali">Bengalisht</string>
+  <string name="russian">Rusisht</string>
+  <string name="italian">Italisht</string>
+  <string name="indonesia">Indonezia</string>
+  <string name="german">Gjermanisht</string>
+  <string name="korean">Koreane</string>
+  <string name="default_1">E paracaktuar</string>
+  <string name="japanese">Japoneze</string>
 </resources>

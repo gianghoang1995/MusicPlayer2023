@@ -53,16 +53,7 @@ import kotlin.math.roundToInt
 object AppUtils {
 
     fun checkPermissionFux(context: Activity) {
-        var isGrantPermissionMedia = true
-        val grant = PackageManager.PERMISSION_GRANTED
-        val permissionCheck1 = ActivityCompat.checkSelfPermission(
-            context, Manifest.permission.WRITE_EXTERNAL_STORAGE
-        )
-        if (permissionCheck1 != grant) {
-            isGrantPermissionMedia = false
-        }
-
-        if (!isGrantPermissionMedia) {
+        if (!isGrantPermission(context)) {
             context.startActivity(Intent(context, PlashScreenActivity::class.java))
             context.finish()
         }
@@ -70,7 +61,7 @@ object AppUtils {
 
     fun isGrantPermission(context: Context): Boolean {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (isGrantPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            if (isGrantPermission(context, Manifest.permission.READ_MEDIA_AUDIO)
                 && isGrantPermission(context, Manifest.permission.READ_MEDIA_IMAGES)
                 && isGrantPermission(context, Manifest.permission.READ_MEDIA_VIDEO)
             ) {

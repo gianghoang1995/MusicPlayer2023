@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Hûrî</string>
   <string name="no_playlist_play">Lîsteya lîstikê nayê lîstin</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ma hûn dixwazin mijarê betal bikin?</string>
   <string name="waiting">Li benda…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Ziman</string>
+  <string name="apply">Bikaranîn</string>
+  <string name="use_device_language">Zimanê telefonê</string>
+  <string name="english">Îngilîzî</string>
+  <string name="vietnamese">Vîetnamî</string>
+  <string name="hindi">Hindî</string>
+  <string name="spanish">Îspanyolî</string>
+  <string name="french">Fransî</string>
+  <string name="arabic">Erebî</string>
+  <string name="bengali">Bengalî</string>
+  <string name="russian">Rûsî</string>
+  <string name="italian">Îtalî</string>
+  <string name="indonesia">Endonêzya</string>
+  <string name="german">Almanî</string>
+  <string name="korean">Koreyî</string>
+  <string name="default_1">Destçûnî</string>
+  <string name="japanese">Japonî</string>
 </resources>

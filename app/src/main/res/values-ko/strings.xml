@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">세부 사항</string>
   <string name="no_playlist_play">재생 중인 재생목록이 없습니다.</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">테마를 취소하시겠습니까?</string>
   <string name="waiting">대기 중 …</string>
   <string name="car_play">카플레이</string>
+  <string name="language">언어</string>
+  <string name="apply">적용하다</string>
+  <string name="use_device_language">전화 언어</string>
+  <string name="english">영어</string>
+  <string name="vietnamese">베트남어</string>
+  <string name="hindi">힌디 어</string>
+  <string name="spanish">스페인의</string>
+  <string name="french">프랑스 국민</string>
+  <string name="arabic">아라비아 말</string>
+  <string name="bengali">벵골 사람</string>
+  <string name="russian">러시아인</string>
+  <string name="italian">이탈리아 사람</string>
+  <string name="indonesia">인도네시아</string>
+  <string name="german">독일 사람</string>
+  <string name="korean">한국인</string>
+  <string name="default_1">기본</string>
+  <string name="japanese">일본어</string>
 </resources>

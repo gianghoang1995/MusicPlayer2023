@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">تفصيل</string>
   <string name="no_playlist_play">ڪا به پبليڪيشن نه هلي رهي آهي</string>
@@ -178,7 +180,7 @@
   <string name="please_try_again">مهرباني ڪري ٻيهر ڪوشش ڪريو!</string>
   <string name="move_to_priority">(ترجيح ڏيڻ لاءِ گيت کي پھرين پوزيشن ڏانھن منتقل ڪريو)</string>
   <string name="downloading">ڊائون لوڊ ٿي رهيو آهي…</string>
-  <string name="download_success">فائل ڊائون لوڊ ڪامياب!</string>
+  <string name="download_success">ڊائون لوڊ فائل ڪامياب!</string>
   <string name="recent_played_stream">تازو ادا ڪيل وهڪرو</string>
   <string name="wellcome_back">واپس ڀلي ڪري آيا!</string>
   <string name="internet_disconected">انٽرنيٽ منقطع</string>
@@ -189,9 +191,9 @@
   <string name="shake_to_next">موسيقي کي تبديل ڪرڻ لاء پنهنجي فون کي ڇڪيو</string>
   <string name="shake_to_play_next">ايندڙ گيت کيڏڻ لاءِ ڇڪيو</string>
   <string name="pause_when_unplug">هيڊ فون ڪڍڻ وقت روڪيو</string>
-  <string name="pause_headphone_content">ميوزڪ پلے بیک کي روڪيو جڏهن هيڊفون هٽايا وڃن</string>
+  <string name="pause_headphone_content">ميوزڪ پلے بیک کي روڪيو جڏهن هيڊفونز هٽايو وڃي</string>
   <string name="autoplay_when_call">ڪال کان پوءِ پاڻمرادو</string>
-  <string name="autoplay_call_content">جيڪڏهن فعال ٿيو ته گيت جاري رهندو ڪال ختم ٿيڻ کان پوءِ</string>
+  <string name="autoplay_call_content">جيڪڏهن فعال ڪيو ويو ته گيت جاري رهندو ڪال ختم ٿيڻ کان پوءِ</string>
   <string name="play_on_lockscreen">لاڪ اسڪرين تي راند ڪريو</string>
   <string name="play_on_lockscreen_content">پليئر کي لاڪ اسڪرين کان ٻاهر ڏيکارڻ جي اجازت ڏئي ٿي</string>
   <string name="other">ٻيو</string>
@@ -236,7 +238,7 @@
   <string name="error_please_try_again">ڪجهه غلط ٿي ويو، مهرباني ڪري ٻيهر ڪوشش ڪريو</string>
   <string name="you_in_online_mode">ناڪام! توهان آن لائن ميوزڪ پلے بیک موڊ ۾ آهيو.</string>
   <string name="this_action_can_contain_ads">هي عمل اشتهارن تي مشتمل ٿي سگھي ٿو.</string>
-  <string name="message_off_lockscreen">توھان ھن خصوصيت کي فعال ڪري سگھو ٿا: سيٽنگون -> اسڪرين کي لاڪ ڪريو</string>
+  <string name="message_off_lockscreen">توھان ھن خصوصيت کي فعال ڪري سگھو ٿا: سيٽنگون -> لاڪ اسڪرين</string>
   <string name="cover_album">ڪپڙا البم</string>
   <string name="format_12h">12 ڪلاڪ</string>
   <string name="format_24h">24 ڪلاڪ</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ڇا توھان موضوع کي منسوخ ڪرڻ چاھيو ٿا؟</string>
   <string name="waiting">انتظار ڪندي…</string>
   <string name="car_play">ڪارپلي</string>
+  <string name="language">ٻولي</string>
+  <string name="apply">لاڳو ڪريو</string>
+  <string name="use_device_language">فون جي ٻولي</string>
+  <string name="english">انگريزي</string>
+  <string name="vietnamese">ويٽنامي</string>
+  <string name="hindi">هندي</string>
+  <string name="spanish">اندلسي</string>
+  <string name="french">فرانسي</string>
+  <string name="arabic">عربي</string>
+  <string name="bengali">بنگالي</string>
+  <string name="russian">روسي</string>
+  <string name="italian">اطالوي</string>
+  <string name="indonesia">انڊونيشيا</string>
+  <string name="german">جرمني</string>
+  <string name="korean">ڪورين</string>
+  <string name="default_1">ڊفالٽ</string>
+  <string name="japanese">جاپاني</string>
 </resources>

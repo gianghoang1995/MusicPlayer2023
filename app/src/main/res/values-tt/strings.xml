@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Деталь</string>
   <string name="no_playlist_play">Плейлист уйнамый</string>
@@ -235,7 +237,7 @@
   <string name="please_check_internet_connection">Зинһар, интернетка тоташуыгызны тикшерегез!</string>
   <string name="error_please_try_again">Нәрсәдер дөрес булмаган, зинһар, кабатлап карагыз</string>
   <string name="you_in_online_mode">Уңышсыз! Сез онлайн музыка уйнау режимында.</string>
-  <string name="this_action_can_contain_ads">Бу акция реклама булырга мөмкин.</string>
+  <string name="this_action_can_contain_ads">Бу гамәлдә реклама булырга мөмкин.</string>
   <string name="message_off_lockscreen">Сез бу функцияне эшли аласыз: көйләүләр -> Экранны бикләү</string>
   <string name="cover_album">Альбом</string>
   <string name="format_12h">12 сәгать</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Теманы юкка чыгарырга телисезме?</string>
   <string name="waiting">Көтү ...</string>
   <string name="car_play">Карлай</string>
+  <string name="language">Тел</string>
+  <string name="apply">Кулланыгыз</string>
+  <string name="use_device_language">Телефон теле</string>
+  <string name="english">Инглиз</string>
+  <string name="vietnamese">Вьетнам</string>
+  <string name="hindi">Hindiинди</string>
+  <string name="spanish">Испан</string>
+  <string name="french">Француз</string>
+  <string name="arabic">Гарәп</string>
+  <string name="bengali">Бенгал</string>
+  <string name="russian">Рус</string>
+  <string name="italian">Италия</string>
+  <string name="indonesia">Индонезия</string>
+  <string name="german">Немец</string>
+  <string name="korean">Корея</string>
+  <string name="default_1">Килешү</string>
+  <string name="japanese">Япон</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ዝርዝር</string>
   <string name="no_playlist_play">ዝኾነ ዝርዝር ደርፍታት ኣይጻወትን ኣሎ።</string>
@@ -153,7 +155,7 @@
   <string name="theme">ጭብጢ</string>
   <string name="create_shortcut_already_exist">እቲ ኣቋራጭ ድሮ ኣሎ።</string>
   <string name="added_to_favorite">ደርፍታት ናብ ፍቱዋት ተወሰኸ</string>
-  <string name="remove_song_from_favorite">ካብ ዝፈትዎም ደርፊ ኣውጺእዎ።</string>
+  <string name="remove_song_from_favorite">እታ ደርፊ ካብ ፍቱዋት ኣውጺእዋ</string>
   <string name="not_found_song">ዝኾነ ደርፊ ኣይረኸበን።</string>
   <string name="no_song_to_play">ዝጻወቱ ደርፍታት የለዉን!</string>
   <string name="no_song_selected">ዝኾነ ደርፊ ኣይተመርጸን!</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ነቲ ቴማ ክትስርዞ ትደሊ ዲኻ?</string>
   <string name="waiting">ምጽባይ …</string>
   <string name="car_play">ካርፕለይ</string>
+  <string name="language">ቋንቋ</string>
+  <string name="apply">ኣተግብር</string>
+  <string name="use_device_language">ቋንቋ ቴሌፎን።</string>
+  <string name="english">ኢንግሊሽ</string>
+  <string name="vietnamese">ቬትናማዊ</string>
+  <string name="hindi">ህንዲ</string>
+  <string name="spanish">ስጳኛ</string>
+  <string name="french">ፈረንሳዊ</string>
+  <string name="arabic">ዓረብኛ</string>
+  <string name="bengali">ቤንጋሊ</string>
+  <string name="russian">ሩስያዊ</string>
+  <string name="italian">ጣልያናዊ</string>
+  <string name="indonesia">ኢንዶነዥያ</string>
+  <string name="german">ጀርመንኛ</string>
+  <string name="korean">ኮርያዊ</string>
+  <string name="default_1">ትሑዝ</string>
+  <string name="japanese">ጃፓናዊ</string>
 </resources>

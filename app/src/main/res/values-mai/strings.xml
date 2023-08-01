@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">विस्तार</string>
   <string name="no_playlist_play">कोनो प्लेलिस्ट नहि बजाओल जा रहल अछि</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">की अहाँ थीम रद्द करय चाहैत छी?</string>
   <string name="waiting">इन्तजार क रहल छी …</string>
   <string name="car_play">कारप्ले</string>
+  <string name="language">भाषा</string>
+  <string name="apply">लागू</string>
+  <string name="use_device_language">फोन भाषा</string>
+  <string name="english">अंग्रेजी</string>
+  <string name="vietnamese">वियतनामी</string>
+  <string name="hindi">हिन्दी</string>
+  <string name="spanish">स्पेनिश</string>
+  <string name="french">फ्रेंच</string>
+  <string name="arabic">अरबी</string>
+  <string name="bengali">बंगला</string>
+  <string name="russian">रूसी</string>
+  <string name="italian">इटालियन</string>
+  <string name="indonesia">इंडोनेशिया</string>
+  <string name="german">जर्मन</string>
+  <string name="korean">कोरियाई</string>
+  <string name="default_1">चुकनाइ</string>
+  <string name="japanese">जापानी</string>
 </resources>

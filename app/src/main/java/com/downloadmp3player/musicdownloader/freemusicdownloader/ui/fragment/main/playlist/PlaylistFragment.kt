@@ -52,6 +52,7 @@ class PlaylistFragment : BaseFragment<FragmentPlaylistBinding>() {
 
     override fun FragmentPlaylistBinding.initView() {
         init()
+        updateDataList()
     }
 
     override fun onResume() {
@@ -210,18 +211,23 @@ class PlaylistFragment : BaseFragment<FragmentPlaylistBinding>() {
                 R.id.menuPlay -> {
                     queryMusic(favorite, R.id.menuPlay)
                 }
+
                 R.id.menuPlayNext -> {
                     queryMusic(favorite, R.id.menuPlayNext)
                 }
+
                 R.id.menuAddToQueue -> {
                     queryMusic(favorite, R.id.menuAddToQueue)
                 }
+
                 R.id.menuShuffle -> {
                     queryMusic(favorite, R.id.menuShuffle)
                 }
+
                 R.id.menuRename -> {
                     showDialogEditText(favorite)
                 }
+
                 R.id.menuDelete -> {
                     ShortcutManagerUtils.delShortcut(requireContext(), favorite)
                     if (favoriteDao.deleteFavorite(favorite.name).toInt() != -1) {
@@ -231,6 +237,7 @@ class PlaylistFragment : BaseFragment<FragmentPlaylistBinding>() {
                         getString(R.string.error)
                     }
                 }
+
                 R.id.menuAddToHomeScreen -> {
                     ShortcutManagerUtils.createShortcutPlaylist(requireContext(), favorite)
                 }
@@ -275,12 +282,15 @@ class PlaylistFragment : BaseFragment<FragmentPlaylistBinding>() {
                 R.id.menuPlay -> {
                     requireContext().let { musicPlayerService?.setListSong(it, listSong, 0) }
                 }
+
                 R.id.menuPlayNext -> {
                     requireContext().let { musicPlayerService?.insertListNextTrack(listSong) }
                 }
+
                 R.id.menuAddToQueue -> {
                     requireContext().let { musicPlayerService?.addToQueue(listSong) }
                 }
+
                 R.id.menuShuffle -> {
                     requireContext().let {
                         musicPlayerService?.shuffleListSong(
@@ -313,6 +323,7 @@ class PlaylistFragment : BaseFragment<FragmentPlaylistBinding>() {
                             startActivity(Intent(requireContext(), EqualizerActivity::class.java))
                         })
                 }
+
                 R.id.menuSort -> {
                     startActivity(Intent(requireContext(), SortPlaylistActivity::class.java))
                 }

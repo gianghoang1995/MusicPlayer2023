@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Ẹ̀kúnrẹ́rẹ́</string>
   <string name="no_playlist_play">Ko si akojọ orin ti a dun</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ṣe o fẹ fagilee akori naa?</string>
   <string name="waiting">Nduro…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Ede</string>
+  <string name="apply">Waye</string>
+  <string name="use_device_language">Ede foonu</string>
+  <string name="english">English</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Sipeeni</string>
+  <string name="french">Faranse</string>
+  <string name="arabic">Larubawa</string>
+  <string name="bengali">Ede Bengali</string>
+  <string name="russian">Russian</string>
+  <string name="italian">Itali</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Jẹmánì</string>
+  <string name="korean">Korean</string>
+  <string name="default_1">Aiyipada</string>
+  <string name="japanese">Japanese</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Sonraigh</string>
   <string name="no_playlist_play">Níl aon seinmliosta á imirt</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ar mhaith leat an téama a chealú?</string>
   <string name="waiting">Ag fanacht…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Teanga</string>
+  <string name="apply">Cuir iarratas isteach</string>
+  <string name="use_device_language">Teanga fón</string>
+  <string name="english">Béarla</string>
+  <string name="vietnamese">Vítneaimis</string>
+  <string name="hindi">Hiondúis</string>
+  <string name="spanish">Spainnis</string>
+  <string name="french">Fraincis</string>
+  <string name="arabic">Araibis</string>
+  <string name="bengali">Beangáilis</string>
+  <string name="russian">Rúisis</string>
+  <string name="italian">Iodálach</string>
+  <string name="indonesia">Indinéis</string>
+  <string name="german">Gearmáinis</string>
+  <string name="korean">Cóiréis</string>
+  <string name="default_1">Réamhshocrú</string>
+  <string name="japanese">Seapánach</string>
 </resources>

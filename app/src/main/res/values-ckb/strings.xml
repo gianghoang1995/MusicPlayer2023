@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ووردەکاری</string>
   <string name="no_playlist_play">هیچ پلەی لیستێک یاری پێناکرێت</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">دەتەوێت تەوەرەکە هەڵبوەشێنیتەوە؟</string>
   <string name="waiting">چاوەڕوان کردن …</string>
   <string name="car_play">کارپلای</string>
+  <string name="language">زمان</string>
+  <string name="apply">جێبەجێکردن</string>
+  <string name="use_device_language">زمانی تەلەفۆن</string>
+  <string name="english">ئینگلیزی</string>
+  <string name="vietnamese">ڤێتنامیی</string>
+  <string name="hindi">هیندی</string>
+  <string name="spanish">ئیسپانی</string>
+  <string name="french">فەڕەنسی</string>
+  <string name="arabic">عەرەبی</string>
+  <string name="bengali">بەنگالی</string>
+  <string name="russian">ڕووسی</string>
+  <string name="italian">ئیتاڵی</string>
+  <string name="indonesia">ئەندەنوسیا</string>
+  <string name="german">ئەڵمانی</string>
+  <string name="korean">کۆری</string>
+  <string name="default_1">بنەڕەتی</string>
+  <string name="japanese">ژاپۆنی</string>
 </resources>

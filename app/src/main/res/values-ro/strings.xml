@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detaliu</string>
   <string name="no_playlist_play">Nu se redă nicio listă de redare</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Doriți să anulați tema?</string>
   <string name="waiting">În așteptare…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Limba</string>
+  <string name="apply">Aplica</string>
+  <string name="use_device_language">Limba telefonului</string>
+  <string name="english">Engleză</string>
+  <string name="vietnamese">Vietnamez</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spaniolă</string>
+  <string name="french">Limba franceza</string>
+  <string name="arabic">Arabic</string>
+  <string name="bengali">Bengaleză</string>
+  <string name="russian">Rusă</string>
+  <string name="italian">Italiană</string>
+  <string name="indonesia">Indonezia</string>
+  <string name="german">Limba germana</string>
+  <string name="korean">Coreeană</string>
+  <string name="default_1">Mod implicit</string>
+  <string name="japanese">Japonez</string>
 </resources>

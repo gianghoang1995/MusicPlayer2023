@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Hapana playlist irikuridzwa</string>
@@ -153,7 +155,7 @@
   <string name="theme">Theme</string>
   <string name="create_shortcut_already_exist">Nzira yekudimbudzira yatovepo</string>
   <string name="added_to_favorite">Nziyo dzakawedzerwa kune dzinodiwa</string>
-  <string name="remove_song_from_favorite">Yakabvisa rwiyo kubva kune vanodiwa</string>
+  <string name="remove_song_from_favorite">Yakabvisa rwiyo kubva kune vaunofarira</string>
   <string name="not_found_song">Hapana nziyo dzawakawana</string>
   <string name="no_song_to_play">Hapana nziyo dzekuridza!</string>
   <string name="no_song_selected">Hapana nziyo dzasarudzwa!</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Unoda kukanzura dingindira?</string>
   <string name="waiting">Takamirira…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Mutauro</string>
+  <string name="apply">Shandisa</string>
+  <string name="use_device_language">Mutauro wefoni</string>
+  <string name="english">Chirungu</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">ChiHindi</string>
+  <string name="spanish">ChiSpanish</string>
+  <string name="french">ChiFrench</string>
+  <string name="arabic">ChiArabic</string>
+  <string name="bengali">ChiBengali</string>
+  <string name="russian">ChiRussian</string>
+  <string name="italian">ChiItalian</string>
+  <string name="indonesia">Indonezhiya</string>
+  <string name="german">ChiJerimani</string>
+  <string name="korean">ChiKorean</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">ChiJapanese</string>
 </resources>

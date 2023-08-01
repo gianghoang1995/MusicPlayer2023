@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Тафсилот</string>
   <string name="no_playlist_play">Ягон рӯйхати навозиш бозӣ карда намешавад</string>
@@ -224,9 +226,9 @@
   <string name="tittle_off_lockscreen">Бозиро дар экрани қулф хомӯш кунед</string>
   <string name="change_font_size">Андозаи шрифтро тағир диҳед</string>
   <string name="large_font">Шрифти калон</string>
-  <string name="send_feedback">Фиристодани фикру мулоҳизаҳо</string>
+  <string name="send_feedback">Фиристодани фикру мулоҳиза</string>
   <string name="enter_your_feedback">Лутфан шарҳҳо ё дархости худро дар ин ҷо нависед</string>
-  <string name="send">Ирсол</string>
+  <string name="send">Фиристодан</string>
   <string name="no_client_email">Ягон муштарии почтаи электронӣ насб нашудааст.</string>
   <string name="small_font">Хурд</string>
   <string name="normal_font">Муқаррарӣ</string>
@@ -236,7 +238,7 @@
   <string name="error_please_try_again">Чизе хато кард, лутфан бори дигар кӯшиш кунед</string>
   <string name="you_in_online_mode">Муваффақият! Шумо дар реҷаи бозикунии мусиқии онлайн ҳастед.</string>
   <string name="this_action_can_contain_ads">Ин амал метавонад дорои таблиғ бошад.</string>
-  <string name="message_off_lockscreen">Шумо метавонед ин хусусиятро аз зерин фаъол созед: Танзимот -> Экрани қулф</string>
+  <string name="message_off_lockscreen">Шумо метавонед ин хусусиятро аз: Танзимотҳо -> Экрани қулф</string>
   <string name="cover_album">Албоми муқова</string>
   <string name="format_12h">12 соат</string>
   <string name="format_24h">24 соат</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Мехоҳед мавзӯъро бекор кунед?</string>
   <string name="waiting">Интизорӣ…</string>
   <string name="car_play">Карплей</string>
+  <string name="language">Забон</string>
+  <string name="apply">Муроҷиат кунед</string>
+  <string name="use_device_language">Забони телефон</string>
+  <string name="english">Англисӣ</string>
+  <string name="vietnamese">Ветнамӣ</string>
+  <string name="hindi">Ҳиндӣ</string>
+  <string name="spanish">Испанӣ</string>
+  <string name="french">Фаронсавӣ</string>
+  <string name="arabic">Арабӣ</string>
+  <string name="bengali">Бангалӣ</string>
+  <string name="russian">Русӣ</string>
+  <string name="italian">Италия</string>
+  <string name="indonesia">Индонезия</string>
+  <string name="german">Олмонӣ</string>
+  <string name="korean">Корея</string>
+  <string name="default_1">Пешфарз</string>
+  <string name="japanese">Ҷопон</string>
 </resources>

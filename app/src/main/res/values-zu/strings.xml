@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Imininingwane</string>
   <string name="no_playlist_play">Alukho uhlu lwadlalwayo oludlalwayo</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ingabe ufuna ukukhansela itimu?</string>
   <string name="waiting">Ilindile...</string>
   <string name="car_play">I-Carplay</string>
+  <string name="language">Ulimi</string>
+  <string name="apply">Faka isicelo</string>
+  <string name="use_device_language">Ulimi lwefoni</string>
+  <string name="english">IsiNgisi</string>
+  <string name="vietnamese">IsiVietnamese</string>
+  <string name="hindi">IsiHindi</string>
+  <string name="spanish">ISpanishi</string>
+  <string name="french">IsiFulentshi</string>
+  <string name="arabic">Isi-Arabhu</string>
+  <string name="bengali">Isi-Bengali</string>
+  <string name="russian">IsiRashiya</string>
+  <string name="italian">IsiNtaliyane</string>
+  <string name="indonesia">I-Indonesia</string>
+  <string name="german">IsiJalimane</string>
+  <string name="korean">IsiKorea</string>
+  <string name="default_1">Okuzenzakalelayo</string>
+  <string name="japanese">IsiJapane</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ዝርዝር</string>
   <string name="no_playlist_play">ምንም አጫዋች ዝርዝር እየተጫወተ አይደለም።</string>
@@ -234,7 +236,7 @@
   <string name="shake_twice">ሁለት ጊዜ ይንቀጠቀጡ</string>
   <string name="please_check_internet_connection">እባክዎ የበይነመረብ ግንኙነትዎን ያረጋግጡ!</string>
   <string name="error_please_try_again">የሆነ ችግር ተፈጥሯል፣ እባክዎ እንደገና ይሞክሩ</string>
-  <string name="you_in_online_mode">አልተሳካም! በመስመር ላይ የሙዚቃ መልሶ ማጫወት ሁነታ ላይ ነዎት።</string>
+  <string name="you_in_online_mode">አልተሳካም! በመስመር ላይ ሙዚቃ መልሶ ማጫወት ሁነታ ላይ ነዎት።</string>
   <string name="this_action_can_contain_ads">ይህ ድርጊት ማስታወቂያዎችን ሊይዝ ይችላል።</string>
   <string name="message_off_lockscreen">ይህን ባህሪ ከ፡ መቼቶች -> መቆለፊያ ማያ ማንቃት ይችላሉ።</string>
   <string name="cover_album">የሽፋን አልበም</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ጭብጡን መሰረዝ ይፈልጋሉ?</string>
   <string name="waiting">በመጠበቅ ላይ…</string>
   <string name="car_play">ካርፕሌይ</string>
+  <string name="language">ቋንቋ</string>
+  <string name="apply">ያመልክቱ</string>
+  <string name="use_device_language">የስልክ ቋንቋ</string>
+  <string name="english">እንግሊዝኛ</string>
+  <string name="vietnamese">ቪትናሜሴ</string>
+  <string name="hindi">ሂንዲ</string>
+  <string name="spanish">ስፓንኛ</string>
+  <string name="french">ፈረንሳይኛ</string>
+  <string name="arabic">አረብኛ</string>
+  <string name="bengali">ቤንጋሊ</string>
+  <string name="russian">ራሺያኛ</string>
+  <string name="italian">ጣሊያንኛ</string>
+  <string name="indonesia">ኢንዶኔዥያ</string>
+  <string name="german">ጀርመንኛ</string>
+  <string name="korean">ኮሪያኛ</string>
+  <string name="default_1">ነባሪ</string>
+  <string name="japanese">ጃፓንኛ</string>
 </resources>

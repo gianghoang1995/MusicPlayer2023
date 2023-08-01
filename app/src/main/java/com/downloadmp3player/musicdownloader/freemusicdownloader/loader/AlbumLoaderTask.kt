@@ -17,6 +17,7 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.model.AlbumItem
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.query_folder.db.block.BlockFolderDao
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.query_folder.db.block.BlockFolderHelper
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppConstants
+import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.ArtworkUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.PreferenceUtils
 
@@ -42,10 +43,7 @@ class AlbumLoaderTask(context: Context?, private val albumListenner: AlbumLoader
                 MediaStore.Audio.Albums.EXTERNAL_CONTENT_URI, null, selectionBlockAlbum(), null, MediaStore.Audio.Albums.ALBUM + " ASC"
         )
         val albums = ArrayList<AlbumItem>()
-        return if (PermissionChecker.checkCallingOrSelfPermission(
-                    context, Manifest.permission.READ_EXTERNAL_STORAGE
-            ) == PermissionChecker.PERMISSION_GRANTED
-        ) {
+        return   if (AppUtils.isGrantPermission(context)) {
             if (mCursor != null && mCursor.count > 0 && mCursor2 != null && mCursor2.count > 0) {
                 val joiner = CursorJoiner(
                         mCursor2, arrayOf(MediaStore.Audio.Media.ALBUM), mCursor, arrayOf(MediaStore.Audio.Albums.ALBUM)
@@ -96,10 +94,7 @@ class AlbumLoaderTask(context: Context?, private val albumListenner: AlbumLoader
                 MediaStore.Audio.Albums.EXTERNAL_CONTENT_URI, null, selectionBlockAlbum(), null, MediaStore.Audio.Albums.ALBUM + " ASC"
         )
         val albums = ArrayList<AlbumItem>()
-        if (PermissionChecker.checkCallingOrSelfPermission(
-                    context, Manifest.permission.READ_EXTERNAL_STORAGE
-            ) == PermissionChecker.PERMISSION_GRANTED
-        ) {
+        if (AppUtils.isGrantPermission(context)) {
             if (mCursor != null && mCursor.count > 0 && mCursor2 != null && mCursor2.count > 0) {
                 val joiner = CursorJoiner(
                         mCursor2, arrayOf(MediaStore.Audio.Media.ALBUM), mCursor, arrayOf(MediaStore.Audio.Albums.ALBUM)

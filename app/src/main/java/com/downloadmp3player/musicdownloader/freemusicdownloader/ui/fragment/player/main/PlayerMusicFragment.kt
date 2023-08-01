@@ -262,7 +262,7 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
             }
 
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
-                musicPlayerService?.seek(seekBar?.progress?.toInt() ?: 0)
+                musicPlayerService?.seek(seekBar?.progress ?: 0)
             }
         })
 

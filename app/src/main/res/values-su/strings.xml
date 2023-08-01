@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Rincian</string>
   <string name="no_playlist_play">Taya playlist keur diputer</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Naha anjeun badé ngabatalkeun téma?</string>
   <string name="waiting">Diantosan…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Basa</string>
+  <string name="apply">Larapkeun</string>
+  <string name="use_device_language">Basa telepon</string>
+  <string name="english">Inggris</string>
+  <string name="vietnamese">Vietnam</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanyol</string>
+  <string name="french">Perancis</string>
+  <string name="arabic">Arab</string>
+  <string name="bengali">Benggala</string>
+  <string name="russian">Rusia</string>
+  <string name="italian">Italia</string>
+  <string name="indonesia">Indonésia</string>
+  <string name="german">Jerman</string>
+  <string name="korean">Koréa</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Basa Jepang</string>
 </resources>

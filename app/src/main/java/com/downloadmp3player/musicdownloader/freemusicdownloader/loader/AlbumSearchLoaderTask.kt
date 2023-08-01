@@ -8,6 +8,7 @@ import android.provider.MediaStore
 import androidx.core.content.PermissionChecker
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseAsyncTaskLoader
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.AlbumItem
+import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.ArtworkUtils
 
 class AlbumSearchLoaderTask(context: Context?, private val searchListener: OnSearchAlbumListener?) :
@@ -27,10 +28,7 @@ class AlbumSearchLoaderTask(context: Context?, private val searchListener: OnSea
         )
 
         val albums = ArrayList<AlbumItem>()
-        if (PermissionChecker.checkCallingOrSelfPermission(
-                context, Manifest.permission.READ_EXTERNAL_STORAGE
-            ) == PermissionChecker.PERMISSION_GRANTED
-        ) {
+        if (AppUtils.isGrantPermission(context)) {
             if (mCursor != null && mCursor.moveToFirst()) {
                 val titleColumn = mCursor.getColumnIndex(MediaStore.Audio.AlbumColumns.ALBUM)
                 val idColumn = mCursor.getColumnIndex(MediaStore.Audio.Albums._ID)

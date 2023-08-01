@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Es wird keine Playlist abgespielt</string>
@@ -156,7 +158,7 @@
   <string name="remove_song_from_favorite">Das Lied wurde aus den Favoriten entfernt</string>
   <string name="not_found_song">Habe keine Lieder gefunden</string>
   <string name="no_song_to_play">Es sind keine Lieder zum Spielen vorhanden!</string>
-  <string name="no_song_selected">Es wurden keine Lieder ausgewählt!</string>
+  <string name="no_song_selected">Es wurden keine Songs ausgewählt!</string>
   <string name="file_small">Die Datei ist zu klein</string>
   <string name="title_rate">Wir arbeiten hart daran, Ihnen die beste kostenlose App zu bieten. Ihre 5-Sterne-Bewertung ist mehr wert als Geld.</string>
   <string name="msg_rate">Bitte nehmen Sie sich einen Moment Zeit und schreiben Sie eine nette Bewertung bei Google Play, um uns zu ermutigen!</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Möchten Sie das Thema abbrechen?</string>
   <string name="waiting">Warten …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Sprache</string>
+  <string name="apply">Anwenden</string>
+  <string name="use_device_language">Telefonsprache</string>
+  <string name="english">Englisch</string>
+  <string name="vietnamese">Vietnamesisch</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanisch</string>
+  <string name="french">Französisch</string>
+  <string name="arabic">Arabisch</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Russisch</string>
+  <string name="italian">Italienisch</string>
+  <string name="indonesia">Indonesien</string>
+  <string name="german">Deutsch</string>
+  <string name="korean">Koreanisch</string>
+  <string name="default_1">Standard</string>
+  <string name="japanese">Japanisch</string>
 </resources>

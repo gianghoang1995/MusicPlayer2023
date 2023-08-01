@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalj</string>
   <string name="no_playlist_play">Ingen spellista spelas upp</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Vill du avbryta temat?</string>
   <string name="waiting">Väntar …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Språk</string>
+  <string name="apply">Tillämpa</string>
+  <string name="use_device_language">Telefonens språk</string>
+  <string name="english">Engelsk</string>
+  <string name="vietnamese">Vietnamesiska</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanska</string>
+  <string name="french">Franska</string>
+  <string name="arabic">Arabiska</string>
+  <string name="bengali">Bengaliska</string>
+  <string name="russian">Ryska</string>
+  <string name="italian">Italienska</string>
+  <string name="indonesia">Indonesien</string>
+  <string name="german">Tysk</string>
+  <string name="korean">Koreanska</string>
+  <string name="default_1">Standard</string>
+  <string name="japanese">Japanska</string>
 </resources>

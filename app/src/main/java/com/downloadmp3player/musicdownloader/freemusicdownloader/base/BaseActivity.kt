@@ -52,6 +52,7 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.sou
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.dialog.moresong.DialogMoreSong
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppConstants
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
+import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.LocaleUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.PreferenceUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.widget.PlayerView
 import com.google.android.material.snackbar.Snackbar
@@ -103,6 +104,7 @@ abstract class BaseActivity<VB : ViewBinding> : BaseFrameActivity<VB>(),
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        LocaleUtils.applyLocale(this)
         fullScreenActivity()
         dialogLoadingAds = DialogLoadingAds(this)
         EventBus.getDefault().register(this)

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detil</string>
   <string name="no_playlist_play">Tidak ada daftar putar yang diputar</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Apakah Anda ingin membatalkan tema?</string>
   <string name="waiting">Menunggu …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Bahasa</string>
+  <string name="apply">Menerapkan</string>
+  <string name="use_device_language">Bahasa telepon</string>
+  <string name="english">Bahasa inggris</string>
+  <string name="vietnamese">Orang Vietnam</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Orang Spanyol</string>
+  <string name="french">Perancis</string>
+  <string name="arabic">Arab</string>
+  <string name="bengali">Benggala</string>
+  <string name="russian">Rusia</string>
+  <string name="italian">Italia</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Jerman</string>
+  <string name="korean">Korea</string>
+  <string name="default_1">Bawaan</string>
+  <string name="japanese">Jepang</string>
 </resources>

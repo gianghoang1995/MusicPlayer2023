@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">细节</string>
   <string name="no_playlist_play">没有播放列表正在播放</string>
@@ -56,7 +58,7 @@
   <string name="play_next">下一个</string>
   <string name="shuffle">随机播放</string>
   <string name="add_to_queue">添加到队列</string>
-  <string name="pin_folder">针文件夹</string>
+  <string name="pin_folder">针夹</string>
   <string name="add_home_screen">添加到主屏幕</string>
   <string name="add_songs">添加歌曲</string>
   <string name="txt_continue">继续</string>
@@ -230,7 +232,7 @@
   <string name="no_client_email">没有安装电子邮件客户端。</string>
   <string name="small_font">小的</string>
   <string name="normal_font">普通的</string>
-  <string name="shake_one">摇动一次</string>
+  <string name="shake_one">摇晃一次</string>
   <string name="shake_twice">摇晃两次</string>
   <string name="please_check_internet_connection">请检查您的互联网连接！</string>
   <string name="error_please_try_again">出了点问题，请重试</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">您想取消主题吗？</string>
   <string name="waiting">等待 …</string>
   <string name="car_play">卡普莱</string>
+  <string name="language">语言</string>
+  <string name="apply">申请</string>
+  <string name="use_device_language">电话语言</string>
+  <string name="english">英语</string>
+  <string name="vietnamese">越南语</string>
+  <string name="hindi">印地语</string>
+  <string name="spanish">西班牙语</string>
+  <string name="french">法语</string>
+  <string name="arabic">阿拉伯</string>
+  <string name="bengali">孟加拉</string>
+  <string name="russian">俄语</string>
+  <string name="italian">意大利语</string>
+  <string name="indonesia">印度尼西亚</string>
+  <string name="german">德语</string>
+  <string name="korean">韩国人</string>
+  <string name="default_1">默认</string>
+  <string name="japanese">日本人</string>
 </resources>

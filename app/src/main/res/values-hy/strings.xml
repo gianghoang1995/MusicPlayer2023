@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Մանրամասն</string>
   <string name="no_playlist_play">Ոչ մի երգացանկ չի նվագարկվում</string>
@@ -245,9 +247,26 @@
   <string name="loop_one">Օղակ մեկ</string>
   <string name="save">Պահպանել</string>
   <string name="blur">Լղոզում</string>
-  <string name="overlay">Ծածկույթ</string>
+  <string name="overlay">Ծածկապատում</string>
   <string name="no">Ոչ</string>
   <string name="ask_cancel">Ցանկանու՞մ եք չեղարկել թեման:</string>
   <string name="waiting">Սպասում…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Լեզու</string>
+  <string name="apply">Դիմել</string>
+  <string name="use_device_language">Հեռախոսի լեզու</string>
+  <string name="english">Անգլերեն</string>
+  <string name="vietnamese">Վիետնամերեն</string>
+  <string name="hindi">Հինդի</string>
+  <string name="spanish">Իսպաներեն</string>
+  <string name="french">Ֆրանսերեն</string>
+  <string name="arabic">Արաբերեն</string>
+  <string name="bengali">Բենգալերեն</string>
+  <string name="russian">Ռուսերեն</string>
+  <string name="italian">Իտալական</string>
+  <string name="indonesia">Ինդոնեզիա</string>
+  <string name="german">Գերմաներեն</string>
+  <string name="korean">Կորեերեն</string>
+  <string name="default_1">Կանխադրված</string>
+  <string name="japanese">Ճապոներեն</string>
 </resources>

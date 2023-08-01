@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Nepřehrává se žádný seznam skladeb</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Chcete téma zrušit?</string>
   <string name="waiting">Čekání…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Jazyk</string>
+  <string name="apply">Aplikovat</string>
+  <string name="use_device_language">Jazyk telefonu</string>
+  <string name="english">Angličtina</string>
+  <string name="vietnamese">Vietnamština</string>
+  <string name="hindi">Hindština</string>
+  <string name="spanish">Španělština</string>
+  <string name="french">Francouzština</string>
+  <string name="arabic">Arabština</string>
+  <string name="bengali">Bengálský</string>
+  <string name="russian">Ruština</string>
+  <string name="italian">Italština</string>
+  <string name="indonesia">Indonésie</string>
+  <string name="german">Němec</string>
+  <string name="korean">Korejština</string>
+  <string name="default_1">Výchozí</string>
+  <string name="japanese">Japonský</string>
 </resources>

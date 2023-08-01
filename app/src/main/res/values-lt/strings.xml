@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalė</string>
   <string name="no_playlist_play">Grojaraštis negrojamas</string>
@@ -50,7 +52,7 @@
   <string name="more_app">Daugiau programėlių</string>
   <string name="ask_save_lyric">Ar norite išsaugoti dainų tekstus?</string>
   <string name="save_lyric_done">Dainos tekstai išsaugoti!</string>
-  <string name="invalid_lyric">Negalite rasti teisingų dainų tekstų?</string>
+  <string name="invalid_lyric">Nerandate teisingų dainų tekstų?</string>
   <string name="find_on_gg">Ieškokite Google ir pakeiskite.</string>
   <string name="play">Žaisti</string>
   <string name="play_next">Kitas</string>
@@ -63,7 +65,7 @@
   <string name="sort">Rūšiuoti pagal</string>
   <string name="sort_name">Vardas</string>
   <string name="get_permission">Gaukite leidimą</string>
-  <string name="need_permission">Norėdami naudoti programą, turite gauti leidimą</string>
+  <string name="need_permission">Jums reikia leidimo naudoti programą</string>
   <string name="per_1">Norėdami išimti muziką, pasiekite medijos failą</string>
   <string name="per_manage_all_file">Leidimas pasiekti visus failus, kad būtų galima pridėti, redaguoti, ištrinti, dainas ir žodžius</string>
   <string name="no_song_play">Šiuo metu negrojamos jokios dainos!</string>
@@ -178,7 +180,7 @@
   <string name="please_try_again">Prašau, pabandykite dar kartą !</string>
   <string name="move_to_priority">( Perkelkite dainą į pirmąją vietą , kad nustatytumėte prioritetą )</string>
   <string name="downloading">Atsisiunčiama…</string>
-  <string name="download_success">Parsisiųsti failą sėkmingai!</string>
+  <string name="download_success">Atsisiųsti failą sėkmingai!</string>
   <string name="recent_played_stream">Neseniai paleistas srautas</string>
   <string name="wellcome_back">Sveikas sugrįžęs!</string>
   <string name="internet_disconected">Internetas atjungtas</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ar norite atšaukti temą?</string>
   <string name="waiting">Laukiama…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Kalba</string>
+  <string name="apply">Taikyti</string>
+  <string name="use_device_language">Telefono kalba</string>
+  <string name="english">Anglų</string>
+  <string name="vietnamese">Vietnamiečių</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Ispanų</string>
+  <string name="french">Prancūzų kalba</string>
+  <string name="arabic">Arabiškas</string>
+  <string name="bengali">Bengalų</string>
+  <string name="russian">Rusų</string>
+  <string name="italian">Italų</string>
+  <string name="indonesia">Indonezija</string>
+  <string name="german">Vokiečių</string>
+  <string name="korean">Korėjiečių</string>
+  <string name="default_1">Numatytas</string>
+  <string name="japanese">Japonų</string>
 </resources>

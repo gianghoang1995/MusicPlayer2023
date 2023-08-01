@@ -32,15 +32,19 @@ class PermissionActivity : BaseActivity<ActivityPermissionBinding>() {
     private fun checkPermission() {
         adapter = PagerAdapter(supportFragmentManager)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (!isGrantPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            if (!isGrantPermission(this, Manifest.permission.READ_MEDIA_AUDIO)
                 && !isGrantPermission(this, Manifest.permission.READ_MEDIA_IMAGES)
                 && !isGrantPermission(this, Manifest.permission.READ_MEDIA_VIDEO)
             ) {
                 adapter?.addFragment(FrgPermissionMedia(), "")
+            } else {
+                postActionFinish()
             }
         } else {
             if (!isGrantPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                 adapter?.addFragment(FrgPermissionMedia(), "")
+            } else {
+                postActionFinish()
             }
         }
 

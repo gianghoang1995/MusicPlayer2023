@@ -35,7 +35,7 @@ class SettingAdapter(private val context: Context?, private val listener: OnClic
                 R.drawable.ic_menu_setting
             )
         )
-//        listSetting.add(SettingItem(context?.getString(R.string.car_play), R.drawable.ic_car))
+        listSetting.add(SettingItem(context?.getString(R.string.language), R.drawable.ic_language))
         listSetting.add(
             SettingItem(
                 context?.getString(R.string.ringtone_cutter),

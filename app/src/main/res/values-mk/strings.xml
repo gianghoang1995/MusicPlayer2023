@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Детал</string>
   <string name="no_playlist_play">Ниту една плејлиста не се репродуцира</string>
@@ -37,7 +39,7 @@
   <string name="new_preset_duplicate">Претходно поставеното веќе постои</string>
   <string name="save_preset_success">Претходно поставеното е успешно зачувано!</string>
   <string name="cant_update">Не може да се ажурира претходно поставеното, обидете се повторно!</string>
-  <string name="preset_update_successfully">Претпоставката е успешно ажурирана!</string>
+  <string name="preset_update_successfully">Претходно поставеното е успешно ажурирано!</string>
   <string name="empty_name">Празно претходно поставено име!</string>
   <string name="error">Грешка</string>
   <string name="please_chose_preset_to_update">Изберете го ефектот што сакате да го ажурирате</string>
@@ -63,7 +65,7 @@
   <string name="sort">Сортирај по</string>
   <string name="sort_name">Име</string>
   <string name="get_permission">Добијте дозвола</string>
-  <string name="need_permission">Ви треба дозвола за користење на апликацијата</string>
+  <string name="need_permission">Потребна ви е дозвола за користење на апликацијата</string>
   <string name="per_1">Пристапете до Media File за да ја извадите музиката</string>
   <string name="per_manage_all_file">Дозвола за пристап до сите датотеки за додавање, уредување, бришење, песни и текстови</string>
   <string name="no_song_play">Во моментов не се репродуцираат песни!</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Дали сакате да ја откажете темата?</string>
   <string name="waiting">Се чека…</string>
   <string name="car_play">Карплеј</string>
+  <string name="language">Јазик</string>
+  <string name="apply">Пријавете се</string>
+  <string name="use_device_language">Јазик на телефонот</string>
+  <string name="english">Англиски</string>
+  <string name="vietnamese">Виетнамски</string>
+  <string name="hindi">Хинди</string>
+  <string name="spanish">Шпански</string>
+  <string name="french">Француски</string>
+  <string name="arabic">Арапски</string>
+  <string name="bengali">Бенгалски</string>
+  <string name="russian">Руски</string>
+  <string name="italian">Италијански</string>
+  <string name="indonesia">Индонезија</string>
+  <string name="german">Германски</string>
+  <string name="korean">Корејски</string>
+  <string name="default_1">Стандардно</string>
+  <string name="japanese">Јапонски</string>
 </resources>

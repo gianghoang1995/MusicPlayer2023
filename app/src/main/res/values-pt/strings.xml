@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalhe</string>
   <string name="no_playlist_play">Nenhuma lista de reprodução está sendo reproduzida</string>
@@ -106,7 +108,7 @@
   <string name="lyrics">Letra da música</string>
   <string name="find_lyrics">Encotrar letras</string>
   <string name="input_name_song">Digite o título da música</string>
-  <string name="load_lyric">Procurando as letras</string>
+  <string name="load_lyric">Procurando a letra</string>
   <string name="sort_album">Álbum</string>
   <string name="sort_artist">Artista</string>
   <string name="order_by">Ordenar por</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Deseja cancelar o tema?</string>
   <string name="waiting">Esperando …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Linguagem</string>
+  <string name="apply">Aplicar</string>
+  <string name="use_device_language">Idioma do telefone</string>
+  <string name="english">Inglês</string>
+  <string name="vietnamese">Vietnamita</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Espanhol</string>
+  <string name="french">Francês</string>
+  <string name="arabic">Árabe</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Russo</string>
+  <string name="italian">Italiano</string>
+  <string name="indonesia">Indonésia</string>
+  <string name="german">Alemão</string>
+  <string name="korean">Coreano</string>
+  <string name="default_1">Padrão</string>
+  <string name="japanese">Japonês</string>
 </resources>

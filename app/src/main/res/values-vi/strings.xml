@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Chi tiết</string>
   <string name="no_playlist_play">Không có danh sách phát nào đang được phát</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Bạn có muốn hủy chủ đề?</string>
   <string name="waiting">Chờ …</string>
   <string name="car_play">Chơi xe</string>
+  <string name="language">Ngôn ngữ</string>
+  <string name="apply">Áp dụng</string>
+  <string name="use_device_language">Ngôn ngữ điện thoại</string>
+  <string name="english">Tiếng Anh</string>
+  <string name="vietnamese">Tiếng Việt</string>
+  <string name="hindi">Tiếng Hin-ddi</string>
+  <string name="spanish">Người Tây Ban Nha</string>
+  <string name="french">Người Pháp</string>
+  <string name="arabic">Tiếng Ả Rập</string>
+  <string name="bengali">Tiếng Bengali</string>
+  <string name="russian">Tiếng Nga</string>
+  <string name="italian">Người Ý</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Tiếng Đức</string>
+  <string name="korean">Hàn Quốc</string>
+  <string name="default_1">Mặc định</string>
+  <string name="japanese">Tiếng Nhật</string>
 </resources>

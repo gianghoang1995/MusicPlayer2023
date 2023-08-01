@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">លម្អិត</string>
   <string name="no_playlist_play">គ្មានបញ្ជីចាក់កំពុងលេងទេ។</string>
@@ -84,7 +86,7 @@
   <string name="empty_preset">គ្មានការកំណត់ជាមុនទេ សូមបង្កើតការកំណត់ជាមុនថ្មី។</string>
   <string name="save_or_update_preset">រក្សាទុក ឬធ្វើបច្ចុប្បន្នភាពការកំណត់ជាមុន</string>
   <string name="update">ធ្វើបច្ចុប្បន្នភាព</string>
-  <string name="tuto_unflug_headphone">បញ្ឈប់ដោយស្វ័យប្រវត្តិ នៅពេលដែលកាសត្រូវបានផ្តាច់</string>
+  <string name="tuto_unflug_headphone">ឈប់ដោយស្វ័យប្រវត្តិ នៅពេលដែលកាសត្រូវបានផ្តាច់</string>
   <string name="tuto_flug_headphone">ចាក់ដោយស្វ័យប្រវត្តិនៅពេលដោតកាសស្តាប់ត្រចៀក</string>
   <string name="tuto_one_click">ចុច 1 ដើម្បីលេង/ផ្អាក</string>
   <string name="tuto_volumeup">បង្កើនកម្រិតសំឡេង</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">តើអ្នកចង់លុបចោលប្រធានបទទេ?</string>
   <string name="waiting">កំពុងរង់ចាំ…</string>
   <string name="car_play">ការលេងល្បែងកំសាន្ត</string>
+  <string name="language">ភាសា</string>
+  <string name="apply">អនុវត្ត</string>
+  <string name="use_device_language">ភាសាទូរស័ព្ទ</string>
+  <string name="english">ភាសាអង់គ្លេស</string>
+  <string name="vietnamese">វៀតណាម</string>
+  <string name="hindi">ហិណ្ឌូ</string>
+  <string name="spanish">ភាសាអេស្ប៉ាញ</string>
+  <string name="french">បារាំង</string>
+  <string name="arabic">ភាសាអារ៉ាប់</string>
+  <string name="bengali">បង់ក្លាដែស</string>
+  <string name="russian">រុស្សី</string>
+  <string name="italian">អ៊ីតាលី</string>
+  <string name="indonesia">ប្រទេសឥណ្ឌូនេស៊ី</string>
+  <string name="german">អាឡឺម៉ង់</string>
+  <string name="korean">កូរ៉េ</string>
+  <string name="default_1">លំនាំដើម</string>
+  <string name="japanese">ជប៉ុន</string>
 </resources>

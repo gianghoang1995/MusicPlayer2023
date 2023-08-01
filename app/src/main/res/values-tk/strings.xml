@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Jikme-jiklik</string>
   <string name="no_playlist_play">Hiç bir pleýlist oýnalmaýar</string>
@@ -233,7 +235,7 @@
   <string name="shake_one">Bir gezek silkele</string>
   <string name="shake_twice">Iki gezek silkele</string>
   <string name="please_check_internet_connection">Internet birikmäňizi barlaň!</string>
-  <string name="error_please_try_again">Bir zat ýalňyşdy, gaýtadan synanyşyň</string>
+  <string name="error_please_try_again">Bir zat nädogry boldy, gaýtadan synanyşyň</string>
   <string name="you_in_online_mode">Şowsuz! Siz onlaýn aýdym-saz çalmak re iniminde.</string>
   <string name="this_action_can_contain_ads">Bu hereket mahabatlary öz içine alyp biler.</string>
   <string name="message_off_lockscreen">Bu aýratynlygy aşakdakylardan açyp bilersiňiz: Sazlamalar -> Ekrany gulplamak</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Temany ýatyrmak isleýärsiňizmi?</string>
   <string name="waiting">Garaşmak ...</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Dil</string>
+  <string name="apply">Giriş</string>
+  <string name="use_device_language">Telefon dili</string>
+  <string name="english">Iňlis</string>
+  <string name="vietnamese">Wýetnamly</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Ispan</string>
+  <string name="french">Fransuz</string>
+  <string name="arabic">Arapça</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Rus</string>
+  <string name="italian">Italýan</string>
+  <string name="indonesia">Indoneziýa</string>
+  <string name="german">Nemes</string>
+  <string name="korean">Koreýçe</string>
+  <string name="default_1">Bellenen</string>
+  <string name="japanese">Japaneseaponlar</string>
 </resources>

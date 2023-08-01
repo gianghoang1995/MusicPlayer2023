@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Kaqnin</string>
   <string name="no_playlist_play">Mana ima takiy listatapas pukllachkanchu</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">¿Munawaqchu chay temata cancelayta?</string>
   <string name="waiting">Suyay …</string>
   <string name="car_play">Carplay nisqa</string>
+  <string name="language">Simi</string>
+  <string name="apply">Ruwachiy</string>
+  <string name="use_device_language">Telefonowan rimay</string>
+  <string name="english">Ingles Simi</string>
+  <string name="vietnamese">Vietnam simimanta</string>
+  <string name="hindi">Hindi simipi</string>
+  <string name="spanish">Español</string>
+  <string name="french">Francés simipi</string>
+  <string name="arabic">Arabe simipi</string>
+  <string name="bengali">Bengali simipi</string>
+  <string name="russian">Ruso simipi</string>
+  <string name="italian">Italiano simi</string>
+  <string name="indonesia">Indonesia suyu</string>
+  <string name="german">Alemán simipi</string>
+  <string name="korean">Corea simimanta</string>
+  <string name="default_1">Ñawpaqchasqa</string>
+  <string name="japanese">Japonés simi</string>
 </resources>

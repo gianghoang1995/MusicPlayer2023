@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">تفصیل</string>
   <string name="no_playlist_play">کوئی پلے لسٹ نہیں چلائی جا رہی ہے۔</string>
@@ -158,7 +160,7 @@
   <string name="no_song_to_play">چلانے کے لیے کوئی گانے نہیں ہیں!</string>
   <string name="no_song_selected">کوئی گانا منتخب نہیں کیا گیا ہے!</string>
   <string name="file_small">فائل بہت چھوٹی ہے۔</string>
-  <string name="title_rate">ہم آپ کو ایک بہترین مفت ایپ فراہم کرنے کے لیے سخت محنت کر رہے ہیں۔ آپ کی 5-اسٹار کی درجہ بندی پیسے سے زیادہ قابل ہے۔</string>
+  <string name="title_rate">ہم آپ کو ایک بہترین مفت ایپ فراہم کرنے کے لیے سخت محنت کر رہے ہیں۔ آپ کی 5-اسٹار ریٹنگ پیسے سے زیادہ قابل ہے۔</string>
   <string name="msg_rate">ہماری حوصلہ افزائی کے لیے براہ کرم گوگل پلے پر ایک اچھا جائزہ لکھنے کے لیے تھوڑا وقت نکالیں!</string>
   <string name="text_rate">ہمیں 5 ستاروں کی درجہ بندی کریں!</string>
   <string name="text_later">بعد میں</string>
@@ -178,7 +180,7 @@
   <string name="please_try_again">دوبارہ کوشش کریں !</string>
   <string name="move_to_priority">(ترجیح دینے کے لیے گانے کو پہلی پوزیشن پر لے جائیں)</string>
   <string name="downloading">ڈاؤن لوڈ ہو رہا ہے…</string>
-  <string name="download_success">ڈاؤن لوڈ فائل کامیاب!</string>
+  <string name="download_success">فائل ڈاؤن لوڈ کامیاب!</string>
   <string name="recent_played_stream">حال ہی میں چلایا گیا سلسلہ</string>
   <string name="wellcome_back">خوش آمدید!</string>
   <string name="internet_disconected">انٹرنیٹ منقطع ہے۔</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">کیا آپ تھیم کو منسوخ کرنا چاہتے ہیں؟</string>
   <string name="waiting">انتظار کر رہا ہے…</string>
   <string name="car_play">کار پلے</string>
+  <string name="language">زبان</string>
+  <string name="apply">درخواست دیں</string>
+  <string name="use_device_language">فون کی زبان</string>
+  <string name="english">انگریزی</string>
+  <string name="vietnamese">ویتنامی</string>
+  <string name="hindi">ہندی</string>
+  <string name="spanish">ہسپانوی</string>
+  <string name="french">فرانسیسی</string>
+  <string name="arabic">عربی</string>
+  <string name="bengali">بنگالی</string>
+  <string name="russian">روسی</string>
+  <string name="italian">اطالوی</string>
+  <string name="indonesia">انڈونیشیا</string>
+  <string name="german">جرمن</string>
+  <string name="korean">کورین</string>
+  <string name="default_1">طے شدہ</string>
+  <string name="japanese">جاپانی</string>
 </resources>

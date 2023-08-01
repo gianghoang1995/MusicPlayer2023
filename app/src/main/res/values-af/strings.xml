@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Besonderhede</string>
   <string name="no_playlist_play">Geen snitlys word gespeel nie</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Wil jy die tema kanselleer?</string>
   <string name="waiting">Wag tans …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Taal</string>
+  <string name="apply">Doen aansoek</string>
+  <string name="use_device_language">Telefoontaal</string>
+  <string name="english">Engels</string>
+  <string name="vietnamese">Viëtnamees</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spaans</string>
+  <string name="french">Frans</string>
+  <string name="arabic">Arabies</string>
+  <string name="bengali">Bengaals</string>
+  <string name="russian">Russies</string>
+  <string name="italian">Italiaans</string>
+  <string name="indonesia">Indonesië</string>
+  <string name="german">Duits</string>
+  <string name="korean">Koreaans</string>
+  <string name="default_1">Verstek</string>
+  <string name="japanese">Japannese</string>
 </resources>

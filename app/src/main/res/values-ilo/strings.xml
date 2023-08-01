@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalye</string>
   <string name="no_playlist_play">Awan ti playlist a maipatokar</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Kayatmo kadi a kanselaen ti tema?</string>
   <string name="waiting">Agur-uray …</string>
   <string name="car_play">Carplay ti lugan</string>
+  <string name="language">Lengguahe</string>
+  <string name="apply">Iyaplikar</string>
+  <string name="use_device_language">Lenguahe ti telepono</string>
+  <string name="english">Ingles</string>
+  <string name="vietnamese">Bietnam</string>
+  <string name="hindi">Hindi nga</string>
+  <string name="spanish">Español</string>
+  <string name="french">Pranses nga</string>
+  <string name="arabic">Arabiko nga</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Ruso nga Ruso</string>
+  <string name="italian">Italiano nga</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Aleman nga Aleman</string>
+  <string name="korean">Koreano</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Hapones</string>
 </resources>

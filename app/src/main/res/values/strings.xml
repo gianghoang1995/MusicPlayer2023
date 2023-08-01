@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">Music downloader</string>
-    <string name="ads_app_id" translatable="false">ca-app-pub-8347077932874205~7331248695</string>
+    <string name="ads_app_id" translatable="false">ca-app-pub-3943517385835088~5755803950</string>
     <string name="applovin_sdk_key" translatable="false">HKq3PPClqZBdgSfBe5a1Ufbgva7Drz-6OFAspX55i8vo5kJ3ErHSMxBRz63idAbTytV7UbkuA1psBR6npnhVH4</string>
     <string name="appvolin_full" translatable="false">8eb52dbe7f496c33</string>
     <string name="appvolin_native" translatable="false">fcd03955b831dd01</string>
 
-  <!--  <string name="app_open_ads" translatable="false">ca-app-pub-8347077932874205/2408334316</string>
+   <!-- <string name="app_open_ads" translatable="false">ca-app-pub-8347077932874205/2408334316</string>
 
     <string name="banner_01" translatable="false">ca-app-pub-8347077932874205/6161675248</string>
     <string name="banner_02" translatable="false">ca-app-pub-8347077932874205/9065102387</string>
@@ -25,12 +25,16 @@
     <string name="native_ads_01" translatable="false">ca-app-pub-8347077932874205/5104201294</string>
     <string name="native_ads_02" translatable="false">ca-app-pub-8347077932874205/2825522319</string>
 
+    <string name="native_ads_language_01" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_ads_language_02" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
     <string name="full_download_01" translatable="false">ca-app-pub-8347077932874205/7271199639</string>
     <string name="full_download_02" translatable="false">ca-app-pub-8347077932874205/5114388706</string>
 
     <string name="full_nowplaying_01" translatable="false">ca-app-pub-8347077932874205/3801307030</string>
     <string name="full_nowplaying_02" translatable="false">ca-app-pub-8347077932874205/6786563021</string>
--->
+    -->
+
     <string name="banner_01" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="banner_02" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 
@@ -48,6 +52,9 @@
 
     <string name="native_ads_01" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
     <string name="native_ads_02" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="native_ads_language_01" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_ads_language_02" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
 
     <string name="app_open_ads" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
 
@@ -77,6 +84,7 @@
         <signature name=\"%1$s\" package=\"%2$s\">\n\t<key>%3$s</key>\n</signature>\n
         ]]>
     </string>
+
 
     <string name="detail">Detail</string>
     <string name="no_playlist_play">No playlist is being played</string>
@@ -328,4 +336,21 @@
     <string name="ask_cancel">Do you want to cancel the theme?</string>
     <string name="waiting">Waiting …</string>
     <string name="car_play">Carplay</string>
+    <string name="language">Language</string>
+    <string name="apply">Apply</string>
+    <string name="use_device_language">Phone language</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="hindi">Hindi</string>
+    <string  name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+    <string name="bengali">Bengali</string>
+    <string name="russian">Russian</string>
+    <string name="italian">Italian</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="german">German</string>
+    <string name="korean">Korean</string>
+    <string name="default_1">Default</string>
+    <string name="japanese">Japanese</string>
 </resources>

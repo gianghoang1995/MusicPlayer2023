@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Esitusloendit ei esitata</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Kas soovite teema tühistada?</string>
   <string name="waiting">Ootel…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Keel</string>
+  <string name="apply">Rakenda</string>
+  <string name="use_device_language">Telefoni keel</string>
+  <string name="english">Inglise</string>
+  <string name="vietnamese">Vietnamlane</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Hispaania keel</string>
+  <string name="french">Prantsuse keel</string>
+  <string name="arabic">Araabia keel</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Vene keel</string>
+  <string name="italian">Itaalia keel</string>
+  <string name="indonesia">Indoneesia</string>
+  <string name="german">Saksa keel</string>
+  <string name="korean">Korea keel</string>
+  <string name="default_1">Vaikimisi</string>
+  <string name="japanese">Jaapani</string>
 </resources>

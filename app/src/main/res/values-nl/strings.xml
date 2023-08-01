@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Er wordt geen afspeellijst afgespeeld</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Wil je het thema annuleren?</string>
   <string name="waiting">Aan het wachten …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Taal</string>
+  <string name="apply">Toepassen</string>
+  <string name="use_device_language">Telefoon taal</string>
+  <string name="english">Engels</string>
+  <string name="vietnamese">Vietnamees</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spaans</string>
+  <string name="french">Frans</string>
+  <string name="arabic">Arabisch</string>
+  <string name="bengali">Bengaals</string>
+  <string name="russian">Russisch</string>
+  <string name="italian">Italiaans</string>
+  <string name="indonesia">Indonesië</string>
+  <string name="german">Duits</string>
+  <string name="korean">Koreaans</string>
+  <string name="default_1">Standaard</string>
+  <string name="japanese">Japans</string>
 </resources>

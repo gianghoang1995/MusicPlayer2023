@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalo</string>
   <string name="no_playlist_play">Neniu ludlisto estas ludata</string>
@@ -92,7 +94,7 @@
   <string name="show_block_folder">Montru blokitajn dosierujojn</string>
   <string name="unblock_folder">Malŝlosu Dosierujon</string>
   <string name="blocked_folders">Kaŝitaj dosierujoj</string>
-  <string name="empty_block_content">Neniu enhavo estas ankoraŭ blokita!</string>
+  <string name="empty_block_content">Neniu enhavo ankoraŭ estas blokita!</string>
   <string name="song_path_not_exist">La vojo de la kanto ne ekzistas!</string>
   <string name="block_album">Kaŝi albumojn</string>
   <string name="pin_album">Pinalbumoj</string>
@@ -222,7 +224,7 @@
   <string name="backgroud_lockscreen">Fona ŝlosa ekrano</string>
   <string name="time_format">Tempoformato</string>
   <string name="tittle_off_lockscreen">Malŝaltu ludadon sur ŝlosila ekrano</string>
-  <string name="change_font_size">Ŝanĝu tipargrandon</string>
+  <string name="change_font_size">Ŝanĝi tiparon</string>
   <string name="large_font">Granda tiparo</string>
   <string name="send_feedback">Sendu komentojn</string>
   <string name="enter_your_feedback">Bonvolu enigi la komentojn aŭ vian peton ĉi tie</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ĉu vi volas nuligi la temon?</string>
   <string name="waiting">Atendante…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Lingvo</string>
+  <string name="apply">Apliki</string>
+  <string name="use_device_language">Telefonlingvo</string>
+  <string name="english">La angla</string>
+  <string name="vietnamese">Vjetnama</string>
+  <string name="hindi">Hindia</string>
+  <string name="spanish">Hispana</string>
+  <string name="french">Franca</string>
+  <string name="arabic">La araba</string>
+  <string name="bengali">Bengala</string>
+  <string name="russian">Rusa</string>
+  <string name="italian">Itala</string>
+  <string name="indonesia">Indonezio</string>
+  <string name="german">Germana</string>
+  <string name="korean">Korea</string>
+  <string name="default_1">Defaŭlte</string>
+  <string name="japanese">Japanoj</string>
 </resources>

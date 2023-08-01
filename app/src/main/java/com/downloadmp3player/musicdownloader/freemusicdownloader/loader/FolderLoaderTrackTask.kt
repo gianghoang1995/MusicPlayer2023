@@ -9,6 +9,7 @@ import androidx.core.content.PermissionChecker
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseAsyncTaskLoader
 import com.downloadmp3player.musicdownloader.freemusicdownloader.handle.SongLoaderListener
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.MusicItem
+import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.SortOrder
 import java.util.*
 
@@ -19,10 +20,7 @@ class FolderLoaderTrackTask(context: Context?, private val path: String?, listen
     override fun loadInBackground(): ArrayList<MusicItem>? {
         val selection = MediaStore.Audio.Media.DATA + " LIKE '" + path + "/%'"
         val songList: ArrayList<MusicItem> = ArrayList()
-        if (PermissionChecker.checkCallingOrSelfPermission(
-                    context, Manifest.permission.READ_EXTERNAL_STORAGE
-            ) == PermissionChecker.PERMISSION_GRANTED
-        ) {
+        if (AppUtils.isGrantPermission(context)) {
             val cursor: Cursor? = context.contentResolver.query(
                     MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, selection, null, sortOrder
             )

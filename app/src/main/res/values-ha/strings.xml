@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Daki-daki</string>
   <string name="no_playlist_play">Ba a kunna lissafin waƙa ba</string>
@@ -48,7 +50,7 @@
   <string name="privacy">Takardar kebantawa</string>
   <string name="share">Raba</string>
   <string name="more_app">Ƙarin apps</string>
-  <string name="ask_save_lyric">Kuna son adana waƙoƙin?</string>
+  <string name="ask_save_lyric">Kuna so a adana waƙoƙin?</string>
   <string name="save_lyric_done">An ajiye waƙoƙin!</string>
   <string name="invalid_lyric">Ba a iya samun madaidaicin waƙoƙi?</string>
   <string name="find_on_gg">Da fatan za a bincika Google kuma ku canza.</string>
@@ -64,9 +66,9 @@
   <string name="sort_name">Suna</string>
   <string name="get_permission">Samun izini</string>
   <string name="need_permission">Kuna buƙatar izini don amfani da aikace-aikacen</string>
-  <string name="per_1">Samun damar Fayil Mai jarida don fitar da kiɗan</string>
+  <string name="per_1">Shiga Fayil Mai jarida don fitar da kiɗan</string>
   <string name="per_manage_all_file">Izinin samun damar duk fayiloli don ƙarawa, gyara, sharewa, waƙoƙi da waƙoƙi</string>
-  <string name="no_song_play">Babu waƙa a halin yanzu!</string>
+  <string name="no_song_play">Babu waƙoƙi a halin yanzu da ake kunnawa!</string>
   <string name="create_new">Ƙirƙiri sababbi</string>
   <string name="enter_name">Shigar da suna</string>
   <string name="create">Ƙirƙiri</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Kuna son soke jigon?</string>
   <string name="waiting">Ana jira…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Harshe</string>
+  <string name="apply">Aiwatar</string>
+  <string name="use_device_language">Harshen waya</string>
+  <string name="english">Turanci</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Mutanen Espanya</string>
+  <string name="french">Faransanci</string>
+  <string name="arabic">Larabci</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Rashanci</string>
+  <string name="italian">Italiyanci</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Jamusanci</string>
+  <string name="korean">Yaren Koriya</string>
+  <string name="default_1">Tsohuwar</string>
+  <string name="japanese">Jafananci</string>
 </resources>

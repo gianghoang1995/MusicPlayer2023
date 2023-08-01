@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Lintlha</string>
   <string name="no_playlist_play">Ha ho lenane la lipina le bapaloang</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">O batla ho hlakola theme?</string>
   <string name="waiting">E emetse…</string>
   <string name="car_play">Papali ea koloi</string>
+  <string name="language">Puo</string>
+  <string name="apply">Etsa kopo</string>
+  <string name="use_device_language">Puo ea mohala</string>
+  <string name="english">Senyesemane</string>
+  <string name="vietnamese">Sevietnam</string>
+  <string name="hindi">Sehindi</string>
+  <string name="spanish">Sepanish</string>
+  <string name="french">Sefora</string>
+  <string name="arabic">Searabia</string>
+  <string name="bengali">Benghali</string>
+  <string name="russian">Serussia</string>
+  <string name="italian">Setaliana</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Sejeremane</string>
+  <string name="korean">Sekorea</string>
+  <string name="default_1">Ea kamehla</string>
+  <string name="japanese">Sejapane</string>
 </resources>

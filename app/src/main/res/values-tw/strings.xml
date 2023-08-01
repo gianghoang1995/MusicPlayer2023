@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Nkyerɛmu</string>
   <string name="no_playlist_play">Wɔrebɔ playlist biara</string>
@@ -234,7 +236,7 @@
   <string name="shake_twice">Wosow mprenu</string>
   <string name="please_check_internet_connection">Yɛsrɛ wo hwɛ wo intanɛt nkitahodi !</string>
   <string name="error_please_try_again">Biribi ankɔ yiye, mesrɛ wo sɔ hwɛ bio</string>
-  <string name="you_in_online_mode">Ankosi hwee! Wowɔ nnwom a wɔbɔ wɔ intanɛt so mu.</string>
+  <string name="you_in_online_mode">Ankosi hwee! Wowɔ nnwom a wɔbɔ wɔ Intanɛt so mu.</string>
   <string name="this_action_can_contain_ads">Saa adeyɛ yi betumi akura dawurubɔ ahorow.</string>
   <string name="message_off_lockscreen">Wubetumi ama saa ade yi ayɛ adwuma afi: Nsiesiei -> Lock screen</string>
   <string name="cover_album">Cover album no ho asɛm</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">So wopɛ sɛ wotwa asɛmti no mu?</string>
   <string name="waiting">Retwɛn …</string>
   <string name="car_play">Carplay a wɔde di dwuma</string>
+  <string name="language">Kasa</string>
+  <string name="apply">Pere</string>
+  <string name="use_device_language">Telefon kasa</string>
+  <string name="english">Borɔfo</string>
+  <string name="vietnamese">Vietnamfo kasa</string>
+  <string name="hindi">Hindi kasa mu</string>
+  <string name="spanish">Spanish</string>
+  <string name="french">Franse kasa</string>
+  <string name="arabic">Arabic kasa</string>
+  <string name="bengali">Bengali kasa mu</string>
+  <string name="russian">Russia kasa</string>
+  <string name="italian">Italia kasa</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">German kasa</string>
+  <string name="korean">Korea kasa</string>
+  <string name="default_1">Mfiaseɛ</string>
+  <string name="japanese">Japanfo kasa</string>
 </resources>

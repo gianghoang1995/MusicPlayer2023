@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Emenuwo</string>
   <string name="no_playlist_play">Womele haƒoƒo ƒe xexlẽdzesi aɖeke ƒom o</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ðe nèdi be yeate fli ɖe tanya la mea?</string>
   <string name="waiting">Le lalam …</string>
   <string name="car_play">Ʋuƒoƒo</string>
+  <string name="language">Gbegbᴐgblᴐ</string>
+  <string name="apply">Tsᴐe wᴐ dᴐ</string>
+  <string name="use_device_language">Telefon dzi gbegbɔgblɔ</string>
+  <string name="english">Iŋlisi</string>
+  <string name="vietnamese">Vietnamgbe me tɔ</string>
+  <string name="hindi">Hindigbe me</string>
+  <string name="spanish">Spaniagbe</string>
+  <string name="french">Fransegbe me nya</string>
+  <string name="arabic">Arabgbe me nyawo</string>
+  <string name="bengali">Bengaligbe me</string>
+  <string name="russian">Russiagbe me</string>
+  <string name="italian">Italygbe me tɔ</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Germanygbe me tɔ</string>
+  <string name="korean">Koreagbe me tɔ</string>
+  <string name="default_1">Gᴐmedzeƒe</string>
+  <string name="japanese">Japangbe me tɔ</string>
 </resources>

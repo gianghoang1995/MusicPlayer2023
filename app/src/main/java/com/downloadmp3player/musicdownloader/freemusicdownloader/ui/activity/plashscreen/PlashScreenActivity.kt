@@ -13,6 +13,8 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppConsta
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.databinding.ActivityPlashBinding
+import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.language.SelectLanguageActivity
+import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.PreferenceUtils
 import com.google.firebase.analytics.FirebaseAnalytics
 import org.json.JSONObject
 
@@ -71,11 +73,25 @@ class PlashScreenActivity : BaseActivity<ActivityPlashBinding>() {
             }
         } else {
             BaseApplication.mInstance?.adsFullPlash?.loadAds(onAdLoader = {
-                startActivity(Intent(this@PlashScreenActivity, PermissionActivity::class.java))
-                finish()
+                if (PreferenceUtils.isFirstSelectLanguage()) {
+                    val intent =
+                        Intent(this@PlashScreenActivity, SelectLanguageActivity::class.java)
+                            .putExtra(AppConstants.SHOW_ADS, true)
+                    startActivity(intent)
+                } else {
+                    startActivity(Intent(this@PlashScreenActivity, PermissionActivity::class.java))
+                    finish()
+                }
             }, onAdLoadFail = {
-                startActivity(Intent(this@PlashScreenActivity, PermissionActivity::class.java))
-                finish()
+                if (PreferenceUtils.isFirstSelectLanguage()) {
+                    val intent =
+                        Intent(this@PlashScreenActivity, SelectLanguageActivity::class.java)
+                            .putExtra(AppConstants.SHOW_ADS, true)
+                    startActivity(intent)
+                } else {
+                    startActivity(Intent(this@PlashScreenActivity, PermissionActivity::class.java))
+                    finish()
+                }
             })
         }
     }

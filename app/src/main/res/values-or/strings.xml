@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ବିବରଣୀ</string>
   <string name="no_playlist_play">କ play ଣସି ପ୍ଲେଲିଷ୍ଟ ଖେଳାଯାଉନାହିଁ |</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ଆପଣ ଥିମ୍ ବାତିଲ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?</string>
   <string name="waiting">ଅପେକ୍ଷା…</string>
   <string name="car_play">କାର୍ପ୍ଲେ |</string>
+  <string name="language">ଭାଷା</string>
+  <string name="apply">ପ୍ରୟୋଗ କରନ୍ତୁ |</string>
+  <string name="use_device_language">ଫୋନ୍ ଭାଷା |</string>
+  <string name="english">ଇଂରାଜୀ |</string>
+  <string name="vietnamese">ଭିଏତନାମ</string>
+  <string name="hindi">ହିନ୍ଦୀ</string>
+  <string name="spanish">ସ୍ପାନିସ୍</string>
+  <string name="french">ଫରାସୀ</string>
+  <string name="arabic">ଆରବୀ |</string>
+  <string name="bengali">ବଙ୍ଗାଳୀ</string>
+  <string name="russian">Russian ଷିୟ |</string>
+  <string name="italian">ଇଟାଲୀୟ |</string>
+  <string name="indonesia">ଇଣ୍ଡୋନେସିଆ</string>
+  <string name="german">ଜର୍ମାନ୍</string>
+  <string name="korean">କୋରିଆନ୍</string>
+  <string name="default_1">ଡିଫଲ୍ଟ |</string>
+  <string name="japanese">ଜାପାନିଜ୍</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Nkọwa</string>
   <string name="no_playlist_play">Ọ dịghị ndepụta ọkpụkpọ a na-akpọ</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ị chọrọ ịkagbu isiokwu ahụ?</string>
   <string name="waiting">Na-eche…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Asụsụ</string>
+  <string name="apply">Tinye</string>
+  <string name="use_device_language">Asụsụ ekwentị</string>
+  <string name="english">Bekee</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanish</string>
+  <string name="french">French</string>
+  <string name="arabic">Arabic</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Russian</string>
+  <string name="italian">Ịtali</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">German</string>
+  <string name="korean">Korean</string>
+  <string name="default_1">Ọdabara</string>
+  <string name="japanese">Japanese</string>
 </resources>

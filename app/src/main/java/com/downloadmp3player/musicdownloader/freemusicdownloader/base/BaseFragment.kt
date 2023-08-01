@@ -16,6 +16,7 @@ import android.os.Environment
 import android.os.IBinder
 import android.provider.MediaStore
 import android.provider.Settings
+import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -75,6 +76,8 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment(), FrameView<VB>,
             mBoundService = false
         }
     }
+    private var mRootView: ViewGroup? = null
+    private var mIsFirstLoad = false
 
     open fun setRingtoneRingDroid(ringtone: MusicItem?) {
         mringtone = ringtone
@@ -104,15 +107,23 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment(), FrameView<VB>,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = bindingProvider(inflater, container)
-        return _binding.root
+        if (mRootView == null) {
+            _binding = bindingProvider(inflater, container)
+            mRootView = _binding.root as ViewGroup?
+            mIsFirstLoad = true
+        } else {
+            mIsFirstLoad = false
+        }
+        return mRootView
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        _binding.initView()
-        EventBus.getDefault().register(this)
-        dialogLoadingAds = DialogLoadingAds(requireActivity())
+        if (mIsFirstLoad) {
+            _binding.initView()
+            EventBus.getDefault().register(this)
+            dialogLoadingAds = DialogLoadingAds(requireActivity())
+        }
     }
 
     override fun onDestroy() {

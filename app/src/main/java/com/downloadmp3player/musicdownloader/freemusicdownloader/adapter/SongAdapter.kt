@@ -89,11 +89,11 @@ class SongAdapter(
                     holder.tvDuration.setTextColor(Color.parseColor("#00C8FF"))
                     holder.tvTitle.setTextColor(Color.parseColor("#00C8FF"))
                 } else {
-                    holder.tvDuration.setTextColor(Color.parseColor("#ffffff"))
+                    holder.tvDuration.setTextColor(Color.parseColor("#E1E1E1"))
                     holder.tvTitle.setTextColor(Color.parseColor("#ffffff"))
                 }
             } else {
-                holder.tvDuration.setTextColor(Color.parseColor("#ffffff"))
+                holder.tvDuration.setTextColor(Color.parseColor("#E1E1E1"))
                 holder.tvTitle.setTextColor(Color.parseColor("#ffffff"))
             }
         }

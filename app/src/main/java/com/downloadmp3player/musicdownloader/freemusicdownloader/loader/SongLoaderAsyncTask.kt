@@ -14,6 +14,7 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.model.MusicItem
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.query_folder.db.block.BlockFolderDao
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.fragment.main.query_folder.db.block.BlockFolderHelper
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppConstants
+import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.PreferenceUtils
 import java.util.*
 
@@ -37,10 +38,7 @@ class SongLoaderAsyncTask(context: Context?, listener: SongLoaderListener?) :
         else
             where += filterSkipDuration()
         val songList: ArrayList<MusicItem> = ArrayList()
-        if (PermissionChecker.checkCallingOrSelfPermission(
-                context, Manifest.permission.READ_EXTERNAL_STORAGE
-            ) == PermissionChecker.PERMISSION_GRANTED
-        ) {
+        if (AppUtils.isGrantPermission(context)) {
             val cursor: Cursor? = context.contentResolver.query(
                 MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, where, null, sortorder
             )
@@ -105,10 +103,7 @@ class SongLoaderAsyncTask(context: Context?, listener: SongLoaderListener?) :
     fun getCount(): Int {
         var count = 0
         where += filterBlockFolder() + filterBlockArtist() + filterBlockAlbum() + filterSkipDuration() + filterDateAdded
-        if (PermissionChecker.checkCallingOrSelfPermission(
-                context, Manifest.permission.READ_EXTERNAL_STORAGE
-            ) == PermissionChecker.PERMISSION_GRANTED
-        ) {
+        if (AppUtils.isGrantPermission(context)) {
             val cursor: Cursor? = context.contentResolver.query(
                 MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, where, null, sortorder
             )

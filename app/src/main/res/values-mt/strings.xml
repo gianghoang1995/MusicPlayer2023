@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Dettall</string>
   <string name="no_playlist_play">L-ebda playlist mhi qed tindaqq</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Trid tikkanċella t-tema?</string>
   <string name="waiting">Stennija…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Lingwa</string>
+  <string name="apply">Applika</string>
+  <string name="use_device_language">Lingwa tat-telefon</string>
+  <string name="english">Ingliż</string>
+  <string name="vietnamese">Vjetnamiż</string>
+  <string name="hindi">Ħindi</string>
+  <string name="spanish">Spanjol</string>
+  <string name="french">Franċiż</string>
+  <string name="arabic">Għarbi</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Russu</string>
+  <string name="italian">Taljan</string>
+  <string name="indonesia">Indoneżja</string>
+  <string name="german">Ġermaniż</string>
+  <string name="korean">Korean</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Ġappuniż</string>
 </resources>

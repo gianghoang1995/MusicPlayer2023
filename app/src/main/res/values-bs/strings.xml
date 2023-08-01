@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalj</string>
   <string name="no_playlist_play">Ne reprodukuje se nijedna lista za reprodukciju</string>
@@ -203,7 +205,7 @@
   <string name="search_from_youtube">Traži pjesme iz</string>
   <string name="searching">Pretraživanje…</string>
   <string name="check_connection">Provjerite internetsku vezu</string>
-  <string name="retry">Pokušajte ponovo</string>
+  <string name="retry">Pokušaj ponovo</string>
   <string name="notification_channel_description">Chanel music player desc</string>
   <string name="notification_channel">Obavijest Chanel</string>
   <string name="sleep_timer">Sleep timer</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Želite li otkazati temu?</string>
   <string name="waiting">Čeka se…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Jezik</string>
+  <string name="apply">Prijavite se</string>
+  <string name="use_device_language">Jezik telefona</string>
+  <string name="english">Engleski</string>
+  <string name="vietnamese">Vijetnamski</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Španski</string>
+  <string name="french">Francuski</string>
+  <string name="arabic">Arapski</string>
+  <string name="bengali">Bengalski</string>
+  <string name="russian">Ruski</string>
+  <string name="italian">Talijanski</string>
+  <string name="indonesia">Indonezija</string>
+  <string name="german">Njemački</string>
+  <string name="korean">Korejski</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Japanski</string>
 </resources>

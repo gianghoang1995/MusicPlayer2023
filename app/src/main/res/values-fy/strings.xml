@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Gjin playlist wurdt spile</string>
@@ -225,7 +227,7 @@
   <string name="change_font_size">Feroarje lettertypegrutte</string>
   <string name="large_font">Grutte lettertype</string>
   <string name="send_feedback">Kommentaar ferstjoere</string>
-  <string name="enter_your_feedback">Fier hjir de opmerkingen of jo fersyk yn</string>
+  <string name="enter_your_feedback">Fier asjebleaft de opmerkingen of jo oanfraach hjir yn</string>
   <string name="send">Stjoere</string>
   <string name="no_client_email">D\'r is gjin e-postkliïnt ynstalleare.</string>
   <string name="small_font">Lyts</string>
@@ -236,7 +238,7 @@
   <string name="error_please_try_again">Der gie der mis, besykje it nochris</string>
   <string name="you_in_online_mode">Sukses! Jo binne yn online muzykôfspielmodus.</string>
   <string name="this_action_can_contain_ads">Dizze aksje kin advertinsjes befetsje.</string>
-  <string name="message_off_lockscreen">Jo kinne dizze funksje ynskeakelje fanút: Ynstellings -> Beskoattelje skerm</string>
+  <string name="message_off_lockscreen">Jo kinne dizze funksje ynskeakelje út: Ynstellings -> Beskoattelje skerm</string>
   <string name="cover_album">Cover album</string>
   <string name="format_12h">12 oere</string>
   <string name="format_24h">24 oere</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Wolle jo it tema annulearje?</string>
   <string name="waiting">Wachtsje…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Taal</string>
+  <string name="apply">Tapasse</string>
+  <string name="use_device_language">Telefoan taal</string>
+  <string name="english">Ingelsk</string>
+  <string name="vietnamese">Fietnameesk</string>
+  <string name="hindi">Hindoestaansk</string>
+  <string name="spanish">Spaansk</string>
+  <string name="french">Frânsk</string>
+  <string name="arabic">Arabysk</string>
+  <string name="bengali">Bengaalsk</string>
+  <string name="russian">Russysk</string>
+  <string name="italian">Italiaansk</string>
+  <string name="indonesia">Yndoneezje</string>
+  <string name="german">Dútsk</string>
+  <string name="korean">Koreaansk</string>
+  <string name="default_1">Standert</string>
+  <string name="japanese">Japansk</string>
 </resources>

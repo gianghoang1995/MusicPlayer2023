@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Paub meej</string>
   <string name="no_playlist_play">Tsis muaj playlist ua si</string>
@@ -59,7 +61,7 @@
   <string name="pin_folder">Pin folder</string>
   <string name="add_home_screen">Ntxiv rau lub vijtsam hauv tsev</string>
   <string name="add_songs">Ntxiv nkauj</string>
-  <string name="txt_continue">Txuas ntxiv</string>
+  <string name="txt_continue">Mus ntxiv</string>
   <string name="sort">Xaiv los ntawm</string>
   <string name="sort_name">Lub npe</string>
   <string name="get_permission">Tau txais kev tso cai</string>
@@ -233,7 +235,7 @@
   <string name="shake_one">Co ib zaug</string>
   <string name="shake_twice">Co ob zaug</string>
   <string name="please_check_internet_connection">Thov xyuas koj qhov kev sib txuas hauv internet!</string>
-  <string name="error_please_try_again">Muaj ib yam dab tsi tsis ncaj ncees lawm, thov rov sim dua</string>
+  <string name="error_please_try_again">Ib yam dab tsi tsis ncaj ncees lawm, thov rov sim dua</string>
   <string name="you_in_online_mode">Ua tsis tiav! Koj nyob hauv online suab paj nruag playback hom.</string>
   <string name="this_action_can_contain_ads">Qhov kev ua no tuaj yeem muaj kev tshaj tawm.</string>
   <string name="message_off_lockscreen">Koj tuaj yeem pab tau qhov no los ntawm: Chaw -> Xauv npo</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Koj puas xav rho tawm lub ntsiab?</string>
   <string name="waiting">Tos…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Lus</string>
+  <string name="apply">Thov</string>
+  <string name="use_device_language">Xov tooj lus</string>
+  <string name="english">Lus Askiv</string>
+  <string name="vietnamese">Nyab Laj</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanish</string>
+  <string name="french">Fabkis</string>
+  <string name="arabic">Arabic</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Lavxias</string>
+  <string name="italian">Italian</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">German</string>
+  <string name="korean">Kauslim</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Nyiv</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Smáatriði</string>
   <string name="no_playlist_play">Enginn lagalisti er spilaður</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Viltu hætta við þemað?</string>
   <string name="waiting">Bíður…</string>
   <string name="car_play">Bílaleikur</string>
+  <string name="language">Tungumál</string>
+  <string name="apply">Sækja um</string>
+  <string name="use_device_language">Tungumál símans</string>
+  <string name="english">Enska</string>
+  <string name="vietnamese">Víetnamska</string>
+  <string name="hindi">Hindí</string>
+  <string name="spanish">Spænska, spænskt</string>
+  <string name="french">Franska</string>
+  <string name="arabic">Arabíska</string>
+  <string name="bengali">Bengalska</string>
+  <string name="russian">Rússneskt</string>
+  <string name="italian">Ítalska</string>
+  <string name="indonesia">Indónesíu</string>
+  <string name="german">Þýska, Þjóðverji, þýskur</string>
+  <string name="korean">Kóreska</string>
+  <string name="default_1">Sjálfgefið</string>
+  <string name="japanese">Japönsku</string>
 </resources>

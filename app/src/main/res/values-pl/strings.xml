@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Szczegół</string>
   <string name="no_playlist_play">Nie jest odtwarzana żadna lista odtwarzania</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Czy chcesz anulować motyw?</string>
   <string name="waiting">Czekanie …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Język</string>
+  <string name="apply">Stosować</string>
+  <string name="use_device_language">Język telefonu</string>
+  <string name="english">Język angielski</string>
+  <string name="vietnamese">Wietnamski</string>
+  <string name="hindi">Hinduski</string>
+  <string name="spanish">Hiszpański</string>
+  <string name="french">Francuski</string>
+  <string name="arabic">Arabski</string>
+  <string name="bengali">Bengalski</string>
+  <string name="russian">Rosyjski</string>
+  <string name="italian">Włoski</string>
+  <string name="indonesia">Indonezja</string>
+  <string name="german">Niemiecki</string>
+  <string name="korean">Koreański</string>
+  <string name="default_1">Domyślny</string>
+  <string name="japanese">Język japoński</string>
 </resources>

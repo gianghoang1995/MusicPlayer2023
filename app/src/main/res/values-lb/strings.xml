@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Keng Playlist gëtt gespillt</string>
@@ -243,11 +245,28 @@
   <string name="shuffle_on">Schrummen</string>
   <string name="loop_all">Loop alles</string>
   <string name="loop_one">Loop eng</string>
-  <string name="save">Spueren</string>
+  <string name="save">Späicheren</string>
   <string name="blur">Blur</string>
   <string name="overlay">Iwwerlagerung</string>
   <string name="no">Nee</string>
   <string name="ask_cancel">Wëllt Dir d\'Thema annuléieren?</string>
   <string name="waiting">Waarden…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Sprooch</string>
+  <string name="apply">Gëlle</string>
+  <string name="use_device_language">Telefon Sprooch</string>
+  <string name="english">Englesch</string>
+  <string name="vietnamese">Vietnamesesch</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spuenesch</string>
+  <string name="french">Franséisch</string>
+  <string name="arabic">Arabesch</string>
+  <string name="bengali">Bengalesch</string>
+  <string name="russian">Russesch</string>
+  <string name="italian">Italienesch</string>
+  <string name="indonesia">Indonesien</string>
+  <string name="german">Däitsch</string>
+  <string name="korean">Koreanesch</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Japanesch</string>
 </resources>

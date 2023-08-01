@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Sa\'iha</string>
   <string name="no_playlist_play">Ndaipóri lista de reproducción oñembopúva</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">¿Rekanselasépa pe téma?</string>
   <string name="waiting">Ha\'arõhápe …</string>
   <string name="car_play">Carplay rehegua</string>
+  <string name="language">Ñe\'ẽ</string>
+  <string name="apply">Poru</string>
+  <string name="use_device_language">Teléfono ñe’ẽ</string>
+  <string name="english">Inglés</string>
+  <string name="vietnamese">Vietnam-ygua</string>
+  <string name="hindi">Hindi ñe’ẽ</string>
+  <string name="spanish">Karaiñe\'ẽ</string>
+  <string name="french">Francés ñe’ẽ</string>
+  <string name="arabic">Árabe ñe’ẽ</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Ruso ñe’ẽ</string>
+  <string name="italian">Italiano ñe’ẽ</string>
+  <string name="indonesia">Indonésia</string>
+  <string name="german">Alemán ñe’ẽ</string>
+  <string name="korean">Coreano ñe’ẽ</string>
+  <string name="default_1">Upevakuére</string>
+  <string name="japanese">Japonés ñe’ẽ</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">ھېچقانداق قويۇش تىزىملىكى قويۇلمىدى</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">باشتېمىنى بىكار قىلماقچىمۇ؟</string>
   <string name="waiting">ساقلاش…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">تىل</string>
+  <string name="apply">ئىلتىماس قىلىڭ</string>
+  <string name="use_device_language">تېلېفون تىلى</string>
+  <string name="english">ئىنگىلىزچە</string>
+  <string name="vietnamese">ۋېيتنام</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">ئىسپانچە</string>
+  <string name="french">فىرانسۇزچە</string>
+  <string name="arabic">ئەرەبچە</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">رۇسچە</string>
+  <string name="italian">Italian</string>
+  <string name="indonesia">ھىندونېزىيە</string>
+  <string name="german">German</string>
+  <string name="korean">كورېيە</string>
+  <string name="default_1">سۈكۈتتىكى</string>
+  <string name="japanese">ياپون</string>
 </resources>

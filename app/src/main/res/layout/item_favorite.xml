@@ -37,8 +37,8 @@
     <TextView
         android:id="@+id/tvCountSong"
         android:layout_width="0dp"
+        style="@style/NormalText"
         android:layout_height="wrap_content"
-        android:padding="8dp"
         android:textColor="@color/hint_author"
         android:text="12song"
         app:layout_constraintBottom_toBottomOf="parent"

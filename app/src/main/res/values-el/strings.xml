@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Λεπτομέρεια</string>
   <string name="no_playlist_play">Δεν γίνεται αναπαραγωγή λίστας αναπαραγωγής</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Θέλετε να ακυρώσετε το θέμα;</string>
   <string name="waiting">Αναμονή …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Γλώσσα</string>
+  <string name="apply">Ισχύουν</string>
+  <string name="use_device_language">Γλώσσα τηλεφώνου</string>
+  <string name="english">Αγγλικά</string>
+  <string name="vietnamese">Βιετναμέζικο</string>
+  <string name="hindi">Χίντι</string>
+  <string name="spanish">Ισπανικά</string>
+  <string name="french">Γαλλική γλώσσα</string>
+  <string name="arabic">Αραβικός</string>
+  <string name="bengali">Μπενγκάλι</string>
+  <string name="russian">Ρωσική</string>
+  <string name="italian">Ιταλικός</string>
+  <string name="indonesia">Ινδονησία</string>
+  <string name="german">Γερμανός</string>
+  <string name="korean">Κορεάτης</string>
+  <string name="default_1">Προκαθορισμένο</string>
+  <string name="japanese">Ιαπωνικά</string>
 </resources>

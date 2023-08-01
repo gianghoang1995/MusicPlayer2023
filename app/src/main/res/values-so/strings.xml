@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Faahfaahin</string>
   <string name="no_playlist_play">Ma jiro liis gabay ah oo la ciyaaray</string>
@@ -196,7 +198,7 @@
   <string name="play_on_lockscreen_content">Oggolow in lagu soo bandhigo ciyaartoyga bannaanka shaashadda qufulka</string>
   <string name="other">Mid kale</string>
   <string name="play_all">Ciyaar dhamaan</string>
-  <string name="custom">Caadiyan</string>
+  <string name="custom">Caado</string>
   <string name="txt_default">Asal ahaan</string>
   <string name="hiden_folder">Galka qarsoon</string>
   <string name="label_select_picture">Dooro sawir</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ma rabtaa in aad tirtirto dulucda?</string>
   <string name="waiting">Sugaya…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Luuqad</string>
+  <string name="apply">Codso</string>
+  <string name="use_device_language">Luuqadda telefoonka</string>
+  <string name="english">Ingiriis</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Isbaanish</string>
+  <string name="french">Faransiis</string>
+  <string name="arabic">Carabi</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Ruush</string>
+  <string name="italian">Talyaani</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Jarmal</string>
+  <string name="korean">Kuuriyaan</string>
+  <string name="default_1">Asal ahaan</string>
+  <string name="japanese">Jabbaan</string>
 </resources>

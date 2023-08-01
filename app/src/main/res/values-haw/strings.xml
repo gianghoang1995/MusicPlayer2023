@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Kikoʻī</string>
   <string name="no_playlist_play">ʻAʻohe playlist e pāʻani ʻia nei</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Makemake ʻoe e kāpae i ke kumuhana?</string>
   <string name="waiting">Ke kali nei…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">ʻŌlelo</string>
+  <string name="apply">E noi</string>
+  <string name="use_device_language">ʻŌlelo kelepona</string>
+  <string name="english">Pelekania</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hiniki</string>
+  <string name="spanish">Kepania</string>
+  <string name="french">Palani</string>
+  <string name="arabic">Apapika</string>
+  <string name="bengali">Penekali</string>
+  <string name="russian">Lukia</string>
+  <string name="italian">Ikalia</string>
+  <string name="indonesia">ʻInidonesia</string>
+  <string name="german">Alemania</string>
+  <string name="korean">Kolea</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Kepanī</string>
 </resources>

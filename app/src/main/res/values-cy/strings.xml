@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Manylyn</string>
   <string name="no_playlist_play">Nid oes rhestr chwarae yn cael ei chwarae</string>
@@ -77,7 +79,7 @@
   <string name="bass_boster">Pennaeth bas</string>
   <string name="virtual">Effaith 3D</string>
   <string name="title_equalizer">Cyfartaledd</string>
-  <string name="tit_artist">Arlunydd</string>
+  <string name="tit_artist">Artist</string>
   <string name="search_lyric">Chwilio Lyrics</string>
   <string name="tooltip_copy">Dewiswch Lyrics a Copy to Clipboard</string>
   <string name="select_preset">Dewiswch rhagosodiad</string>
@@ -108,7 +110,7 @@
   <string name="input_name_song">Rhowch deitl y gân</string>
   <string name="load_lyric">Chwilio am y geiriau</string>
   <string name="sort_album">Albwm</string>
-  <string name="sort_artist">Arlunydd</string>
+  <string name="sort_artist">Artist</string>
   <string name="order_by">Gorchymyn gan</string>
   <string name="order_ascending">Esgynnol</string>
   <string name="order_descending">Disgyn</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ydych chi am ganslo\'r thema?</string>
   <string name="waiting">Aros …</string>
   <string name="car_play">Chwarae car</string>
+  <string name="language">Iaith</string>
+  <string name="apply">Ymgeisiwch</string>
+  <string name="use_device_language">Iaith ffôn</string>
+  <string name="english">Saesneg</string>
+  <string name="vietnamese">Fietnameg</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Sbaeneg</string>
+  <string name="french">Ffrangeg</string>
+  <string name="arabic">Arabeg</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Rwsieg</string>
+  <string name="italian">Eidaleg</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Almaeneg</string>
+  <string name="korean">Corëeg</string>
+  <string name="default_1">Diofyn</string>
+  <string name="japanese">Japaneaidd</string>
 </resources>

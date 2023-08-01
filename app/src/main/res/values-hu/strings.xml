@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Részlet</string>
   <string name="no_playlist_play">Nincs lejátszási lista</string>
@@ -36,7 +38,7 @@
   <string name="title_playlist">Lejátszási listák</string>
   <string name="new_preset_duplicate">Előbeállítás már létezik</string>
   <string name="save_preset_success">Az előbeállítás sikeresen elmentve!</string>
-  <string name="cant_update">Nem lehet frissíteni az előbeállítást, próbálja újra!</string>
+  <string name="cant_update">Nem lehet frissíteni az előbeállítást, próbálkozzon újra!</string>
   <string name="preset_update_successfully">Előbeállítás sikeresen frissítve!</string>
   <string name="empty_name">Üres előre beállított név!</string>
   <string name="error">Hiba</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Megszakítja a témát?</string>
   <string name="waiting">Várakozás…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Nyelv</string>
+  <string name="apply">Alkalmaz</string>
+  <string name="use_device_language">Telefon nyelve</string>
+  <string name="english">Angol</string>
+  <string name="vietnamese">Vietnami</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanyol</string>
+  <string name="french">Francia</string>
+  <string name="arabic">Arab</string>
+  <string name="bengali">Bengáli</string>
+  <string name="russian">Orosz</string>
+  <string name="italian">Olasz</string>
+  <string name="indonesia">Indonézia</string>
+  <string name="german">Német</string>
+  <string name="korean">Koreai</string>
+  <string name="default_1">Alapértelmezett</string>
+  <string name="japanese">Japán</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Mion-fhiosrachadh</string>
   <string name="no_playlist_play">Chan eil liosta-cluiche ga chluich</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">A bheil thu airson an cuspair a chur dheth?</string>
   <string name="waiting">A’ feitheamh…</string>
   <string name="car_play">Dealbh-chluich</string>
+  <string name="language">Cànain</string>
+  <string name="apply">Cuir a-steach</string>
+  <string name="use_device_language">Cànain fòn</string>
+  <string name="english">Sasannach</string>
+  <string name="vietnamese">Bhietnam</string>
+  <string name="hindi">Indeach</string>
+  <string name="spanish">Spàinneach</string>
+  <string name="french">Frangach</string>
+  <string name="arabic">Arabach</string>
+  <string name="bengali">Bengàlach</string>
+  <string name="russian">Ruiseanach</string>
+  <string name="italian">Eadailteach</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Gearmailteach</string>
+  <string name="korean">Corèanach</string>
+  <string name="default_1">Deònach</string>
+  <string name="japanese">Iapanach</string>
 </resources>

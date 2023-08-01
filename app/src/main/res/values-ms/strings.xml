@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Perincian</string>
   <string name="no_playlist_play">Tiada senarai main sedang dimainkan</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Adakah anda mahu membatalkan tema?</string>
   <string name="waiting">Menunggu…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Bahasa</string>
+  <string name="apply">Mohon</string>
+  <string name="use_device_language">Bahasa telefon</string>
+  <string name="english">Inggeris</string>
+  <string name="vietnamese">Bahasa Vietnam</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Bahasa Sepanyol</string>
+  <string name="french">Perancis</string>
+  <string name="arabic">Bahasa arab</string>
+  <string name="bengali">Benggali</string>
+  <string name="russian">Bahasa Rusia</string>
+  <string name="italian">Itali</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Jerman</string>
+  <string name="korean">Korea</string>
+  <string name="default_1">Lalai</string>
+  <string name="japanese">Jepun</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">التفاصيل</string>
   <string name="no_playlist_play">لا توجد قائمة تشغيل قيد التشغيل</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">هل تريد إلغاء الموضوع؟</string>
   <string name="waiting">منتظر …</string>
   <string name="car_play">كاربلاي</string>
+  <string name="language">لغة</string>
+  <string name="apply">يتقدم</string>
+  <string name="use_device_language">لغة الهاتف</string>
+  <string name="english">إنجليزي</string>
+  <string name="vietnamese">فيتنامي</string>
+  <string name="hindi">هندي</string>
+  <string name="spanish">الأسبانية</string>
+  <string name="french">فرنسي</string>
+  <string name="arabic">عربي</string>
+  <string name="bengali">البنغالية</string>
+  <string name="russian">الروسية</string>
+  <string name="italian">إيطالي</string>
+  <string name="indonesia">إندونيسيا</string>
+  <string name="german">ألمانية</string>
+  <string name="korean">الكورية</string>
+  <string name="default_1">تقصير</string>
+  <string name="japanese">اليابانية</string>
 </resources>

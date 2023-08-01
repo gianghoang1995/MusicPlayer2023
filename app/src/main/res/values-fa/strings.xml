@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">جزئیات</string>
   <string name="no_playlist_play">هیچ لیست پخشی در حال پخش نیست</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">آیا می خواهید موضوع را لغو کنید؟</string>
   <string name="waiting">در انتظار …</string>
   <string name="car_play">کارپلی</string>
+  <string name="language">زبان</string>
+  <string name="apply">درخواست دادن</string>
+  <string name="use_device_language">زبان تلفن</string>
+  <string name="english">انگلیسی</string>
+  <string name="vietnamese">ویتنامی</string>
+  <string name="hindi">هندی</string>
+  <string name="spanish">اسپانیایی</string>
+  <string name="french">فرانسوی</string>
+  <string name="arabic">عربی</string>
+  <string name="bengali">بنگالی</string>
+  <string name="russian">روسی</string>
+  <string name="italian">ایتالیایی</string>
+  <string name="indonesia">اندونزی</string>
+  <string name="german">آلمانی</string>
+  <string name="korean">کره ای</string>
+  <string name="default_1">پیش فرض</string>
+  <string name="japanese">ژاپنی</string>
 </resources>

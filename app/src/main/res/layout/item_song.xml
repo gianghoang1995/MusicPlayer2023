@@ -74,7 +74,6 @@
         android:layout_height="wrap_content"
         android:maxLines="1"
         android:text="12 song"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@id/imgThumb"
         app:layout_constraintEnd_toStartOf="@+id/tvBitrate"
         app:layout_constraintStart_toEndOf="@id/imgThumb"

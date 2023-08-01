@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalye</string>
   <string name="no_playlist_play">Walang playlist na nilalaro</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Gusto mo bang kanselahin ang tema?</string>
   <string name="waiting">Naghihintay…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Wika</string>
+  <string name="apply">Mag-apply</string>
+  <string name="use_device_language">Wika ng telepono</string>
+  <string name="english">Ingles</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Espanyol</string>
+  <string name="french">Pranses</string>
+  <string name="arabic">Arabic</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Ruso</string>
+  <string name="italian">Italyano</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Aleman</string>
+  <string name="korean">Koreano</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Hapon</string>
 </resources>

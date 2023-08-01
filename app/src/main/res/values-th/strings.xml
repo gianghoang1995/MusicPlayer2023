@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">รายละเอียด</string>
   <string name="no_playlist_play">ไม่มีเพลย์ลิสต์ที่กำลังเล่น</string>
@@ -188,7 +190,7 @@
   <string name="preference">ความพึงใจ</string>
   <string name="shake_to_next">เขย่าโทรศัพท์ของคุณเพื่อเปลี่ยนเพลง</string>
   <string name="shake_to_play_next">เขย่าเพื่อเล่นเพลงถัดไป</string>
-  <string name="pause_when_unplug">หยุดชั่วคราวเมื่อถอดหูฟังออก</string>
+  <string name="pause_when_unplug">หยุดชั่วคราวเมื่อถอดปลั๊กหูฟัง</string>
   <string name="pause_headphone_content">หยุดเล่นเพลงชั่วคราวเมื่อถอดหูฟังออก</string>
   <string name="autoplay_when_call">เล่นอัตโนมัติหลังการโทร</string>
   <string name="autoplay_call_content">หากเปิดใช้งาน เพลงจะเล่นต่อไปหลังจากวางสาย</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">คุณต้องการยกเลิกธีมหรือไม่?</string>
   <string name="waiting">ซึ่งรอคอย …</string>
   <string name="car_play">คาร์เพลย์</string>
+  <string name="language">ภาษา</string>
+  <string name="apply">นำมาใช้</string>
+  <string name="use_device_language">ภาษาโทรศัพท์</string>
+  <string name="english">ภาษาอังกฤษ</string>
+  <string name="vietnamese">เวียตนาม</string>
+  <string name="hindi">ภาษาฮินดี</string>
+  <string name="spanish">สเปน</string>
+  <string name="french">ภาษาฝรั่งเศส</string>
+  <string name="arabic">อาหรับ</string>
+  <string name="bengali">เบงกาลี</string>
+  <string name="russian">รัสเซีย</string>
+  <string name="italian">ภาษาอิตาลี</string>
+  <string name="indonesia">อินโดนีเซีย</string>
+  <string name="german">ภาษาเยอรมัน</string>
+  <string name="korean">เกาหลี</string>
+  <string name="default_1">ค่าเริ่มต้น</string>
+  <string name="japanese">ญี่ปุ่น</string>
 </resources>

@@ -51,6 +51,7 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
     var currentActivity: Activity? = null
     var obverseDownloadServiceUtils: ObverseDownloadServiceUtils? = null
     var networkChangeReceiver: NetworkChangeReceiver? = null
+    var currentKeyLang = "en"
 
     companion object {
         @SuppressLint("StaticFieldLeak")
@@ -63,6 +64,7 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
 
     override fun onCreate() {
         super.onCreate()
+        currentKeyLang = Locale.getDefault().language
         networkChangeReceiver = NetworkChangeReceiver()
         registerReceiver(
             networkChangeReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)

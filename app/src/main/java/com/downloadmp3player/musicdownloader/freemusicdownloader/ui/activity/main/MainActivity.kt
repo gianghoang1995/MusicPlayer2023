@@ -30,6 +30,7 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.model.ArtistIte
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.FolderItem
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.TutorialActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.equalizer.EqualizerActivity
+import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.language.SelectLanguageActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.ringtone.RingtoneMakerActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.scaningmusic.ScanMusicActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.search.SearchActivity
@@ -67,10 +68,7 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
 
     }
 
-    private var nativeAdsManager: NativeAdsManager? = null
-    private var nativeAdsBig: NativeAdGiftView? = null
     var dialogRating: Dialog? = null
-    var dialogExitApp: Dialog? = null
     lateinit var pagerAdapter: PagerAdapter
     lateinit var fragmentFolder: QueryFolderFragment
     lateinit var fragmentAlbum: AlbumsFragment
@@ -285,12 +283,10 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
             if (System.currentTimeMillis() - mills > 3600000 / 2) {
                 showDialogRating()
             } else {
-                initDialogExitApp()
-                showDialogExitApp()
+                finishAffinity()
             }
         } else {
-            initDialogExitApp()
-            showDialogExitApp()
+            finishAffinity()
         }
     }
 
@@ -322,39 +318,6 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
         dialogRating?.show()
     }
 
-
-    private fun initDialogExitApp() {
-        nativeAdsManager = NativeAdsManager(
-            this, getString(R.string.native_ads_01),
-            getString(R.string.native_ads_02)
-        )
-        nativeAdsManager?.loadAds(onLoadSuccess = {
-            nativeAdsBig?.setNativeAd(it)
-            nativeAdsBig?.showShimmer(false)
-        }, onLoadFail = {})
-
-        dialogExitApp = Dialog(this)
-        dialogExitApp?.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialogExitApp?.setContentView(R.layout.dialog_exit_app)
-        dialogExitApp?.setCancelable(false)
-        dialogExitApp?.window?.setGravity(Gravity.BOTTOM)
-        dialogExitApp?.setCanceledOnTouchOutside(true)
-        dialogExitApp?.window?.setBackgroundDrawableResource(android.R.color.transparent)
-        dialogExitApp?.window?.setLayout(
-            WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT
-        )
-        nativeAdsBig = dialogExitApp?.findViewById(R.id.nativeAdsBig)
-        val btnExit = dialogExitApp?.findViewById<Button>(R.id.btnExit)
-        btnExit?.setOnClickListener {
-            finishAffinity()
-        }
-        dialogExitApp?.show()
-    }
-
-    private fun showDialogExitApp() {
-        dialogExitApp?.show()
-    }
-
     override fun onItemSettingClick(position: Int) {
         when (position) {
             0 -> {
@@ -376,10 +339,12 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     onLoadAdSuccess = {
                         dialogLoadingAds?.dismissDialog()
                     }, onAdClose = {
-                        startActivity(Intent(this, RingtoneMakerActivity::class.java))
+                        startActivity(Intent(this, SelectLanguageActivity::class.java))
+                        finish()
                     }, onAdLoadFail = {
                         dialogLoadingAds?.dismissDialog()
-                        startActivity(Intent(this, RingtoneMakerActivity::class.java))
+                        startActivity(Intent(this, SelectLanguageActivity::class.java))
+                        finish()
                     })
             }
 
@@ -389,6 +354,19 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     onLoadAdSuccess = {
                         dialogLoadingAds?.dismissDialog()
                     }, onAdClose = {
+                        startActivity(Intent(this, RingtoneMakerActivity::class.java))
+                    }, onAdLoadFail = {
+                        dialogLoadingAds?.dismissDialog()
+                        startActivity(Intent(this, RingtoneMakerActivity::class.java))
+                    })
+            }
+
+            3 -> {
+                dialogLoadingAds?.showDialogLoading()
+                BaseApplication.getAppInstance().adsFullOptionMenu?.showAds(this,
+                    onLoadAdSuccess = {
+                        dialogLoadingAds?.dismissDialog()
+                    }, onAdClose = {
                         DialogTimePicker.showDialogTimePicker(
                             this@MainActivity,
                             object : DialogTimePickerCallback {
@@ -408,7 +386,7 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     })
             }
 
-            3 -> {
+            4 -> {
                 dialogLoadingAds?.showDialogLoading()
                 BaseApplication.getAppInstance().adsFullOptionMenu?.showAds(this,
                     onLoadAdSuccess = {
@@ -421,7 +399,7 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     })
             }
 
-            4 -> {
+            5 -> {
                 dialogLoadingAds?.showDialogLoading()
                 BaseApplication.getAppInstance().adsFullOptionMenu?.showAds(this,
                     onLoadAdSuccess = {
@@ -439,7 +417,7 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     })
             }
 
-            5 -> {
+            6 -> {
                 dialogLoadingAds?.showDialogLoading()
                 BaseApplication.getAppInstance().adsFullOptionMenu?.showAds(this,
                     onLoadAdSuccess = {
@@ -452,19 +430,19 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     })
             }
 
-            6 -> {/*Thư mục ẩn*/
+            7 -> {/*Thư mục ẩn*/
                 showDialogUnblockFolder()
             }
 
-            7 -> {/*Album ẩn*/
+            8 -> {/*Album ẩn*/
                 showDialogUnblockAlbum()
             }
 
-            8 -> {/*Artist ẩn*/
+            9 -> {/*Artist ẩn*/
                 showDialogUnblockArtist()
             }
 
-            9 -> {
+            10 -> {
                 dialogLoadingAds?.showDialogLoading()
                 BaseApplication.getAppInstance().adsFullOptionMenu?.showAds(this,
                     onLoadAdSuccess = {
@@ -477,11 +455,11 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     })
             }
 
-            10 -> {
+            11 -> {
                 openUrl(AppConstants.POLICY_URL)
             }
 
-            11 -> {
+            12 -> {
                 AppUtils.shareText(
                     this,
                     getString(R.string.subject_share),
@@ -489,16 +467,16 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                 )
             }
 
-            12 -> {
+            13 -> {
                 openPubGGPlay(AppConstants.PUBLISHER_NAME)
             }
 
-            13 -> {
+            14 -> {
                 rateInStore()
                 PreferenceUtils.put(AppConstants.PREF_DONT_SHOW_RATE, true)
             }
 
-            14 -> {
+            15 -> {
                 finishAffinity()
             }
         }

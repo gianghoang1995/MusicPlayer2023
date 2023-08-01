@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">דעטאַל</string>
   <string name="no_playlist_play">קיין פּלייַליסט איז נישט פּלייַעד</string>
@@ -167,7 +169,7 @@
   <string name="no_internet">קיין אינטערנעט</string>
   <string name="unblock_artist">ופשליסן קינסטלער</string>
   <string name="hide_all_song_in_folder">פאָלדערס און פֿאַרבונדענע לידער פאַרבאָרגן</string>
-  <string name="name_contain_symbol">דער ליד טיטל קען נישט אַנטהאַלטן ספּעציעלע אותיות</string>
+  <string name="name_contain_symbol">דער ליד טיטל קען נישט אַנטהאַלטן ספּעציעל אותיות</string>
   <string name="blank_title_song">דער ליד טיטל קענען ניט זיין ליידיק</string>
   <string name="rename_successfull">ריניימד הצלחה</string>
   <string name="add_to">לייג צו</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">צי איר ווילן צו באָטל מאַכן די טעמע?</string>
   <string name="waiting">ווארטן…</string>
   <string name="car_play">קאַרפּלייַ</string>
+  <string name="language">שפּראַך</string>
+  <string name="apply">צולייגן</string>
+  <string name="use_device_language">טעלעפאָן שפּראַך</string>
+  <string name="english">ענגליש</string>
+  <string name="vietnamese">וויעטנאַמעזיש</string>
+  <string name="hindi">הינדיש</string>
+  <string name="spanish">שפּאַניש</string>
+  <string name="french">פראנצויזיש</string>
+  <string name="arabic">אַראַביש</string>
+  <string name="bengali">בענגאַליש</string>
+  <string name="russian">רוסיש</string>
+  <string name="italian">איטאַליעניש</string>
+  <string name="indonesia">ינדאָנעסיאַ</string>
+  <string name="german">דײַטש</string>
+  <string name="korean">קאָרעיִש</string>
+  <string name="default_1">פעליקייַט</string>
+  <string name="japanese">יאַפּאַניש</string>
 </resources>

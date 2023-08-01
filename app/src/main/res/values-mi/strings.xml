@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Taipitopito</string>
   <string name="no_playlist_play">Karekau he rārangipāpāho e whakatangihia ana</string>
@@ -53,7 +55,7 @@
   <string name="invalid_lyric">Kaore e kitea nga kupu tika?</string>
   <string name="find_on_gg">Rapua koa i runga i a Google ka whakakapi.</string>
   <string name="play">Te purei</string>
-  <string name="play_next">Panuku</string>
+  <string name="play_next">Whai muri</string>
   <string name="shuffle">Riwhi</string>
   <string name="add_to_queue">Tāpiri ki te tūtira</string>
   <string name="pin_folder">Kōpaki titi</string>
@@ -85,7 +87,7 @@
   <string name="save_or_update_preset">Tiakina, whakahou ranei i te tatūkē</string>
   <string name="update">Whakahou</string>
   <string name="tuto_unflug_headphone">Ka mutu aunoa ina wetekina te waea pane</string>
-  <string name="tuto_flug_headphone">Ka purei aunoa ina honoa te pane pane</string>
+  <string name="tuto_flug_headphone">Ka purei aunoa ina honoa te pane</string>
   <string name="tuto_one_click">1 pawhiri ki te purei/tatari</string>
   <string name="tuto_volumeup">Runga ake</string>
   <string name="tuto_two_click">2 pawhiria kia neke ki tera atu</string>
@@ -158,7 +160,7 @@
   <string name="no_song_to_play">Karekau he waiata hei purei!</string>
   <string name="no_song_selected">Kaore he waiata i tohua!</string>
   <string name="file_small">He iti rawa te kōnae</string>
-  <string name="title_rate">Kei te whakapau kaha matou ki te whakarato ki a koe he taupānga kore utu pai. Ko to whakatauranga whetu 5 he nui ake te utu i te moni.</string>
+  <string name="title_rate">Kei te whakapau kaha matou ki te whakarato ki a koe he taupānga kore utu pai. Ko to whakatauranga whetu-5 he nui ake te utu i te moni.</string>
   <string name="msg_rate">Tena koa tango i tetahi wa ki te tuhi i tetahi arotake pai i runga i te Google Play hei akiaki i a matou!</string>
   <string name="text_rate">Whakatauhia matou 5 whetu!</string>
   <string name="text_later">I muri mai</string>
@@ -188,7 +190,7 @@
   <string name="preference">Manakohanga</string>
   <string name="shake_to_next">Ruia to waea ki te huri i te puoro</string>
   <string name="shake_to_play_next">Ruperupea kia whakatangihia te waiata e whai ake nei</string>
-  <string name="pause_when_unplug">Okioki ina wetewetehia te waea waea</string>
+  <string name="pause_when_unplug">Okioki ina wetewetehia te waea</string>
   <string name="pause_headphone_content">Whakatatarihia te purei puoro ina tangohia nga taringa</string>
   <string name="autoplay_when_call">Purei aunoa i muri i te waea</string>
   <string name="autoplay_call_content">Ki te whakahohea ka purei tonu te waiata i muri i te mutunga o te waea</string>
@@ -234,9 +236,9 @@
   <string name="shake_twice">Rua rua</string>
   <string name="please_check_internet_connection">Tena koa tirohia to hononga ipurangi!</string>
   <string name="error_please_try_again">Kua he tetahi, ngana ano</string>
-  <string name="you_in_online_mode">Kore i angitu! Kei te aratau purei puoro ipurangi koe.</string>
+  <string name="you_in_online_mode">Kore i angitu! Kei roto koe i te aratau purei puoro ipurangi.</string>
   <string name="this_action_can_contain_ads">Kei roto i tenei mahi nga panui.</string>
-  <string name="message_off_lockscreen">Ka taea e koe tenei ahuatanga mai i: Tautuhinga -> Maukati mata</string>
+  <string name="message_off_lockscreen">Ka taea e koe tenei ahuatanga mai i: Tautuhinga -> Mata maukati</string>
   <string name="cover_album">Uhi pukaemi</string>
   <string name="format_12h">12 haora</string>
   <string name="format_24h">24 haora</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Me whakakore te kaupapa?</string>
   <string name="waiting">E tatari ana…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Reo</string>
+  <string name="apply">Tonoa</string>
+  <string name="use_device_language">Te reo waea</string>
+  <string name="english">Ingarihi</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Paniora</string>
+  <string name="french">Wīwī</string>
+  <string name="arabic">Arapi</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Ruhia</string>
+  <string name="italian">Itariana</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Tiamana</string>
+  <string name="korean">Koreana</string>
+  <string name="default_1">Taunoa</string>
+  <string name="japanese">Hapanihi</string>
 </resources>

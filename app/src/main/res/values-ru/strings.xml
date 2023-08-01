@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Деталь</string>
   <string name="no_playlist_play">Плейлист не воспроизводится</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Вы хотите отменить тему?</string>
   <string name="waiting">Ожидающий …</string>
   <string name="car_play">Карплей</string>
+  <string name="language">Язык</string>
+  <string name="apply">Применять</string>
+  <string name="use_device_language">Язык телефона</string>
+  <string name="english">Английский</string>
+  <string name="vietnamese">Вьетнамский</string>
+  <string name="hindi">Хинди</string>
+  <string name="spanish">Испанский</string>
+  <string name="french">Французский</string>
+  <string name="arabic">Арабский</string>
+  <string name="bengali">Бенгальский</string>
+  <string name="russian">Русский</string>
+  <string name="italian">Итальянский</string>
+  <string name="indonesia">Индонезия</string>
+  <string name="german">Немецкий</string>
+  <string name="korean">Корейский</string>
+  <string name="default_1">По умолчанию</string>
+  <string name="japanese">Японский</string>
 </resources>

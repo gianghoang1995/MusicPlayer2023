@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Gadi fageenya</string>
   <string name="no_playlist_play">Playlist tokkollee taphatamaa hin jiru</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Mata duree sana haquu barbaadduu?</string>
   <string name="waiting">Eeguu …</string>
   <string name="car_play">Carplay jedhamuun beekama</string>
+  <string name="language">Afaan</string>
+  <string name="apply">Hojiirra oolchuu</string>
+  <string name="use_device_language">Afaan bilbilaa</string>
+  <string name="english">Afaan Ingilizii</string>
+  <string name="vietnamese">Lammii Veetnaam</string>
+  <string name="hindi">Afaan Oromoo</string>
+  <string name="spanish">Ispaanishii</string>
+  <string name="french">Afaan Faransaayii</string>
+  <string name="arabic">Afaan Arabaa</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Afaan Raashiyaa</string>
+  <string name="italian">Afaan Xaaliyaanii</string>
+  <string name="indonesia">Indooneezhiyaa</string>
+  <string name="german">Jarmanii</string>
+  <string name="korean">Afaan Kooriyaa</string>
+  <string name="default_1">Durtii</string>
+  <string name="japanese">Afaan Jaappaan</string>
 </resources>

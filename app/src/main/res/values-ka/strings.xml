@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Დეტალი</string>
   <string name="no_playlist_play">Დასაკრავი სიის დაკვრა არ მიმდინარეობს</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Გსურთ გააუქმოთ თემა?</string>
   <string name="waiting">Ელოდება…</string>
   <string name="car_play">Კარპლეი</string>
+  <string name="language">Ენა</string>
+  <string name="apply">Მიმართეთ</string>
+  <string name="use_device_language">Ტელეფონის ენა</string>
+  <string name="english">Ინგლისური</string>
+  <string name="vietnamese">Ვიეტნამური</string>
+  <string name="hindi">Ჰინდი</string>
+  <string name="spanish">Ესპანური</string>
+  <string name="french">Ფრანგული</string>
+  <string name="arabic">Არაბული</string>
+  <string name="bengali">Ბენგალური</string>
+  <string name="russian">Რუსული</string>
+  <string name="italian">Იტალიური</string>
+  <string name="indonesia">Ინდონეზია</string>
+  <string name="german">Გერმანული</string>
+  <string name="korean">Კორეული</string>
+  <string name="default_1">Ნაგულისხმევი</string>
+  <string name="japanese">Იაპონელი</string>
 </resources>

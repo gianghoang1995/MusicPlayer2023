@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Antsipirihany</string>
   <string name="no_playlist_play">Tsy misy playlist alefa</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Te-hanafoana ny lohahevitra ve ianao?</string>
   <string name="waiting">Miandry…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Fiteny</string>
+  <string name="apply">AMPIHARO</string>
+  <string name="use_device_language">Fiteny an-telefaona</string>
+  <string name="english">Anglisy</string>
+  <string name="vietnamese">Vietnamiana</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Fikarohana</string>
+  <string name="french">FRANTSAY</string>
+  <string name="arabic">Arabo</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">ROSIANINA</string>
+  <string name="italian">ITALIANINA</string>
+  <string name="indonesia">Indonezia</string>
+  <string name="german">Anarana</string>
+  <string name="korean">Koreana</string>
+  <string name="default_1">Toerana misy anao</string>
+  <string name="japanese">Anarana</string>
 </resources>

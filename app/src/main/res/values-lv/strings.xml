@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detaļas</string>
   <string name="no_playlist_play">Netiek atskaņots neviens atskaņošanas saraksts</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Vai vēlaties atcelt motīvu?</string>
   <string name="waiting">Gaida…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Valoda</string>
+  <string name="apply">Pieteikties</string>
+  <string name="use_device_language">Tālruņa valoda</string>
+  <string name="english">Angļu</string>
+  <string name="vietnamese">Vjetnamietis</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spāņu valoda</string>
+  <string name="french">Franču valoda</string>
+  <string name="arabic">Arābu</string>
+  <string name="bengali">Bengāļu</string>
+  <string name="russian">Krievu valoda</string>
+  <string name="italian">Itāļu valoda</string>
+  <string name="indonesia">Indonēzija</string>
+  <string name="german">Vācu</string>
+  <string name="korean">Korejiešu</string>
+  <string name="default_1">Noklusējums</string>
+  <string name="japanese">Japāņi</string>
 </resources>

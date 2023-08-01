@@ -7,6 +7,7 @@ import androidx.core.content.PermissionChecker
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseAsyncTaskLoader
 import com.downloadmp3player.musicdownloader.freemusicdownloader.handle.OnSearchAudioListener
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.MusicItem
+import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
 
 class SearchLoaderTask(private val songListenner: OnSearchAudioListener, context: Context?) :
     BaseAsyncTaskLoader<ArrayList<MusicItem>>(context) {
@@ -17,10 +18,7 @@ class SearchLoaderTask(private val songListenner: OnSearchAudioListener, context
 
     override fun loadInBackground(): ArrayList<MusicItem> {
         val songList: ArrayList<MusicItem> = ArrayList()
-        return if (PermissionChecker.checkCallingOrSelfPermission(
-                context, Manifest.permission.READ_EXTERNAL_STORAGE
-            ) == PermissionChecker.PERMISSION_GRANTED
-        ) {
+        return   if (AppUtils.isGrantPermission(context)) {
             val where =
                 MediaStore.Audio.Media.IS_MUSIC + " != 0" + " AND " + MediaStore.Audio.Media.TITLE + " LIKE ?"
             val cursor = context.contentResolver.query(

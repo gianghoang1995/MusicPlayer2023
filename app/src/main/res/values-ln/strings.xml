@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Makambo ya mikemike</string>
   <string name="no_playlist_play">Liste ya ba playlist moko te ezali kobeta</string>
@@ -209,7 +211,7 @@
   <string name="sleep_timer">Motango ya kolala</string>
   <string name="save_themes">Kobomba ba thèmes ...</string>
   <string name="hour">Bangonga</string>
-  <string name="could_not_find_right_lyric">Akoki kozwa maloba oyo ebongi te .</string>
+  <string name="could_not_find_right_lyric">Nakoki kozwa maloba oyo ebongi te .</string>
   <string name="please_wait">Svp bozela ...</string>
   <string name="online">Na internet</string>
   <string name="number_of_shake">Motango ya ba shakes</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Olingi ko annuler thème?</string>
   <string name="waiting">Kozela …</string>
   <string name="car_play">Mosala ya motuka</string>
+  <string name="language">Lokota</string>
+  <string name="apply">Kosalela</string>
+  <string name="use_device_language">Monoko ya telefone</string>
+  <string name="english">Lingelesi</string>
+  <string name="vietnamese">Bato ya Vietnam</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Espagnole</string>
+  <string name="french">Lifalanse</string>
+  <string name="arabic">Arabe</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Liloba ya Russe</string>
+  <string name="italian">Italien</string>
+  <string name="indonesia">Indonésie</string>
+  <string name="german">Allemand</string>
+  <string name="korean">Mokolo ya Corée</string>
+  <string name="default_1">Mbeba</string>
+  <string name="japanese">Bato ya Japon</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Ka botlalo</string>
   <string name="no_playlist_play">Ga go na lenaneo la dipapadi leo le bapalwago</string>
@@ -249,5 +251,22 @@
   <string name="no">Aowa</string>
   <string name="ask_cancel">Na o nyaka go phumola sehlogo?</string>
   <string name="waiting">Letile …</string>
-  <string name="car_play">Go bapala ka koloi</string>
+  <string name="car_play">Go bapala dikoloi</string>
+  <string name="language">Polelo</string>
+  <string name="apply">Diriša</string>
+  <string name="use_device_language">Polelo ya mogala</string>
+  <string name="english">Seisimane</string>
+  <string name="vietnamese">Sevietnam</string>
+  <string name="hindi">Sehindi sa Sehindi</string>
+  <string name="spanish">Sepeniši</string>
+  <string name="french">Sefora</string>
+  <string name="arabic">Searabia</string>
+  <string name="bengali">Sebengali</string>
+  <string name="russian">Se-Russia</string>
+  <string name="italian">Setaliana</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Sejeremane</string>
+  <string name="korean">Sekorea</string>
+  <string name="default_1">Hlokomologa</string>
+  <string name="japanese">Sejapane</string>
 </resources>

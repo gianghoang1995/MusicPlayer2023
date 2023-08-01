@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ವಿವರ</string>
   <string name="no_playlist_play">ಯಾವುದೇ ಪ್ಲೇಪಟ್ಟಿಯನ್ನು ಪ್ಲೇ ಮಾಡಲಾಗುತ್ತಿಲ್ಲ</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ನೀವು ಥೀಮ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ಬಯಸುವಿರಾ?</string>
   <string name="waiting">ಕಾಯುತ್ತಿದೆ…</string>
   <string name="car_play">ಕಾರ್ಪ್ಲೇ</string>
+  <string name="language">ಭಾಷೆ</string>
+  <string name="apply">ಅನ್ವಯಿಸು</string>
+  <string name="use_device_language">ಫೋನ್ ಭಾಷೆ</string>
+  <string name="english">ಆಂಗ್ಲ</string>
+  <string name="vietnamese">ವಿಯೆಟ್ನಾಮೀಸ್</string>
+  <string name="hindi">ಹಿಂದಿ</string>
+  <string name="spanish">ಸ್ಪ್ಯಾನಿಷ್</string>
+  <string name="french">ಫ್ರೆಂಚ್</string>
+  <string name="arabic">ಅರೇಬಿಕ್</string>
+  <string name="bengali">ಬೆಂಗಾಲಿ</string>
+  <string name="russian">ರಷ್ಯನ್</string>
+  <string name="italian">ಇಟಾಲಿಯನ್</string>
+  <string name="indonesia">ಇಂಡೋನೇಷ್ಯಾ</string>
+  <string name="german">ಜರ್ಮನ್</string>
+  <string name="korean">ಕೊರಿಯನ್</string>
+  <string name="default_1">ಡೀಫಾಲ್ಟ್</string>
+  <string name="japanese">ಜಪಾನೀಸ್</string>
 </resources>

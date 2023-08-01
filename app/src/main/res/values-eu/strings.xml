@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Xehetasuna</string>
   <string name="no_playlist_play">Ez da erreprodukzio zerrendarik erreproduzitzen</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Gaia bertan behera utzi nahi duzu?</string>
   <string name="waiting">Zain…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Hizkuntza</string>
+  <string name="apply">Aplikatu</string>
+  <string name="use_device_language">Telefonoaren hizkuntza</string>
+  <string name="english">Ingelesa</string>
+  <string name="vietnamese">Vietnamera</string>
+  <string name="hindi">Hindia</string>
+  <string name="spanish">Gaztelania</string>
+  <string name="french">Frantsesa</string>
+  <string name="arabic">Arabiera</string>
+  <string name="bengali">Bengalera</string>
+  <string name="russian">Errusiera</string>
+  <string name="italian">Italiarra</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Alemana</string>
+  <string name="korean">Korean</string>
+  <string name="default_1">Lehenetsia</string>
+  <string name="japanese">Japoniarra</string>
 </resources>

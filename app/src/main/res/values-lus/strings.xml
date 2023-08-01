@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Chipchiar</string>
   <string name="no_playlist_play">Playlist engmah play a ni lo</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Theme cancel i duh em?</string>
   <string name="waiting">Nghak …</string>
   <string name="car_play">Carplay a ni</string>
+  <string name="language">Tawng</string>
+  <string name="apply">Dil</string>
+  <string name="use_device_language">Phone tawng hman dan</string>
+  <string name="english">Sap</string>
+  <string name="vietnamese">Vietnamese tawng a ni</string>
+  <string name="hindi">Hindi tawng a ni</string>
+  <string name="spanish">Spanish</string>
+  <string name="french">French tawng a ni</string>
+  <string name="arabic">Arabic tawng a ni</string>
+  <string name="bengali">Bengali tawng a ni</string>
+  <string name="russian">Russian tawng a ni</string>
+  <string name="italian">Italian tawng a ni</string>
+  <string name="indonesia">Indonesia ram a ni</string>
+  <string name="german">German tawng a ni</string>
+  <string name="korean">Korean tawng a ni</string>
+  <string name="default_1">Hlawhchhamna</string>
+  <string name="japanese">Japanese tawng a ni</string>
 </resources>

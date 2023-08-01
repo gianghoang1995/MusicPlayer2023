@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">तपशील</string>
   <string name="no_playlist_play">कोणतीही प्लेलिस्ट प्ले केली जात नाही</string>
@@ -63,7 +65,7 @@
   <string name="sort">यानुसार क्रमवारी लावा</string>
   <string name="sort_name">नाव</string>
   <string name="get_permission">परवानगी घ्या</string>
-  <string name="need_permission">अनुप्रयोग वापरण्यासाठी तुम्हाला परवानगी आवश्यक आहे</string>
+  <string name="need_permission">तुम्हाला अनुप्रयोग वापरण्यासाठी परवानगी आवश्यक आहे</string>
   <string name="per_1">संगीत काढण्यासाठी मीडिया फाइलमध्ये प्रवेश करा</string>
   <string name="per_manage_all_file">गाणी आणि बोल जोडण्यासाठी, संपादित करण्यासाठी, हटवण्यासाठी सर्व फायलींमध्ये प्रवेश करण्याची परवानगी</string>
   <string name="no_song_play">सध्या कोणतीही गाणी वाजत नाहीत!</string>
@@ -225,7 +227,7 @@
   <string name="change_font_size">फॉन्ट आकार बदला</string>
   <string name="large_font">मोठा फॉन्ट</string>
   <string name="send_feedback">अभिप्राय पाठवा</string>
-  <string name="enter_your_feedback">कृपया येथे टिप्पण्या किंवा तुमची विनंती प्रविष्ट करा</string>
+  <string name="enter_your_feedback">कृपया टिप्पण्या किंवा तुमची विनंती येथे प्रविष्ट करा</string>
   <string name="send">पाठवा</string>
   <string name="no_client_email">कोणताही ईमेल क्लायंट स्थापित केलेला नाही.</string>
   <string name="small_font">लहान</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">तुम्हाला थीम रद्द करायची आहे का?</string>
   <string name="waiting">वाट पाहत आहे…</string>
   <string name="car_play">कारप्ले</string>
+  <string name="language">इंग्रजी</string>
+  <string name="apply">अर्ज करा</string>
+  <string name="use_device_language">फोनची भाषा</string>
+  <string name="english">इंग्रजी</string>
+  <string name="vietnamese">व्हिएतनामी</string>
+  <string name="hindi">हिंदी</string>
+  <string name="spanish">स्पॅनिश</string>
+  <string name="french">फ्रेंच</string>
+  <string name="arabic">अरबी</string>
+  <string name="bengali">बंगाली</string>
+  <string name="russian">रशियन</string>
+  <string name="italian">इटालियन</string>
+  <string name="indonesia">इंडोनेशिया</string>
+  <string name="german">जर्मन</string>
+  <string name="korean">कोरियन</string>
+  <string name="default_1">डीफॉल्ट</string>
+  <string name="japanese">जपानी</string>
 </resources>

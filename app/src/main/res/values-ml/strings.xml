@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">വിശദാംശങ്ങൾ</string>
   <string name="no_playlist_play">ഒരു പ്ലേലിസ്റ്റും പ്ലേ ചെയ്യുന്നില്ല</string>
@@ -109,7 +111,7 @@
   <string name="load_lyric">വരികൾക്കായി തിരയുന്നു</string>
   <string name="sort_album">ആൽബം</string>
   <string name="sort_artist">കലാകാരൻ</string>
-  <string name="order_by">ഓർഡർ ചെയ്യുക</string>
+  <string name="order_by">ഓർഡർ പ്രകാരം</string>
   <string name="order_ascending">ആരോഹണം</string>
   <string name="order_descending">അവരോഹണം</string>
   <string name="block_folder">ഫോൾഡർ മറയ്ക്കുക</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">നിങ്ങൾക്ക് തീം റദ്ദാക്കണോ?</string>
   <string name="waiting">കാത്തിരിക്കുന്നു…</string>
   <string name="car_play">കാർപ്ലേ</string>
+  <string name="language">ഭാഷ</string>
+  <string name="apply">അപേക്ഷിക്കുക</string>
+  <string name="use_device_language">ഫോൺ ഭാഷ</string>
+  <string name="english">ഇംഗ്ലീഷ്</string>
+  <string name="vietnamese">വിയറ്റ്നാമീസ്</string>
+  <string name="hindi">ഹിന്ദി</string>
+  <string name="spanish">സ്പാനിഷ്</string>
+  <string name="french">ഫ്രഞ്ച്</string>
+  <string name="arabic">അറബി</string>
+  <string name="bengali">ബംഗാളി</string>
+  <string name="russian">റഷ്യൻ</string>
+  <string name="italian">ഇറ്റാലിയൻ</string>
+  <string name="indonesia">ഇന്തോനേഷ്യ</string>
+  <string name="german">ജർമ്മൻ</string>
+  <string name="korean">കൊറിയൻ</string>
+  <string name="default_1">സ്ഥിരസ്ഥിതി</string>
+  <string name="japanese">ജാപ്പനീസ്</string>
 </resources>

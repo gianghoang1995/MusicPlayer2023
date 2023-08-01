@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">פרט</string>
-  <string name="no_playlist_play">שום רשימת השמעה לא מושמעת</string>
+  <string name="no_playlist_play">אין פלייליסט מופעל</string>
   <string name="txt_done">בוצע!</string>
   <string name="success">הַצלָחָה</string>
   <string name="song_info">מידע על השיר</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">האם אתה רוצה לבטל את ערכת הנושא?</string>
   <string name="waiting">מחכה…</string>
   <string name="car_play">קארפליי</string>
+  <string name="language">שפה</string>
+  <string name="apply">להגיש מועמדות</string>
+  <string name="use_device_language">שפת הטלפון</string>
+  <string name="english">אנגלית</string>
+  <string name="vietnamese">וייטנאמית</string>
+  <string name="hindi">הינדי</string>
+  <string name="spanish">ספרדית</string>
+  <string name="french">צָרְפָתִית</string>
+  <string name="arabic">עֲרָבִית</string>
+  <string name="bengali">בנגלית</string>
+  <string name="russian">רוּסִי</string>
+  <string name="italian">אִיטַלְקִית</string>
+  <string name="indonesia">אִינדוֹנֵזִיָה</string>
+  <string name="german">גֶרמָנִיָת</string>
+  <string name="korean">קוריאנית</string>
+  <string name="default_1">בְּרִירַת מֶחדָל</string>
+  <string name="japanese">יַפָּנִית</string>
 </resources>

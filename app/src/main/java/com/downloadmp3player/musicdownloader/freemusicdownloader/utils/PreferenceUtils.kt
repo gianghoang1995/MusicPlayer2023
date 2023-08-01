@@ -125,4 +125,14 @@ object PreferenceUtils {
         return sharedPref.getInt(AppConstants.THEME_BLUR_PROGRESS, 100)
     }
 
+    fun putFirstSelectLanguage(mContext: Context, selected: Boolean) {
+        val editor: SharedPreferences.Editor = sharedPref.edit()
+        editor.putBoolean(AppConstants.KEY_LANGUAGE_SELECTED, selected)
+        editor.apply()
+    }
+
+    fun isFirstSelectLanguage(): Boolean {
+        return sharedPref.getBoolean(AppConstants.KEY_LANGUAGE_SELECTED, true)
+    }
+
 }

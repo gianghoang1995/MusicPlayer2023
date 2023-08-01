@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">تفصیل</string>
   <string name="no_playlist_play">هیڅ پلی لیست نه لوبول کیږي</string>
@@ -196,7 +198,7 @@
   <string name="play_on_lockscreen_content">د لاک سکرین څخه بهر د پلیر ښودلو ته اجازه ورکوي</string>
   <string name="other">نور</string>
   <string name="play_all">ټول لوبه وکړئ</string>
-  <string name="custom">ګمرک</string>
+  <string name="custom">دودیز</string>
   <string name="txt_default">ډیفالټ</string>
   <string name="hiden_folder">پټ فولډر</string>
   <string name="label_select_picture">انځور غوره کړئ</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ایا تاسو غواړئ موضوع لغوه کړئ؟</string>
   <string name="waiting">انتظار…</string>
   <string name="car_play">کارپلی</string>
+  <string name="language">ژبه</string>
+  <string name="apply">درخواست وکړئ</string>
+  <string name="use_device_language">د تلیفون ژبه</string>
+  <string name="english">انګلیسي</string>
+  <string name="vietnamese">ویتنامي</string>
+  <string name="hindi">هندي</string>
+  <string name="spanish">هسپانیه ایی</string>
+  <string name="french">فرانسوي</string>
+  <string name="arabic">عربي</string>
+  <string name="bengali">بنګالي</string>
+  <string name="russian">روسي</string>
+  <string name="italian">ایټالیوي</string>
+  <string name="indonesia">انډونیزیا</string>
+  <string name="german">جرمني</string>
+  <string name="korean">کوریایی</string>
+  <string name="default_1">ډیفالټ</string>
+  <string name="japanese">جاپاني</string>
 </resources>

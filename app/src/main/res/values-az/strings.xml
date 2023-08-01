@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detal</string>
   <string name="no_playlist_play">Heç bir pleylist oxunmur</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Mövzunu ləğv etmək istəyirsiniz?</string>
   <string name="waiting">Gözləyirik...</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Dil</string>
+  <string name="apply">Müraciət edin</string>
+  <string name="use_device_language">Telefon dili</string>
+  <string name="english">İngilis dili</string>
+  <string name="vietnamese">Vyetnamlı</string>
+  <string name="hindi">Hind</string>
+  <string name="spanish">Ispan dili</string>
+  <string name="french">Fransız dili</string>
+  <string name="arabic">Ərəb</string>
+  <string name="bengali">Benqal dili</string>
+  <string name="russian">Rus</string>
+  <string name="italian">Italyan</string>
+  <string name="indonesia">İndoneziya</string>
+  <string name="german">Alman</string>
+  <string name="korean">Koreyalı</string>
+  <string name="default_1">Defolt</string>
+  <string name="japanese">Yapon</string>
 </resources>

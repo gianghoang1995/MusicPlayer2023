@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Faranfasiyali</string>
   <string name="no_playlist_play">Fɔli-sɛbɛn si tɛ ka fɔ</string>
@@ -249,5 +251,22 @@
   <string name="no">Ayi</string>
   <string name="ask_cancel">Yala i b’a fɛ ka barokun tiɲɛ wa?</string>
   <string name="waiting">Makɔnɔli …</string>
-  <string name="car_play">Carplay (Carplay) ye</string>
+  <string name="car_play">Carplay (Mɔgɔw ​​ka tulonkɛ).</string>
+  <string name="language">Kan</string>
+  <string name="apply">Ka waleya</string>
+  <string name="use_device_language">Telefɔni kan</string>
+  <string name="english">Angilɛtɛri</string>
+  <string name="vietnamese">Vietnamkaw ye</string>
+  <string name="hindi">Hindikan na</string>
+  <string name="spanish">Ɛsipaɲɔli</string>
+  <string name="french">Faransikan na</string>
+  <string name="arabic">Arabukan na</string>
+  <string name="bengali">Bengalikan</string>
+  <string name="russian">Irisikan na</string>
+  <string name="italian">Italikan na</string>
+  <string name="indonesia">Indonezi jamana na</string>
+  <string name="german">Alemaɲikan na</string>
+  <string name="korean">Korekan na</string>
+  <string name="default_1">Fɔlɔ</string>
+  <string name="japanese">Zapɔnkan na</string>
 </resources>

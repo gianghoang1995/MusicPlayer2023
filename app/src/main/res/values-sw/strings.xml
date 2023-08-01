@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Maelezo</string>
   <string name="no_playlist_play">Hakuna orodha ya kucheza inayochezwa</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Je, ungependa kughairi mandhari?</string>
   <string name="waiting">Inasubiri...</string>
   <string name="car_play">Uchezaji wa gari</string>
+  <string name="language">Lugha</string>
+  <string name="apply">Omba</string>
+  <string name="use_device_language">Lugha ya simu</string>
+  <string name="english">Kiingereza</string>
+  <string name="vietnamese">Kivietinamu</string>
+  <string name="hindi">Kihindi</string>
+  <string name="spanish">Kihispania</string>
+  <string name="french">Kifaransa</string>
+  <string name="arabic">Kiarabu</string>
+  <string name="bengali">Kibengali</string>
+  <string name="russian">Kirusi</string>
+  <string name="italian">Kiitaliano</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Kijerumani</string>
+  <string name="korean">Kikorea</string>
+  <string name="default_1">Chaguomsingi</string>
+  <string name="japanese">Kijapani</string>
 </resources>

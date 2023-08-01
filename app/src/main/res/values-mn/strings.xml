@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Дэлгэрэнгүй</string>
-  <string name="no_playlist_play">Тоглуулах жагсаалтыг тоглуулахгүй байна</string>
+  <string name="no_playlist_play">Тоглуулах жагсаалт байхгүй байна</string>
   <string name="txt_done">Дууслаа!</string>
   <string name="success">Амжилт</string>
   <string name="song_info">Дууны мэдээлэл</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Та сэдвийг цуцлахыг хүсэж байна уу?</string>
   <string name="waiting">Хүлээж байна…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Хэл</string>
+  <string name="apply">Өргөдөл гаргах</string>
+  <string name="use_device_language">Утасны хэл</string>
+  <string name="english">Англи</string>
+  <string name="vietnamese">Вьетнам</string>
+  <string name="hindi">Хинди</string>
+  <string name="spanish">Испани</string>
+  <string name="french">Франц</string>
+  <string name="arabic">Араб</string>
+  <string name="bengali">Бенгал</string>
+  <string name="russian">Орос</string>
+  <string name="italian">Итали</string>
+  <string name="indonesia">Индонез</string>
+  <string name="german">Герман</string>
+  <string name="korean">Солонгос</string>
+  <string name="default_1">Өгөгдмөл</string>
+  <string name="japanese">Япон</string>
 </resources>

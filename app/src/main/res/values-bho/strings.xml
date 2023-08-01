@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ब्योरेवार</string>
   <string name="no_playlist_play">कवनो प्लेलिस्ट ना चलावल जा रहल बा</string>
@@ -232,7 +234,7 @@
   <string name="normal_font">सामान्य</string>
   <string name="shake_one">एक बेर हिला लीं</string>
   <string name="shake_twice">दू बेर हिला लीं</string>
-  <string name="please_check_internet_connection">रउरा सभे से निहोरा बा कि आपन इंटरनेट कनेक्शन देख लीं !</string>
+  <string name="please_check_internet_connection">रउरा सभे से निहोरा बा कि आपन इंटरनेट कनेक्शन चेक करीं !</string>
   <string name="error_please_try_again">कुछ गड़बड़ हो गइल, कृपया फेर से कोशिश करीं</string>
   <string name="you_in_online_mode">असफल हो गइल! रउआ ऑनलाइन म्यूजिक प्लेबैक मोड में बानी।</string>
   <string name="this_action_can_contain_ads">एह कार्रवाई में विज्ञापन हो सकेला.</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">का रउरा थीम रद्द कइल चाहत बानी?</string>
   <string name="waiting">इंतजार करतानी …</string>
   <string name="car_play">कारप्ले के बा</string>
+  <string name="language">भाखा</string>
+  <string name="apply">लागू करीं</string>
+  <string name="use_device_language">फोन भाषा के बा</string>
+  <string name="english">अंगरेजी</string>
+  <string name="vietnamese">वियतनामी के बा</string>
+  <string name="hindi">हिन्दी के बा</string>
+  <string name="spanish">स्पेनिश</string>
+  <string name="french">फ्रेंच भाषा के बा</string>
+  <string name="arabic">अरबी के बा</string>
+  <string name="bengali">बंगाली के बा</string>
+  <string name="russian">रूसी भाषा के बा</string>
+  <string name="italian">इटैलियन के बा</string>
+  <string name="indonesia">इंडोनेशिया के ह</string>
+  <string name="german">जर्मन भाषा के बा</string>
+  <string name="korean">कोरियाई के बा</string>
+  <string name="default_1">बाकी</string>
+  <string name="japanese">जापानी के बा</string>
 </resources>

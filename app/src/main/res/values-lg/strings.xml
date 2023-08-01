@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Okusoggola</string>
   <string name="no_playlist_play">Tewali playlist ezannyibwa</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Oyagala kusazaamu mulamwa?</string>
   <string name="waiting">Okulinda …</string>
   <string name="car_play">Omuzannyo gw’emmotoka</string>
+  <string name="language">Olulimi</string>
+  <string name="apply">Okuteeka mu nkola</string>
+  <string name="use_device_language">Olulimi lw\'essimu</string>
+  <string name="english">Olungereeza</string>
+  <string name="vietnamese">Olulimi Oluvietnam</string>
+  <string name="hindi">Oluhindu</string>
+  <string name="spanish">Olusupeyini</string>
+  <string name="french">Olufaransa</string>
+  <string name="arabic">Oluwarabu</string>
+  <string name="bengali">Olubengali</string>
+  <string name="russian">Olurussia</string>
+  <string name="italian">Oluyitale</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Omugirimaani</string>
+  <string name="korean">Olukorea</string>
+  <string name="default_1">Okukosamu</string>
+  <string name="japanese">Olujapani</string>
 </resources>

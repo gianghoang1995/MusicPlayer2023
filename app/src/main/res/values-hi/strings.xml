@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">विवरण</string>
   <string name="no_playlist_play">कोई प्लेलिस्ट नहीं चलाई जा रही है</string>
@@ -38,7 +40,7 @@
   <string name="save_preset_success">प्रीसेट सफलतापूर्वक सहेजा गया!</string>
   <string name="cant_update">प्रीसेट अपडेट नहीं किया जा सकता, कृपया पुनः प्रयास करें!</string>
   <string name="preset_update_successfully">प्रीसेट सफलतापूर्वक अपडेट किया गया!</string>
-  <string name="empty_name">खाली पूर्व निर्धारित नाम!</string>
+  <string name="empty_name">खाली पूर्वनिर्धारित नाम!</string>
   <string name="error">गलती</string>
   <string name="please_chose_preset_to_update">कृपया वह प्रभाव चुनें जिसे आप अपडेट करना चाहते हैं</string>
   <string name="search">खोज</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">क्या आप थीम रद्द करना चाहते हैं?</string>
   <string name="waiting">इंतज़ार में …</string>
   <string name="car_play">CarPlay</string>
+  <string name="language">भाषा</string>
+  <string name="apply">आवेदन करना</string>
+  <string name="use_device_language">फोन की भाषा</string>
+  <string name="english">अंग्रेज़ी</string>
+  <string name="vietnamese">वियतनामी</string>
+  <string name="hindi">हिंदी</string>
+  <string name="spanish">स्पैनिश</string>
+  <string name="french">फ़्रेंच</string>
+  <string name="arabic">अरबी</string>
+  <string name="bengali">बंगाली</string>
+  <string name="russian">रूसी</string>
+  <string name="italian">इतालवी</string>
+  <string name="indonesia">इंडोनेशिया</string>
+  <string name="german">जर्मन</string>
+  <string name="korean">कोरियाई</string>
+  <string name="default_1">गलती करना</string>
+  <string name="japanese">जापानी</string>
 </resources>

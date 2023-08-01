@@ -5,6 +5,7 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.CategoryItem
 
 object AppConstants {
+    const val KEY_LANGUAGE_SELECTED = "KEY_LANGUAGE_SELECTED"
     const val POLICY_URL = "https://sites.google.com/view/musicplayer4k-policy"
     const val PUBLISHER_NAME = "MusicDownloader"
     const val BASE_GG_SEARCH = "https://www.google.com/search?q=lyric+"
@@ -50,6 +51,8 @@ object AppConstants {
     const val ACTION_NEXT = "action_next"
     const val ACTION_CHANGE_PRESET_EQUALIZER = "action_change_preset_equalizer"
 
+    const val TYPE_OBJECT = 0
+    const val TYPE_ADS = 1
     fun testDevices(): List<String> {
         return listOf(
             "DE84AB3B057C90AF8FBD9446091BD425",
@@ -211,4 +214,6 @@ object AppConstants {
         listDrawer.add(R.drawable.thumb_15)
         return listDrawer[AppUtils.getRandomNumber(listDrawer.size - 1)]
     }
+
+
 }

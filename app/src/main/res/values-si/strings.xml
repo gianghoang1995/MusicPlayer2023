@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">විස්තර</string>
   <string name="no_playlist_play">ධාවන ලැයිස්තුවක් වාදනය නොවේ</string>
@@ -82,7 +84,7 @@
   <string name="tooltip_copy">කරුණාකර ගී පද තෝරා පසුරු පුවරුවට පිටපත් කරන්න</string>
   <string name="select_preset">පෙරසිටුවන්න තෝරන්න</string>
   <string name="empty_preset">පෙරසිටුවීමක් නැත, කරුණාකර නව පෙරසිටුවක් සාදන්න</string>
-  <string name="save_or_update_preset">පෙරසිටුව සුරකින්න හෝ යාවත්කාලීන කරන්න</string>
+  <string name="save_or_update_preset">පෙර සැකසුම සුරකින්න හෝ යාවත්කාලීන කරන්න</string>
   <string name="update">යාවත්කාලීන කරන්න</string>
   <string name="tuto_unflug_headphone">හෙඩ්සෙට් එක විසන්ධි වූ විට ස්වයංක්‍රීයව නවත්වන්න</string>
   <string name="tuto_flug_headphone">හෙඩ්සෙට් එක පේනුගත කර ඇති විට ස්වයංක්‍රීයව වාදනය කරන්න</string>
@@ -236,7 +238,7 @@
   <string name="error_please_try_again">යම් දෙයක් වැරදී ඇත, කරුණාකර නැවත උත්සාහ කරන්න</string>
   <string name="you_in_online_mode">අසාර්ථකයි! ඔබ සිටින්නේ සබැඳි සංගීත ප්ලේබැක් මාදිලියේ ය.</string>
   <string name="this_action_can_contain_ads">මෙම ක්‍රියාවෙහි දැන්වීම් අඩංගු විය හැක.</string>
-  <string name="message_off_lockscreen">ඔබට මෙම විශේෂාංගය සක්‍රීය කළ හැක: සැකසීම් -> අගුළු තිරය</string>
+  <string name="message_off_lockscreen">ඔබට මෙම විශේෂාංගය සක්‍රිය කළ හැක්කේ: සැකසීම් -> අගුළු තිරය</string>
   <string name="cover_album">ආවරණ ඇල්බමය</string>
   <string name="format_12h">පැය 12 යි</string>
   <string name="format_24h">පැය 24 යි</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ඔබට තේමාව අවලංගු කිරීමට අවශ්‍යද?</string>
   <string name="waiting">බලා සිටින…</string>
   <string name="car_play">කාර්ප්ලේ</string>
+  <string name="language">භාෂාව</string>
+  <string name="apply">අයදුම් කරන්න</string>
+  <string name="use_device_language">දුරකථන භාෂාව</string>
+  <string name="english">ඉංග්රීසි</string>
+  <string name="vietnamese">වියට්නාම</string>
+  <string name="hindi">හින්දි</string>
+  <string name="spanish">ස්පාඤ්ඤ</string>
+  <string name="french">ප්රංශ</string>
+  <string name="arabic">අරාබි</string>
+  <string name="bengali">බෙංගාලි</string>
+  <string name="russian">රුසියානු</string>
+  <string name="italian">ඉතාලි</string>
+  <string name="indonesia">ඉන්දුනීසියාව</string>
+  <string name="german">ජර්මානු</string>
+  <string name="korean">කොරියානු</string>
+  <string name="default_1">පෙරනිමිය</string>
+  <string name="japanese">ජපන්</string>
 </resources>

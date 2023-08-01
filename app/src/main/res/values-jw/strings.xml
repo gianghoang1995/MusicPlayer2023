@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Rincian</string>
   <string name="no_playlist_play">Ora ana dhaptar lagu sing lagi diputer</string>
@@ -79,7 +81,7 @@
   <string name="title_equalizer">Ekualiser</string>
   <string name="tit_artist">Artis</string>
   <string name="search_lyric">Search Lyrics</string>
-  <string name="tooltip_copy">Pilih Lirik lan Salin menyang Papan Klip</string>
+  <string name="tooltip_copy">Mangga pilih Lirik lan Salin menyang Papan Klip</string>
   <string name="select_preset">Pilih prasetel</string>
   <string name="empty_preset">Ora ana prasetel, gawe prasetel anyar</string>
   <string name="save_or_update_preset">Simpen utawa nganyari prasetel</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Apa sampeyan pengin mbatalake tema kasebut?</string>
   <string name="waiting">Nunggu…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Basa</string>
+  <string name="apply">Nglamar</string>
+  <string name="use_device_language">Basa telpon</string>
+  <string name="english">Inggris</string>
+  <string name="vietnamese">Vietnam</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanyol</string>
+  <string name="french">Prancis</string>
+  <string name="arabic">Arab</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Rusian</string>
+  <string name="italian">Basa Italia</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Jerman</string>
+  <string name="korean">Korea</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Jepang</string>
 </resources>

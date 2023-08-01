@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detall</string>
   <string name="no_playlist_play">No s\'està reproduint cap llista de reproducció</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Vols cancel·lar el tema?</string>
   <string name="waiting">Esperant…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Llenguatge</string>
+  <string name="apply">Aplicar</string>
+  <string name="use_device_language">Idioma del telèfon</string>
+  <string name="english">Anglès</string>
+  <string name="vietnamese">Vietnamita</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Espanyol</string>
+  <string name="french">Francès</string>
+  <string name="arabic">Àrab</string>
+  <string name="bengali">Bengalí</string>
+  <string name="russian">Rus</string>
+  <string name="italian">Italià</string>
+  <string name="indonesia">Indonèsia</string>
+  <string name="german">Alemany</string>
+  <string name="korean">Coreà</string>
+  <string name="default_1">Per defecte</string>
+  <string name="japanese">Japonès</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Fa\'amatalaga</string>
   <string name="no_playlist_play">E leai se lisi o ta\'alo</string>
@@ -234,7 +236,7 @@
   <string name="shake_twice">Lulu faalua</string>
   <string name="please_check_internet_connection">Fa\'amolemole siaki lau feso\'ota\'iga initaneti!</string>
   <string name="error_please_try_again">Sa i ai se mea ua faaletonu, faamolemole toe taumafai</string>
-  <string name="you_in_online_mode">Le manuia! O lo\'o e i ai i luga ole laiga ta\'alo musika i luga ole laiga.</string>
+  <string name="you_in_online_mode">Le manuia! O lo\'o e i ai i luga ole laiga fa\'afoliga musika.</string>
   <string name="this_action_can_contain_ads">O lenei gaioiga e mafai ona iai fa\'asalalauga.</string>
   <string name="message_off_lockscreen">E mafai ona e fa\'aogaina lenei vaega mai le: Fa\'atonu -> Loka lau</string>
   <string name="cover_album">Ufiufi album</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">E te mana\'o e fa\'aleaogaina le autu?</string>
   <string name="waiting">Faatalitali…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Gagana</string>
+  <string name="apply">Talosaga</string>
+  <string name="use_device_language">Gagana telefoni</string>
+  <string name="english">Igilisi</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Sipaniolo</string>
+  <string name="french">Falani</string>
+  <string name="arabic">Alapi</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Lusia</string>
+  <string name="italian">Italia</string>
+  <string name="indonesia">Ikonisia</string>
+  <string name="german">Siamani</string>
+  <string name="korean">Kolea</string>
+  <string name="default_1">Fa\'atonu</string>
+  <string name="japanese">Iapani</string>
 </resources>

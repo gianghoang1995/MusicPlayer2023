@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Tafsilot</string>
   <string name="no_playlist_play">Hech qanday pleylist ijro qilinmayapti</string>
@@ -13,7 +15,7 @@
   <string name="delete">Oʻchirish</string>
   <string name="chose_playlist">Pleylistni tanlang</string>
   <string name="song_exits_playlist">Qo\'shiq pleylistda mavjud!</string>
-  <string name="delete_song_in_playlist">Qo\'shiqni pleylistdan o\'chirib tashlang</string>
+  <string name="delete_song_in_playlist">Qo\'shiqni pleylistdan o\'chiring</string>
   <string name="cant_delete_file">Bu faylni oʻchirib boʻlmadi</string>
   <string name="file_not_found">Fayl topilmadi !</string>
   <string name="music_has_stop">Musiqa keyinroq toʻxtatiladi</string>
@@ -36,7 +38,7 @@
   <string name="title_playlist">Pleylistlar</string>
   <string name="new_preset_duplicate">Oldindan o\'rnatilgan</string>
   <string name="save_preset_success">Oldindan sozlash muvaffaqiyatli saqlandi!</string>
-  <string name="cant_update">Oldindan sozlashni yangilab bo\'lmadi, qayta urinib ko\'ring!</string>
+  <string name="cant_update">Oldindan sozlashni yangilab boʻlmadi, qaytadan urinib koʻring!</string>
   <string name="preset_update_successfully">Oldindan sozlash muvaffaqiyatli yangilandi!</string>
   <string name="empty_name">Oldindan oʻrnatilgan nom boʻsh!</string>
   <string name="error">Xato</string>
@@ -221,7 +223,7 @@
   <string name="slide_to_unlock">Qulfni ochish uchun suring</string>
   <string name="backgroud_lockscreen">Fon blokirovkasi ekrani</string>
   <string name="time_format">Vaqt formati</string>
-  <string name="tittle_off_lockscreen">Bloklangan ekranda o\'ynashni o\'chiring</string>
+  <string name="tittle_off_lockscreen">Bloklangan ekranda oʻynashni oʻchiring</string>
   <string name="change_font_size">Shrift hajmini o\'zgartirish</string>
   <string name="large_font">Katta shrift</string>
   <string name="send_feedback">Fikr-mulohaza yuboring</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Mavzuni bekor qilmoqchimisiz?</string>
   <string name="waiting">Kutilmoqda…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Til</string>
+  <string name="apply">Murojaat qiling</string>
+  <string name="use_device_language">Telefon tili</string>
+  <string name="english">Ingliz</string>
+  <string name="vietnamese">Vetnam</string>
+  <string name="hindi">Hind</string>
+  <string name="spanish">Ispancha</string>
+  <string name="french">Frantsuz</string>
+  <string name="arabic">Arabcha</string>
+  <string name="bengali">Bengal</string>
+  <string name="russian">Rus</string>
+  <string name="italian">Italyancha</string>
+  <string name="indonesia">Indoneziya</string>
+  <string name="german">Nemis</string>
+  <string name="korean">Koreys</string>
+  <string name="default_1">Standart</string>
+  <string name="japanese">Yapon</string>
 </resources>

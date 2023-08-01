@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Vuxokoxoko</string>
   <string name="no_playlist_play">Ku hava playlist leyi tlangiwaka</string>
@@ -236,7 +238,7 @@
   <string name="error_please_try_again">Ku na leswi nga famba kahle, ndzi kombela u ringeta nakambe</string>
   <string name="you_in_online_mode">A swi humelelanga! U le ka xiyimo xo tlanga vuyimbeleri bya le ka inthanete.</string>
   <string name="this_action_can_contain_ads">Xiendlo lexi xi nga va na swinavetiso.</string>
-  <string name="message_off_lockscreen">U nga pfumelela xiyenge lexi ku suka eka: Switirhisiwa -> Khiya xikirini</string>
+  <string name="message_off_lockscreen">U nga pfumelela xivumbeko lexi ku suka eka: Switirhisiwa -> Khiya xikirini</string>
   <string name="cover_album">Album ya xifunengeto</string>
   <string name="format_12h">12 wa tiawara</string>
   <string name="format_24h">24 wa tiawara</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Xana u lava ku khansela nhloko-mhaka?</string>
   <string name="waiting">Rindzile …</string>
   <string name="car_play">Ku tlanga hi movha</string>
+  <string name="language">Ririmi</string>
+  <string name="apply">Endla xikombelo</string>
+  <string name="use_device_language">Ririmi ra riqingho</string>
+  <string name="english">Xinghezi</string>
+  <string name="vietnamese">Xivietnam</string>
+  <string name="hindi">Xihindi</string>
+  <string name="spanish">Spanish</string>
+  <string name="french">Xifurwa</string>
+  <string name="arabic">Xiarabu</string>
+  <string name="bengali">Xibengali</string>
+  <string name="russian">Xirhaxiya</string>
+  <string name="italian">Xintariyana</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Xijarimani</string>
+  <string name="korean">Xikorea</string>
+  <string name="default_1">Ku tlula</string>
+  <string name="japanese">Xijapani</string>
 </resources>

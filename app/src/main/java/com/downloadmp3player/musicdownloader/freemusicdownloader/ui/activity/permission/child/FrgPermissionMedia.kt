@@ -47,14 +47,12 @@ class FrgPermissionMedia : BaseFragment<FragmentPermission1Binding>() {
     }
 
     fun check() {
-        //below android 11======
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             TedPermission.create()
                 .setPermissionListener(permissionlistener)
                 .setDeniedMessage(getString(R.string.need_permission))
                 .setPermissions(
-                    WRITE_EXTERNAL_STORAGE,
-                    READ_EXTERNAL_STORAGE,
+                    READ_MEDIA_AUDIO,
                     READ_MEDIA_IMAGES,
                     READ_MEDIA_VIDEO
                 )

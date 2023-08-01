@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">အသေးစိတ်</string>
   <string name="no_playlist_play">ပြသစာရင်းကို ဖွင့်ထားခြင်းမရှိပါ။</string>
@@ -83,7 +85,7 @@
   <string name="select_preset">ကြိုတင်သတ်မှတ်ကို ရွေးပါ။</string>
   <string name="empty_preset">ကြိုတင်သတ်မှတ်မထားပါ၊ ကြိုတင်သတ်မှတ်မှုအသစ်ကို ဖန်တီးပါ။</string>
   <string name="save_or_update_preset">ကြိုတင်သတ်မှတ်မှုကို သိမ်းဆည်းပါ သို့မဟုတ် အပ်ဒိတ်လုပ်ပါ။</string>
-  <string name="update">မွမ်းမံ</string>
+  <string name="update">အပ်ဒိတ်</string>
   <string name="tuto_unflug_headphone">နားကြပ်ကို ပလပ်ဖြုတ်လိုက်သောအခါ အလိုအလျောက်ရပ်တန့်သည်။</string>
   <string name="tuto_flug_headphone">နားကြပ်တပ်ထားသည့်အခါ အလိုအလျောက်ဖွင့်ပါ။</string>
   <string name="tuto_one_click">ကစားရန်/ခေတ္တရပ်ရန် 1 နှိပ်ပါ။</string>
@@ -110,7 +112,7 @@
   <string name="sort_album">အခွေ</string>
   <string name="sort_artist">အနုပညာရှင်</string>
   <string name="order_by">အော်ဒါမှာပါတယ်။</string>
-  <string name="order_ascending">တက်နေသည်</string>
+  <string name="order_ascending">ကြီးနေပါသည်။</string>
   <string name="order_descending">ဆင်းသက်လာသည်။</string>
   <string name="block_folder">ဖိုင်တွဲကို ဝှက်ထားပါ။</string>
   <string name="unpin">ပင်ဖြုတ်ပါ။</string>
@@ -228,7 +230,7 @@
   <string name="enter_your_feedback">ကျေးဇူးပြု၍ မှတ်ချက်များ သို့မဟုတ် သင့်တောင်းဆိုချက်ကို ဤနေရာတွင် ထည့်သွင်းပါ။</string>
   <string name="send">ပို့ပါ။</string>
   <string name="no_client_email">အီးမေးလ်ကလိုင်းယင့် ထည့်သွင်းထားခြင်းမရှိပါ။</string>
-  <string name="small_font">အငယ်</string>
+  <string name="small_font">သေးငယ်သည်။</string>
   <string name="normal_font">ပုံမှန်</string>
   <string name="shake_one">တစ်ကြိမ်လှုပ်ပါ။</string>
   <string name="shake_twice">နှစ်ကြိမ်လှုပ်ပါ။</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">အပြင်အဆင်ကို ပယ်ဖျက်လိုပါသလား။</string>
   <string name="waiting">စောင့်နေသည်…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">ဘာသာစကား</string>
+  <string name="apply">လျှောက်ထားပါ။</string>
+  <string name="use_device_language">ဖုန်းဘာသာစကား</string>
+  <string name="english">အင်္ဂလိပ်စာ</string>
+  <string name="vietnamese">ဗီယက်နမ်လူမျိုး</string>
+  <string name="hindi">ဟိန္ဒီ</string>
+  <string name="spanish">ငပိ</string>
+  <string name="french">ပြင်သစ်</string>
+  <string name="arabic">အာရဗီ</string>
+  <string name="bengali">ဘင်္ဂါလီ</string>
+  <string name="russian">ရုရှ</string>
+  <string name="italian">အီတလီ</string>
+  <string name="indonesia">အင်ဒိုနီးရှား</string>
+  <string name="german">ဂျာမန်</string>
+  <string name="korean">ကိုးရီးယား</string>
+  <string name="default_1">ပုံသေ</string>
+  <string name="japanese">ဂျပန်</string>
 </resources>

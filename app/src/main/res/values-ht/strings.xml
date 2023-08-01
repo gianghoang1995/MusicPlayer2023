@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detay</string>
   <string name="no_playlist_play">Pa gen lis jwe</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ou vle anile tèm nan?</string>
   <string name="waiting">Ap tann…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Lang</string>
+  <string name="apply">Aplike</string>
+  <string name="use_device_language">Lang telefòn</string>
+  <string name="english">Angle</string>
+  <string name="vietnamese">Vyetnamyen</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Panyòl</string>
+  <string name="french">Franse</string>
+  <string name="arabic">Arab</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Ris</string>
+  <string name="italian">Italyen</string>
+  <string name="indonesia">Endonezi</string>
+  <string name="german">Alman</string>
+  <string name="korean">Koreyen</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Japonè</string>
 </resources>

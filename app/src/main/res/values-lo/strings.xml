@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ລາຍລະອຽດ</string>
   <string name="no_playlist_play">ບໍ່ມີລາຍການຫຼິ້ນໃດຖືກຫຼິ້ນ</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ທ່ານຕ້ອງການຍົກເລີກຮູບແບບສີສັນບໍ?</string>
   <string name="waiting">ກຳລັງລໍຖ້າ…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">ພາສາ</string>
+  <string name="apply">ສະໝັກ</string>
+  <string name="use_device_language">ພາສາໂທລະສັບ</string>
+  <string name="english">ພາສາອັງກິດ</string>
+  <string name="vietnamese">ຫວຽດນາມ</string>
+  <string name="hindi">ຮິນດູ</string>
+  <string name="spanish">ແອສປາໂຍນ</string>
+  <string name="french">ຝຣັ່ງ</string>
+  <string name="arabic">ອາຣັບ</string>
+  <string name="bengali">ເບັງກາລີ</string>
+  <string name="russian">ພາສາລັດເຊຍ</string>
+  <string name="italian">ອິຕາລຽນ</string>
+  <string name="indonesia">ອິນໂດເນເຊຍ</string>
+  <string name="german">ເຢຍລະມັນ</string>
+  <string name="korean">ເກົາຫຼີ</string>
+  <string name="default_1">ຄ່າເລີ່ມຕົ້ນ</string>
+  <string name="japanese">ພາສາຍີ່ປຸ່ນ</string>
 </resources>

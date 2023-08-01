@@ -12,6 +12,7 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.PlaylistAdapter
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.listener.OnClickPlaylistListener
+import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseApplication
 import com.downloadmp3player.musicdownloader.freemusicdownloader.eventbus.EventDeleteSong
 import com.downloadmp3player.musicdownloader.freemusicdownloader.eventbus.EventPutLoveSong
 import com.downloadmp3player.musicdownloader.freemusicdownloader.eventbus.EventRefreshDataPlaylist
@@ -74,6 +76,8 @@ object DialogSelectSong {
             showDialogEditText(context, listSong, listener)
         }
 
+        val imgTheme = dialogAddToPlaylist.findViewById<ImageView>(R.id.imgTheme)
+        imgTheme.setImageBitmap(BaseApplication.getAppInstance().bmImg)
         val rv_favorite = dialogAddToPlaylist.findViewById<View>(R.id.rv_favorite) as RecyclerView
         val favoriteAdapter = PlaylistAdapter(context, true, object : OnClickPlaylistListener {
             override fun onPlaylistClick(favorite: PlaylistITem, i: Int) {
@@ -87,19 +91,26 @@ object DialogSelectSong {
                     PlaylistSongDaoDB(
                         sqliteHelper
                     )
-                if(listSong.size>1){
+                if (listSong.size > 1) {
                     for (i in listSong) {
                         songListDao.insertToLocalPlaylist(i)
                     }
                     listener.onAddToPlaylistDone()
-                    Toast.makeText(context, context.getString(R.string.txt_done), Toast.LENGTH_LONG).show()
-                }else{
+                    Toast.makeText(context, context.getString(R.string.txt_done), Toast.LENGTH_LONG)
+                        .show()
+                } else {
                     if (songListDao.insertToLocalPlaylist(listSong[0]) != (-1).toLong()) {
-                        Toast.makeText(context, context.getString(R.string.txt_done), Toast.LENGTH_LONG)
+                        Toast.makeText(
+                            context,
+                            context.getString(R.string.txt_done),
+                            Toast.LENGTH_LONG
+                        )
                             .show()
                     } else {
                         Toast.makeText(
-                            context, context.getString(R.string.song_exits_playlist), Toast.LENGTH_LONG
+                            context,
+                            context.getString(R.string.song_exits_playlist),
+                            Toast.LENGTH_LONG
                         ).show()
                     }
                 }
@@ -206,7 +217,8 @@ object DialogSelectSong {
                     deleteFile(context, item)
                 }
                 dialogDeleteSong.dismiss()
-                Toast.makeText(context, context.getString(R.string.txt_done), Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, context.getString(R.string.txt_done), Toast.LENGTH_SHORT)
+                    .show()
                 listener.onDeleteSuccess()
             }
         }

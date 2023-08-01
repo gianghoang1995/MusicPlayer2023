@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Yksityiskohta</string>
   <string name="no_playlist_play">Soittolistaa ei toisteta</string>
@@ -194,7 +196,7 @@
   <string name="autoplay_call_content">Jos tämä on käytössä, kappaleen toisto jatkuu puhelun päätyttyä</string>
   <string name="play_on_lockscreen">Pelaa lukitusnäytöllä</string>
   <string name="play_on_lockscreen_content">Mahdollistaa soittimen näyttämisen lukitusnäytön ulkopuolella</string>
-  <string name="other">Muu</string>
+  <string name="other">Muut</string>
   <string name="play_all">Pelaa kaikki</string>
   <string name="custom">Mukautettu</string>
   <string name="txt_default">Oletus</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Haluatko peruuttaa teeman?</string>
   <string name="waiting">Odotetaan…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Kieli</string>
+  <string name="apply">Käytä</string>
+  <string name="use_device_language">Puhelimen kieli</string>
+  <string name="english">Englanti</string>
+  <string name="vietnamese">Vietnam</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Espanja</string>
+  <string name="french">Ranskan kieli</string>
+  <string name="arabic">Arabialainen</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Venäjän kieli</string>
+  <string name="italian">Italialainen</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Saksan kieli</string>
+  <string name="korean">Korealainen</string>
+  <string name="default_1">Oletus</string>
+  <string name="japanese">Japanilainen</string>
 </resources>

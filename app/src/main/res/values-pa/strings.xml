@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">ਵੇਰਵੇ</string>
   <string name="no_playlist_play">ਕੋਈ ਪਲੇਲਿਸਟ ਨਹੀਂ ਚਲਾਈ ਜਾ ਰਹੀ ਹੈ</string>
@@ -66,7 +68,7 @@
   <string name="need_permission">ਤੁਹਾਨੂੰ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ</string>
   <string name="per_1">ਸੰਗੀਤ ਨੂੰ ਬਾਹਰ ਕੱਢਣ ਲਈ ਮੀਡੀਆ ਫਾਈਲ ਤੱਕ ਪਹੁੰਚ ਕਰੋ</string>
   <string name="per_manage_all_file">ਗੀਤਾਂ ਅਤੇ ਬੋਲਾਂ ਨੂੰ ਜੋੜਨ, ਸੰਪਾਦਿਤ ਕਰਨ, ਮਿਟਾਉਣ ਲਈ ਸਾਰੀਆਂ ਫਾਈਲਾਂ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ</string>
-  <string name="no_song_play">ਇਸ ਵੇਲੇ ਕੋਈ ਗੀਤ ਨਹੀਂ ਚੱਲ ਰਿਹਾ ਹੈ!</string>
+  <string name="no_song_play">ਇਸ ਵੇਲੇ ਕੋਈ ਗੀਤ ਨਹੀਂ ਚੱਲ ਰਹੇ ਹਨ!</string>
   <string name="create_new">ਨਵਾਂ ਬਣਾਓ</string>
   <string name="enter_name">ਇੱਕ ਨਾਮ ਦਰਜ ਕਰੋ</string>
   <string name="create">ਬਣਾਓ</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">ਕੀ ਤੁਸੀਂ ਥੀਮ ਨੂੰ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
   <string name="waiting">ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…</string>
   <string name="car_play">ਕਾਰਪਲੇ</string>
+  <string name="language">ਭਾਸ਼ਾ</string>
+  <string name="apply">ਲਾਗੂ ਕਰੋ</string>
+  <string name="use_device_language">ਫ਼ੋਨ ਭਾਸ਼ਾ</string>
+  <string name="english">ਅੰਗਰੇਜ਼ੀ</string>
+  <string name="vietnamese">ਵੀਅਤਨਾਮੀ</string>
+  <string name="hindi">ਹਿੰਦੀ</string>
+  <string name="spanish">ਸਪੇਨੀ</string>
+  <string name="french">ਫ੍ਰੈਂਚ</string>
+  <string name="arabic">ਅਰਬੀ</string>
+  <string name="bengali">ਬੰਗਾਲੀ</string>
+  <string name="russian">ਰੂਸੀ</string>
+  <string name="italian">ਇਤਾਲਵੀ</string>
+  <string name="indonesia">ਇੰਡੋਨੇਸ਼ੀਆ</string>
+  <string name="german">ਜਰਮਨ</string>
+  <string name="korean">ਕੋਰੀਅਨ</string>
+  <string name="default_1">ਡਿਫਾਲਟ</string>
+  <string name="japanese">ਜਾਪਾਨੀ</string>
 </resources>

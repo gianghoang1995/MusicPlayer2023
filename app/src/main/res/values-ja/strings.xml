@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">詳細</string>
   <string name="no_playlist_play">プレイリストが再生されていません</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">テーマをキャンセルしますか?</string>
   <string name="waiting">待っている …</string>
   <string name="car_play">カープレイ</string>
+  <string name="language">言語</string>
+  <string name="apply">申し込み</string>
+  <string name="use_device_language">電話の言語</string>
+  <string name="english">英語</string>
+  <string name="vietnamese">ベトナム語</string>
+  <string name="hindi">ヒンディー語</string>
+  <string name="spanish">スペイン語</string>
+  <string name="french">フランス語</string>
+  <string name="arabic">アラビア語</string>
+  <string name="bengali">ベンガル語</string>
+  <string name="russian">ロシア</string>
+  <string name="italian">イタリアの</string>
+  <string name="indonesia">インドネシア</string>
+  <string name="german">ドイツ人</string>
+  <string name="korean">韓国語</string>
+  <string name="default_1">デフォルト</string>
+  <string name="japanese">日本</string>
 </resources>

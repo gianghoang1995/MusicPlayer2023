@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Iinkcukacha</string>
   <string name="no_playlist_play">Akukho ludwe lokudlala ludlalwayo</string>
@@ -221,7 +223,7 @@
   <string name="slide_to_unlock">Isilayidi ukuze uvule</string>
   <string name="backgroud_lockscreen">Ukutshixa ngasemva isikrini</string>
   <string name="time_format">Ubume bexesha</string>
-  <string name="tittle_off_lockscreen">Cima umdlalo wokutshixa isikrini</string>
+  <string name="tittle_off_lockscreen">Cima ukudlala kwiscreen sokutshixa</string>
   <string name="change_font_size">Guqula ubungakanani befonti</string>
   <string name="large_font">Ifonti enkulu</string>
   <string name="send_feedback">Ukuzisa impendulo</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Ngaba uyafuna ukurhoxisa umxholo?</string>
   <string name="waiting">Ilindile...</string>
   <string name="car_play">I-Carplay</string>
+  <string name="language">Ulwimi</string>
+  <string name="apply">Faka isicelo</string>
+  <string name="use_device_language">Ulwimi lwefowuni</string>
+  <string name="english">IsiNgesi</string>
+  <string name="vietnamese">IsiVietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanish</string>
+  <string name="french">IsiFrentshi</string>
+  <string name="arabic">IsiArabhu</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">IsiRashiya</string>
+  <string name="italian">IsiTaliyani</string>
+  <string name="indonesia">Indoneshiya</string>
+  <string name="german">IsiJamani</string>
+  <string name="korean">Korean</string>
+  <string name="default_1">Ukuhlala kukho</string>
+  <string name="japanese">IsiJaphani</string>
 </resources>

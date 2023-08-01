@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Мәлімет</string>
   <string name="no_playlist_play">Ойнату тізімі ойнатылмайды</string>
@@ -20,7 +22,7 @@
   <string name="minute">Минут</string>
   <string name="second">Секунд</string>
   <string name="subject_share">Қолданбаны бөлісіңіз</string>
-  <string name="content_share">Маған бұл қолданба өте ұнайды, жүктеп алыңыз және пайдаланыңыз</string>
+  <string name="content_share">Маған бұл қолданба өте ұнайды, оны жүктеп алыңыз және пайдаланыңыз</string>
   <string name="unknow">Белгісіз</string>
   <string name="internal">Ішкі жады</string>
   <string name="external">Сыртқы жады</string>
@@ -36,7 +38,7 @@
   <string name="title_playlist">Ойнату тізімдері</string>
   <string name="new_preset_duplicate">Алдын ала орнатылған</string>
   <string name="save_preset_success">Алдын ала орнату сәтті сақталды!</string>
-  <string name="cant_update">Алдын ала орнатуды жаңарту мүмкін емес, әрекетті қайталаңыз!</string>
+  <string name="cant_update">Алдын ала орнатуды жаңарту мүмкін емес, қайталап көріңіз!</string>
   <string name="preset_update_successfully">Алдын ала орнату сәтті жаңартылды!</string>
   <string name="empty_name">Бос алдын ала орнатылған атау!</string>
   <string name="error">Қате</string>
@@ -49,7 +51,7 @@
   <string name="share">Бөлісу</string>
   <string name="more_app">Қосымша қолданбалар</string>
   <string name="ask_save_lyric">Ән мәтінін сақтағыңыз келе ме?</string>
-  <string name="save_lyric_done">Ән мәтіні сақталды!</string>
+  <string name="save_lyric_done">Әннің мәтіні сақталды!</string>
   <string name="invalid_lyric">Дұрыс мәтінді таба алмайсыз ба?</string>
   <string name="find_on_gg">Google-дан іздеп, ауыстырыңыз.</string>
   <string name="play">Ойнау</string>
@@ -124,7 +126,7 @@
   <string name="edtior_ends">Соңы</string>
   <string name="ringtone_cutter">Қоңырау үнін кескіш</string>
   <string name="cant_cut_this_song">Ағымдағы жолды кесу мүмкін емес</string>
-  <string name="error_cutter_msg">Файл атауында арнайы таңбалар бар, файл атын өзгертіп, әрекетті қайталаңыз.</string>
+  <string name="error_cutter_msg">Файл атауында арнайы таңбалар бар, файлдың атын өзгертіп, әрекетті қайталаңыз.</string>
   <string name="change_file_name">Файлдың атын өзгертіп көріңіз</string>
   <string name="sort_duration">Ұзақтығы</string>
   <string name="skip_song_30s">30 секундтан аз әндерді өткізіп жіберіңіз</string>
@@ -159,7 +161,7 @@
   <string name="no_song_selected">Ешқандай ән таңдалған жоқ!</string>
   <string name="file_small">Файл тым кішкентай</string>
   <string name="title_rate">Біз сізге ең жақсы тегін қолданбаны ұсыну үшін көп жұмыс жасаймыз. Сіздің 5 жұлдызды рейтингіңіз ақшадан да қымбат.</string>
-  <string name="msg_rate">Бізді жігерлендіру үшін Google Play сайтында жақсы пікір жазуға уақыт бөліңіз!</string>
+  <string name="msg_rate">Бізді ынталандыру үшін Google Play сайтында жақсы пікір жазуға біраз уақыт бөліңіз!</string>
   <string name="text_rate">Бізге 5 жұлдызды бағалаңыз!</string>
   <string name="text_later">Кейінірек</string>
   <string name="title_header_rate">Бізге баға беріңіз</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Тақырыптан бас тартқыңыз келе ме?</string>
   <string name="waiting">Күтуде…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Тіл</string>
+  <string name="apply">Қолдану</string>
+  <string name="use_device_language">Телефон тілі</string>
+  <string name="english">Ағылшын</string>
+  <string name="vietnamese">Вьетнамдық</string>
+  <string name="hindi">Хинди</string>
+  <string name="spanish">Испан</string>
+  <string name="french">Француз</string>
+  <string name="arabic">Араб</string>
+  <string name="bengali">Бенгал</string>
+  <string name="russian">Орыс</string>
+  <string name="italian">Итальян</string>
+  <string name="indonesia">Индонезия</string>
+  <string name="german">Неміс</string>
+  <string name="korean">Корей</string>
+  <string name="default_1">Әдепкі</string>
+  <string name="japanese">Жапон</string>
 </resources>

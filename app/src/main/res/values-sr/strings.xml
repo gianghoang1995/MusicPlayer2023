@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Детаљ</string>
   <string name="no_playlist_play">Ниједна листа за репродукцију се не репродукује</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Да ли желите да откажете тему?</string>
   <string name="waiting">Чека се…</string>
   <string name="car_play">Царплаи</string>
+  <string name="language">Језик</string>
+  <string name="apply">Применити</string>
+  <string name="use_device_language">Језик телефона</string>
+  <string name="english">Енглески језик</string>
+  <string name="vietnamese">Вијетнамски</string>
+  <string name="hindi">Хинди</string>
+  <string name="spanish">Шпански</string>
+  <string name="french">Француски</string>
+  <string name="arabic">Арапски</string>
+  <string name="bengali">Бенгалски</string>
+  <string name="russian">Руски</string>
+  <string name="italian">Италијан</string>
+  <string name="indonesia">Индонесиа</string>
+  <string name="german">Немачки</string>
+  <string name="korean">Корејски</string>
+  <string name="default_1">Уобичајено</string>
+  <string name="japanese">Јапански</string>
 </resources>

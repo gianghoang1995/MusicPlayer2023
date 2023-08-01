@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">Nisuna playlist hè ghjucata</string>
@@ -155,7 +157,7 @@
   <string name="added_to_favorite">Aghjunghjite canzoni à i preferiti</string>
   <string name="remove_song_from_favorite">Eliminatu a canzone da i preferiti</string>
   <string name="not_found_song">Ùn aghju trovu nisuna canzone</string>
-  <string name="no_song_to_play">Ùn ci hè micca canzone per ghjucà !</string>
+  <string name="no_song_to_play">Ùn ci hè micca canzoni per ghjucà !</string>
   <string name="no_song_selected">Nisuna canzone hè stata scelta!</string>
   <string name="file_small">U schedariu hè troppu chjucu</string>
   <string name="title_rate">Travagliemu duramente per furnisce una megliu app gratuita. A vostra valutazione di 5 stelle vale più di soldi.</string>
@@ -234,7 +236,7 @@
   <string name="shake_twice">Agite duie volte</string>
   <string name="please_check_internet_connection">Per piacè verificate a vostra cunnessione Internet!</string>
   <string name="error_please_try_again">Qualcosa hè andatu sbagliatu, per piacè pruvate di novu</string>
-  <string name="you_in_online_mode">Senza successu! Sò in modalità di riproduzione di musica in linea.</string>
+  <string name="you_in_online_mode">Un successu! Sò in modalità di riproduzione di musica in linea.</string>
   <string name="this_action_can_contain_ads">Questa azione pò cuntene publicità.</string>
   <string name="message_off_lockscreen">Pudete attivà sta funzione da: Settings -> Lock screen</string>
   <string name="cover_album">Album di copertina</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Vulete annullà u tema?</string>
   <string name="waiting">Aspittendu…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Lingua</string>
+  <string name="apply">Applica</string>
+  <string name="use_device_language">Lingua di u telefonu</string>
+  <string name="english">Inglese</string>
+  <string name="vietnamese">Vietnamita</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spagnolu</string>
+  <string name="french">Francese</string>
+  <string name="arabic">Arabu</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Russu</string>
+  <string name="italian">Talianu</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Tedescu</string>
+  <string name="korean">Coreanu</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Ghjappunese</string>
 </resources>

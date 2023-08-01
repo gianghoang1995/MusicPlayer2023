@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Ukhama</string>
   <string name="no_playlist_play">Janiw mä lista de reproducción ukax anatatäkiti</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">¿Uka tema cancelañ munasmati?</string>
   <string name="waiting">Suyaskiwa …</string>
   <string name="car_play">Carplay ukax mä jach’a uñacht’äwiwa</string>
+  <string name="language">Aru</string>
+  <string name="apply">Apnaqaña</string>
+  <string name="use_device_language">Telefono tuqit parlir aru</string>
+  <string name="english">Inklisa</string>
+  <string name="vietnamese">Vietnam markankir jaqinakawa</string>
+  <string name="hindi">Hindi arumpixa</string>
+  <string name="spanish">Ispañula</string>
+  <string name="french">Francés aru</string>
+  <string name="arabic">Árabe aru</string>
+  <string name="bengali">Bengali aru uñt’ayaña</string>
+  <string name="russian">Ruso aru uñt’ayaña</string>
+  <string name="italian">Italiano aru</string>
+  <string name="indonesia">Indonesia markanxa</string>
+  <string name="german">Alemán aru</string>
+  <string name="korean">Corea markankir jaqinakawa</string>
+  <string name="default_1">Jan walitxa</string>
+  <string name="japanese">Japonés aru</string>
 </resources>

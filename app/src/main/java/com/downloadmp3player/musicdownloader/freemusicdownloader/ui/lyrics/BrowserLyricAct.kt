@@ -39,10 +39,6 @@ class BrowserLyricAct : BaseActivity<ActivityBrowserLyricBinding>(), OnBinderSer
     }
 
     override fun ActivityBrowserLyricBinding.initView() {
-        changeStatusbarColor(resources.getColor(R.color.colorPrimary))
-        window.requestFeature(Window.FEATURE_PROGRESS)
-        setContentView(R.layout.activity_browser_lyric)
-        window.setFeatureInt(Window.FEATURE_PROGRESS, Window.PROGRESS_VISIBILITY_ON)
         init()
     }
 

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detalye</string>
   <string name="no_playlist_play">Walay playlist nga gipatokar</string>
@@ -35,7 +37,7 @@
   <string name="title_folders">Mga folder</string>
   <string name="title_playlist">Mga playlist</string>
   <string name="new_preset_duplicate">Anaa na ang preset</string>
-  <string name="save_preset_success">Malamposong na-save ang preset!</string>
+  <string name="save_preset_success">Malampuson nga na-save ang preset!</string>
   <string name="cant_update">Dili ma-update ang preset, palihug pagsulay pag-usab!</string>
   <string name="preset_update_successfully">Malamposong gi-update ang preset!</string>
   <string name="empty_name">Walay sulod nga preset nga ngalan!</string>
@@ -186,10 +188,10 @@
   <string name="cut_new_ringtone">Guntinga ang bag-ong ringtone</string>
   <string name="previous_ringtones">Nauna nga mga ringtone</string>
   <string name="preference">Pagpalabi</string>
-  <string name="shake_to_next">Pag-uyog sa imong telepono aron usbon ang musika</string>
+  <string name="shake_to_next">Pag-uyog sa imong telepono aron mausab ang musika</string>
   <string name="shake_to_play_next">Pag-uyog aron ipatugtog ang sunod nga kanta</string>
   <string name="pause_when_unplug">Paghunong sa dihang i-unplug ang headphone</string>
-  <string name="pause_headphone_content">Ihunong ang pag-playback sa musika kung tangtangon ang mga headphone</string>
+  <string name="pause_headphone_content">Ihunong ang pagpatugtog sa musika kung tangtangon ang mga headphone</string>
   <string name="autoplay_when_call">Autoplay pagkahuman sa tawag</string>
   <string name="autoplay_call_content">Kung mahimo ang kanta magpadayon sa pagdula pagkahuman sa tawag</string>
   <string name="play_on_lockscreen">Pagdula sa lock screen</string>
@@ -221,7 +223,7 @@
   <string name="slide_to_unlock">Pag-slide aron maablihan</string>
   <string name="backgroud_lockscreen">Lock screen sa background</string>
   <string name="time_format">Format sa oras</string>
-  <string name="tittle_off_lockscreen">I-off ang pagdula sa lock screen</string>
+  <string name="tittle_off_lockscreen">I-off ang play sa lock screen</string>
   <string name="change_font_size">Usba ang gidak-on sa font</string>
   <string name="large_font">Dako nga font</string>
   <string name="send_feedback">Ipadala ang feedback</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Gusto ba nimong kanselahon ang tema?</string>
   <string name="waiting">Naghulat…</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Pinulongan</string>
+  <string name="apply">Pag-aplay</string>
+  <string name="use_device_language">Pinulongan sa telepono</string>
+  <string name="english">English</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Kinatsila</string>
+  <string name="french">Pransiya</string>
+  <string name="arabic">Arabiko</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Ruso</string>
+  <string name="italian">Italyano</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">Aleman</string>
+  <string name="korean">Koreano</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Hapon</string>
 </resources>

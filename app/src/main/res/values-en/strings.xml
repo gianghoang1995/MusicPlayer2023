@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--Automatically translated by Globalization Translator (https://github.com/wilinz/globalization-translator)-->
 <resources>
   <string name="detail">Detail</string>
   <string name="no_playlist_play">No playlist is being played</string>
@@ -250,4 +252,21 @@
   <string name="ask_cancel">Do you want to cancel the theme?</string>
   <string name="waiting">Waiting …</string>
   <string name="car_play">Carplay</string>
+  <string name="language">Language</string>
+  <string name="apply">Apply</string>
+  <string name="use_device_language">Phone language</string>
+  <string name="english">English</string>
+  <string name="vietnamese">Vietnamese</string>
+  <string name="hindi">Hindi</string>
+  <string name="spanish">Spanish</string>
+  <string name="french">French</string>
+  <string name="arabic">Arabic</string>
+  <string name="bengali">Bengali</string>
+  <string name="russian">Russian</string>
+  <string name="italian">Italian</string>
+  <string name="indonesia">Indonesia</string>
+  <string name="german">German</string>
+  <string name="korean">Korean</string>
+  <string name="default_1">Default</string>
+  <string name="japanese">Japanese</string>
 </resources>
