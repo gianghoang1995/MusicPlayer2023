@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
     defaultConfig {
         applicationId "com.downloadmp3player.musicdownloader.freemusicdownloader"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName 'v1.0.1'
         multiDexEnabled true
@@ -32,15 +32,10 @@ android {
     }
 
     buildTypes {
-
         release {
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "URL_CONFIG_APP", '"https://raw.githubusercontent.com/ladygaga121/ConfigApp/main/musicdownloader2023v1.json"'
-        }
-        debug {
-            buildConfigField "String", "URL_CONFIG_APP", '"https://raw.githubusercontent.com/ladygaga121/ConfigApp/main/musicdownloader2023v1.json"'
         }
     }
 
@@ -189,6 +184,4 @@ dependencies {
     implementation project(':jaudiotagger')
     implementation project(':blurry')
     implementation project(':circularSeekBar')
-    implementation project(':downloadfile')
-    implementation project(':AppvolinAds')
 }

@@ -42,7 +42,6 @@
             app:layout_constraintWidth_percent="0.7"
             app:srcCompat="@drawable/ic_song_transparent" />
 
-
         <ImageButton
             android:id="@+id/btnChangeThumb"
             android:layout_width="30dp"
@@ -50,38 +49,9 @@
             android:layout_margin="4dp"
             android:background="@drawable/bg_border_camera"
             android:elevation="2dp"
-            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@id/imgAvt"
             app:layout_constraintEnd_toEndOf="@id/imgAvt"
             app:srcCompat="@drawable/ic_camera" />
-
-        <FrameLayout
-            android:id="@+id/frameAds"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed">
-
-            <com.utils.adsloader.NativeAdGiftView
-                android:id="@+id/nativeAdsView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:elevation="@dimen/dp_8" />
-
-            <RelativeLayout
-                android:id="@+id/appLovinNative"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:elevation="@dimen/dp_8" />
-        </FrameLayout>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

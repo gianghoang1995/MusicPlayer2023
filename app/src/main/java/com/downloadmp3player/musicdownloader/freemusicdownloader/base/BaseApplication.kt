@@ -27,8 +27,6 @@ import com.applovin.sdk.AppLovinMediationProvider
 import com.applovin.sdk.AppLovinSdk
 import com.downloadmp3player.musicdownloader.freemusicdownloader.service.ObverseDownloadServiceUtils
 import com.google.android.gms.ads.*
-import com.liulishuo.filedownloader.FileDownloader
-import com.liulishuo.filedownloader.connection.FileDownloadUrlConnection
 import com.utils.adsloader.AppOpenAdManager
 import com.utils.adsloader.InterstitialPreloadAdManager
 import com.utils.adsloader.InterstitialSingleReqAdManager
@@ -108,13 +106,6 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
         favoriteDao.insertFavorite(FavoriteSqliteHelperDB.TABLE_MOST_PLAYING)
         addDefaultEqualizer(this, equalizerDao)
         refreshBitmapBackground()
-
-        FileDownloader.setupOnApplicationOnCreate(this).connectionCreator(
-            FileDownloadUrlConnection.Creator(
-                FileDownloadUrlConnection.Configuration().connectTimeout(15000)
-                    .readTimeout(15000)
-            )
-        ).commit()
     }
 
     private fun initAds() {
@@ -232,15 +223,19 @@ class BaseApplication : Application(), LifecycleObserver, Application.ActivityLi
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun onAppResume() {
-        if (currentActivity !is PlashScreenActivity) currentActivity?.let {
-            val dialogLoadingAds = DialogLoadingOpenAds(currentActivity!!)
-            dialogLoadingAds.showDialogLoading()
-            appOpenAdManager?.loadAd(onAdLoader = {
-                dialogLoadingAds.dismissDialog()
-                appOpenAdManager?.showAdIfAvailable(it)
-            }, onAdLoadFail = {
-                dialogLoadingAds.dismissDialog()
-            })
+        if (currentActivity !is PlashScreenActivity
+            && currentActivity !is AdActivity
+        ) {
+            currentActivity?.let {
+                val dialogLoadingAds = DialogLoadingOpenAds(currentActivity!!)
+                dialogLoadingAds.showDialogLoading()
+                appOpenAdManager?.loadAd(onAdLoader = {
+                    dialogLoadingAds.dismissDialog()
+                    appOpenAdManager?.showAdIfAvailable(it)
+                }, onAdLoadFail = {
+                    dialogLoadingAds.dismissDialog()
+                })
+            }
         }
     }
 

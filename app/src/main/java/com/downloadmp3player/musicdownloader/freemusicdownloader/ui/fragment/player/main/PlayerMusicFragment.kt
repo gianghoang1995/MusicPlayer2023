@@ -9,12 +9,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isGone
-import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
-import com.aliendroid.alienads.MaxIntertitial
-import com.aliendroid.alienads.MaxNativeAds
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
@@ -39,7 +35,6 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.model.MusicItem
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.equalizer.EqualizerActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.playing.NowPlayingActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.playing.PlayerViewModel
-import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.playing.download.DownloadingFragmentDialog
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.dialog.DialogSelectSong
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.dialog.timer.DialogTimePicker
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.dialog.timer.DialogTimePickerCallback
@@ -88,7 +83,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
     }
     var stopMusicTimer: CountDownTimer? = null
     var millisUntilFinished: Long = 0
-    private var mNativeAdManager: NativeAdsManager? = null
 
     override fun bindingProvider(
         inflater: LayoutInflater,
@@ -114,7 +108,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
 
     fun init() {
         setBindListener(this)
-        initNativeAds()
         songListSqliteHelper = PlaylistSongSqLiteHelperDB(
             requireContext(), FavoriteSqliteHelperDB.DEFAULT_FAVORITE
         )
@@ -188,10 +181,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
         }
     }
 
-    private fun visibleView() {
-        binding.btnAddToPlaylist.isVisible = true
-    }
-
     private fun cancelTimer() {
         if (stopMusicTimer != null) {
             stopMusicTimer?.cancel()
@@ -249,17 +238,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
     }
 
     fun onClick() {
-        /*     btnHideAds.setOnClickListener {
-                 if (nativeAdsView.visibility == View.VISIBLE) {
-                     YoYo.with(Techniques.FadeIn).duration(300).repeat(0).onStart {}
-                         .onEnd { animator: Animator? ->
-                             btnHideAds.visibility = View.GONE
-                             YoYo.with(Techniques.SlideOutRight).duration(1000).repeat(0)
-                                 .playOn(nativeAdsView)
-                         }.playOn(imgAvt)
-                 }
-             }*/
-
         binding.btnChangeThumb.setOnClickListener {
             dialogLoadingAds?.showDialogLoading()
             BaseApplication.getAppInstance().adsFullInApp?.showAds(requireActivity(),
@@ -268,12 +246,8 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
                 }, onAdClose = {
                     pickFromGallery()
                 }, onAdLoadFail = {
-                    MaxIntertitial.ShowIntertitialApplovinMax(
-                        requireActivity(), getString(R.string.appvolin_full)
-                    ) {
-                        dialogLoadingAds?.dismissDialog()
-                        pickFromGallery()
-                    }
+                    dialogLoadingAds?.dismissDialog()
+                    pickFromGallery()
                 })
         }
 
@@ -331,12 +305,8 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
                 }, onAdClose = {
                     startActivity(Intent(requireContext(), EqualizerActivity::class.java))
                 }, onAdLoadFail = {
-                    MaxIntertitial.ShowIntertitialApplovinMax(
-                        requireActivity(), getString(R.string.appvolin_full)
-                    ) {
-                        dialogLoadingAds?.dismissDialog()
-                        startActivity(Intent(requireContext(), EqualizerActivity::class.java))
-                    }
+                    dialogLoadingAds?.dismissDialog()
+                    startActivity(Intent(requireContext(), EqualizerActivity::class.java))
                 })
         }
 
@@ -389,28 +359,8 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
         }
 
         binding.btnNowPlaying.setOnClickListener {
-            dialogLoadingAds?.showDialogLoading()
-            BaseApplication.getAppInstance().adsFullNowPlaying?.showAds(requireActivity(),
-                onLoadAdSuccess = {
-                    dialogLoadingAds?.dismissDialog()
-                }, onAdClose = {
-                    startActivity(Intent(requireActivity(), NowPlayingActivity::class.java))
-                }, onAdLoadFail = {
-                    MaxIntertitial.ShowIntertitialApplovinMax(
-                        requireActivity(), getString(R.string.appvolin_full)
-                    ) {
-                        dialogLoadingAds?.dismissDialog()
-                        startActivity(Intent(requireActivity(), NowPlayingActivity::class.java))
-                    }
-                })
+            startActivity(Intent(requireActivity(), NowPlayingActivity::class.java))
         }
-    }
-
-    private fun actionStartDownload() {
-        val itemOnline = musicPlayerService?.getCurrentOnline()
-        itemOnline?.downloadURL = musicPlayerService?.urlPlayer
-        val dialogDownload = DownloadingFragmentDialog(itemOnline)
-        dialogDownload.show(parentFragmentManager, "download")
     }
 
     private fun updateStateLoopMode() {
@@ -440,32 +390,6 @@ class PlayerMusicFragment : BaseFragment<FragmentPlayerOnlineBinding>(), OnBinde
                 intent, getString(R.string.label_select_picture)
             ), SELECT_PICTURE
         )
-    }
-
-    private fun initNativeAds() {
-        mNativeAdManager = NativeAdsManager(
-            requireActivity(),
-            getString(R.string.native_ads_01),
-            getString(R.string.native_ads_02)
-        )
-        mNativeAdManager?.loadAds(onLoadSuccess = {
-            try {
-                binding.nativeAdsView.showShimmer(false)
-                YoYo.with(Techniques.FadeOut).duration(750).repeat(0).playOn(binding.imgAvt)
-                binding.nativeAdsView.setNativeAd(it)
-            } catch (e: java.lang.Exception) {
-            }
-        }, onLoadFail = {
-            try {
-                MaxNativeAds.MediumNativeMax(
-                    requireContext(),
-                    binding.appLovinNative,
-                    getString(R.string.appvolin_native)
-                )
-                binding.nativeAdsView.hideAdsAndShimmer()
-            } catch (e: java.lang.Exception) {
-            }
-        })
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

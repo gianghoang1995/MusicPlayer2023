@@ -1,10 +1,13 @@
 package com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.permission
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Build
 import android.view.LayoutInflater
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.PagerAdapter
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.databinding.ActivityPermissionBinding
@@ -28,17 +31,32 @@ class PermissionActivity : BaseActivity<ActivityPermissionBinding>() {
 
     private fun checkPermission() {
         adapter = PagerAdapter(supportFragmentManager)
-        val grant = PackageManager.PERMISSION_GRANTED
-        val permissionCheck1 = ActivityCompat.checkSelfPermission(
-            this, Manifest.permission.WRITE_EXTERNAL_STORAGE
-        )
-        if (permissionCheck1 != grant) {
-            adapter?.addFragment(FrgPermissionMedia(), "")
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (!isGrantPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                && !isGrantPermission(this, Manifest.permission.READ_MEDIA_IMAGES)
+                && !isGrantPermission(this, Manifest.permission.READ_MEDIA_VIDEO)
+            ) {
+                adapter?.addFragment(FrgPermissionMedia(), "")
+            }
+        } else {
+            if (!isGrantPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                adapter?.addFragment(FrgPermissionMedia(), "")
+            }
         }
 
         binding.viewPager.adapter = adapter
         binding.viewPager.offscreenPageLimit = adapter!!.count - 1
         binding.viewPager.setSwipeEnable(false)
+    }
+
+    private fun isGrantPermission(context: Context, permission: String): Boolean {
+        if (ContextCompat.checkSelfPermission(
+                context, permission
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            return true
+        }
+        return false
     }
 
     private fun postActionFinish() {

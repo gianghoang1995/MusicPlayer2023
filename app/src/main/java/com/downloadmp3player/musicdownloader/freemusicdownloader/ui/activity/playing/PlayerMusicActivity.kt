@@ -131,25 +131,6 @@ class PlayerMusicActivity : BaseActivity<ActivityPlayerBinding>(), OnBinderServi
         onClick()
     }
 
-
-    /* private fun changeStatusPlayer() {
-         if (isPlaying()) {
-             if (btnPlayPause != null) btnPlayPause?.setImageResource(R.drawable.ic_pause_big)
-             if (btnPlayPauseLyric != null) btnPlayPauseLyric?.setImageResource(R.drawable.ic_pause_big)
-             if (btnPlayPauseLockScreen != null) btnPlayPauseLockScreen?.setImageResource(R.drawable.ic_pause_lockscreen)
-             rotateThumbVinyl()
-         } else {
-             if (btnPlayPause != null) btnPlayPause?.setImageResource(R.drawable.ic_play_big)
-             if (btnPlayPauseLyric != null) btnPlayPauseLyric?.setImageResource(R.drawable.ic_play_big)
-             if (btnPlayPauseLockScreen != null) btnPlayPauseLockScreen?.setImageResource(R.drawable.ic_play_lockscreen)
-             stopRotate()
-         }
-
-         if (playerView != null) {
-             playerView?.setPlayerState(isPlaying())
-         }
-     }*/
-
 //
 //
 //    @SuppressLint("UseCompatLoadingForDrawables")

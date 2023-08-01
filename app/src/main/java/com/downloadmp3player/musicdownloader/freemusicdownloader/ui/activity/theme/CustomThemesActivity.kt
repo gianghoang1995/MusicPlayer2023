@@ -18,7 +18,6 @@ import android.widget.SeekBar
 import androidx.palette.graphics.Palette
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.airbnb.lottie.LottieAnimationView
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.ThemesAdapter
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseActivity
@@ -154,13 +153,9 @@ class CustomThemesActivity : BaseActivity<ThemesActivityBinding>(),
                                         showMessage(getString(R.string.success))
                                         finish()
                                     }, onAdLoadFail = {
-                                        MaxIntertitial.ShowIntertitialApplovinMax(
-                                            this@CustomThemesActivity, getString(R.string.appvolin_full)
-                                        ) {
-                                            dialogLoadingAds?.dismissDialog()
-                                            showMessage(getString(R.string.success))
-                                            finish()
-                                        }
+                                        dialogLoadingAds?.dismissDialog()
+                                        showMessage(getString(R.string.success))
+                                        finish()
                                     })
                             }
 

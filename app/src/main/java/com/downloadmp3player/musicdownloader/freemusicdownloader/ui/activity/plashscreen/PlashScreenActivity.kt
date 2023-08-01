@@ -11,10 +11,6 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.mai
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.permission.PermissionActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppConstants
 import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.AppUtils
-import com.downloadmp3player.musicdownloader.freemusicdownloader.utils.ConfigApp
-import com.aliendroid.alienads.AliendroidInitialize
-import com.aliendroid.alienads.MaxIntertitial
-import com.downloadmp3player.musicdownloader.freemusicdownloader.BuildConfig
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.databinding.ActivityPlashBinding
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -30,19 +26,10 @@ class PlashScreenActivity : BaseActivity<ActivityPlashBinding>() {
     override fun ActivityPlashBinding.initView() {
         initThemeStyle(binding.supportThemes.imgTheme, binding.supportThemes.blackTspView)
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this@PlashScreenActivity)
-        AliendroidInitialize.SelectAdsApplovinMax(this@PlashScreenActivity, "", "")
-        MaxIntertitial.LoadIntertitialApplovinMax(
-            this@PlashScreenActivity,
-            getString(R.string.appvolin_full)
-        )
-        requestCheckUpdate()
-    }
-
-    private fun requestCheckUpdate() {
         checkFinishPermission()
     }
 
-    fun checkFinishPermission() {
+    private fun checkFinishPermission() {
         if (AppUtils.isGrantPermission(this)) {
             val folderPath = intent.getStringExtra(AppConstants.SHORTCUT_FOLDER_PATH)
             val artistID = intent.getStringExtra(AppConstants.SHORTCUT_ARTIST_ID)

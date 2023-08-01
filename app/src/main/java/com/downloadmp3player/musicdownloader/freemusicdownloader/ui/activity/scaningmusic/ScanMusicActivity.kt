@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseApplication
@@ -90,12 +89,8 @@ class ScanMusicActivity : BaseActivity<ActivityScanMusicBinding>() {
                     }, onAdClose = {
                         finish()
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            finish()
-                        }
+                        dialogLoadingAds?.dismissDialog()
+                        finish()
                     })
             }
         }

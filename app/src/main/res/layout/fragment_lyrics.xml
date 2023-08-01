@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:background="@drawable/theme_01"
     tools:context=".ui.lyrics.LyricsFragment">
 
     <!--Top-->
@@ -149,7 +148,7 @@
             android:layout_marginStart="16dp"
             android:textColor="@color/white"
             android:textSize="14dp"
-            app:layout_constraintBottom_toTopOf="@id/frameTogglePlay"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayPauseLyric"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -159,37 +158,24 @@
             android:layout_marginEnd="16dp"
             android:textColor="@color/white"
             android:textSize="14dp"
-            app:layout_constraintBottom_toTopOf="@id/frameTogglePlay"
+            app:layout_constraintBottom_toTopOf="@id/btnPlayPauseLyric"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <FrameLayout
-            android:id="@+id/frameTogglePlay"
+        <ImageView
+            android:id="@+id/btnPlayPauseLyric"
             android:layout_width="@dimen/dp_70"
             android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_play_big"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent" />
 
-            <ProgressBar
-                android:id="@+id/bufferView"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center"
-                android:visibility="visible"/>
-
-            <ImageView
-                android:id="@+id/btnPlayPauseLyric"
-                android:layout_width="@dimen/dp_70"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:elevation="4dp"
-                android:focusable="true"
-                android:visibility="gone"
-                app:srcCompat="@drawable/ic_play_big"
-                tools:ignore="ContentDescription" />
-        </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!--Searchbox-->

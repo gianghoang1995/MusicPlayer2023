@@ -1,6 +1,7 @@
 package com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.permission.child
 
 import android.Manifest.permission.*
+import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.gun0912.tedpermission.PermissionListener
@@ -34,10 +35,6 @@ class FrgPermissionMedia : BaseFragment<FragmentPermission1Binding>() {
         }
     }
 
-    override fun onResume() {
-        super.onResume()
-    }
-
     fun checkPermission() {
         permissionlistener = object : PermissionListener {
             override fun onPermissionGranted() {
@@ -51,10 +48,26 @@ class FrgPermissionMedia : BaseFragment<FragmentPermission1Binding>() {
 
     fun check() {
         //below android 11======
-        TedPermission.create()
-            .setPermissionListener(permissionlistener)
-            .setDeniedMessage(getString(R.string.need_permission))
-            .setPermissions(WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE)
-            .check()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            TedPermission.create()
+                .setPermissionListener(permissionlistener)
+                .setDeniedMessage(getString(R.string.need_permission))
+                .setPermissions(
+                    WRITE_EXTERNAL_STORAGE,
+                    READ_EXTERNAL_STORAGE,
+                    READ_MEDIA_IMAGES,
+                    READ_MEDIA_VIDEO
+                )
+                .check()
+        } else {
+            TedPermission.create()
+                .setPermissionListener(permissionlistener)
+                .setDeniedMessage(getString(R.string.need_permission))
+                .setPermissions(
+                    WRITE_EXTERNAL_STORAGE,
+                    READ_EXTERNAL_STORAGE
+                )
+                .check()
+        }
     }
 }

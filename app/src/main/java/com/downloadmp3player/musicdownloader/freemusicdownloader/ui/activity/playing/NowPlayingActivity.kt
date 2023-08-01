@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.DragSortRecycler
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.AdapterNowPlaying
@@ -61,12 +60,8 @@ class NowPlayingActivity : BaseActivity<ActivityNowPlayingBinding>(), OnClickSon
                 }, onAdClose = {
                     super.onBackPressed()
                 }, onAdLoadFail = {
-                    MaxIntertitial.ShowIntertitialApplovinMax(
-                        this, getString(R.string.appvolin_full)
-                    ) {
-                        dialogLoadingAds?.dismissDialog()
-                        super.onBackPressed()
-                    }
+                    dialogLoadingAds?.dismissDialog()
+                    super.onBackPressed()
                 })
         }
     }

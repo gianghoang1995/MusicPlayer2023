@@ -13,7 +13,6 @@ import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.AdapterAlbum
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.listener.OnClickAlbumListener
@@ -208,17 +207,13 @@ class AlbumsFragment : BaseFragment<FragmentAlbumsBinding>(), AlbumLoaderListene
                         }, onAdClose = {
                             startActivity(Intent(requireContext(), EqualizerActivity::class.java))
                         }, onAdLoadFail = {
-                            MaxIntertitial.ShowIntertitialApplovinMax(
-                                requireActivity(), getString(R.string.appvolin_full)
-                            ) {
-                                dialogLoadingAds?.dismissDialog()
-                                startActivity(
-                                    Intent(
-                                        requireContext(),
-                                        EqualizerActivity::class.java
-                                    )
+                            dialogLoadingAds?.dismissDialog()
+                            startActivity(
+                                Intent(
+                                    requireContext(),
+                                    EqualizerActivity::class.java
                                 )
-                            }
+                            )
                         })
                 }
 

@@ -11,7 +11,6 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.aliendroid.alienads.MaxIntertitial
 import com.google.android.gms.ads.nativead.NativeAd
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.SongAdapter
@@ -154,14 +153,10 @@ class SongFragment : BaseFragment<FragmentSongBinding>(), SongLoaderListener,
                     list.addAll(listSong)
                     requireContext().let { musicPlayerService?.setListSong(it, list, i) }
                 }, onAdLoadFail = {
-                    MaxIntertitial.ShowIntertitialApplovinMax(
-                        requireActivity(), getString(R.string.appvolin_full)
-                    ) {
-                        dialogLoadingAds?.dismissDialog()
-                        val list = ArrayList<MusicItem>()
-                        list.addAll(listSong)
-                        requireContext().let { musicPlayerService?.setListSong(it, list, i) }
-                    }
+                    dialogLoadingAds?.dismissDialog()
+                    val list = ArrayList<MusicItem>()
+                    list.addAll(listSong)
+                    requireContext().let { musicPlayerService?.setListSong(it, list, i) }
                 })
         }
         mLastClickTime = SystemClock.elapsedRealtime()
@@ -284,16 +279,12 @@ class SongFragment : BaseFragment<FragmentSongBinding>(), SongLoaderListener,
                                 )
                             )
                         }, onAdLoadFail = {
-                            MaxIntertitial.ShowIntertitialApplovinMax(
-                                requireActivity(), getString(R.string.appvolin_full)
-                            ) {
-                                dialogLoadingAds?.dismissDialog()
-                                startActivity(
-                                    Intent(
-                                        requireContext(), EqualizerActivity::class.java
-                                    )
+                            dialogLoadingAds?.dismissDialog()
+                            startActivity(
+                                Intent(
+                                    requireContext(), EqualizerActivity::class.java
                                 )
-                            }
+                            )
                         })
                 }
 

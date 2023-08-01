@@ -22,7 +22,6 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseActivity
 import com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseApplication
@@ -1175,12 +1174,8 @@ class RingdroidActivity : BaseActivity<ActivityEditorBinding>(), MarkerView.Mark
                                 }, onAdClose = {
                                     postFinishSetRingtone(uri1)
                                 }, onAdLoadFail = {
-                                    MaxIntertitial.ShowIntertitialApplovinMax(
-                                        this, getString(R.string.appvolin_full)
-                                    ) {
-                                        dialogLoadingAds?.dismissDialog()
-                                        postFinishSetRingtone(uri1)
-                                    }
+                                    dialogLoadingAds?.dismissDialog()
+                                    postFinishSetRingtone(uri1)
                                 })
                         }
                     }
@@ -1196,12 +1191,8 @@ class RingdroidActivity : BaseActivity<ActivityEditorBinding>(), MarkerView.Mark
                         }, onAdClose = {
                             postFinishSetRingtone(ringtoneUri)
                         }, onAdLoadFail = {
-                            MaxIntertitial.ShowIntertitialApplovinMax(
-                                this, getString(R.string.appvolin_full)
-                            ) {
-                                dialogLoadingAds?.dismissDialog()
-                                postFinishSetRingtone(ringtoneUri)
-                            }
+                            dialogLoadingAds?.dismissDialog()
+                            postFinishSetRingtone(ringtoneUri)
                         })
                 }
             }

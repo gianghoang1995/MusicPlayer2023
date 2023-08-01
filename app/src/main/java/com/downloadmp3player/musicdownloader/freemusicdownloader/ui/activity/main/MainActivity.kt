@@ -11,7 +11,6 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.PagerAdapter
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.SettingAdapter
@@ -95,14 +94,15 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
         super.onStart()
         if (intent.getBooleanExtra(AppConstants.SHOW_ADS, false)) {
             BaseApplication.isShowAdsFull = true
-            BaseApplication.mInstance?.adsFullPlash?.showAds(this,object :InterstitialPreloadAdManager.InterstitialAdListener{
-                override fun onClose() {
+            BaseApplication.mInstance?.adsFullPlash?.showAds(this,
+                object : InterstitialPreloadAdManager.InterstitialAdListener {
+                    override fun onClose() {
 
-                }
+                    }
 
-                override fun onError() {
-                }
-            })
+                    override fun onError() {
+                    }
+                })
         }
         AppUtils.checkPermissionFux(this)
     }
@@ -365,12 +365,8 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     }, onAdClose = {
                         startActivity(Intent(this@MainActivity, SettingActivity::class.java))
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            startActivity(Intent(this@MainActivity, SettingActivity::class.java))
-                        }
+                        dialogLoadingAds?.dismissDialog()
+                        startActivity(Intent(this@MainActivity, SettingActivity::class.java))
                     })
             }
 
@@ -382,12 +378,8 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     }, onAdClose = {
                         startActivity(Intent(this, RingtoneMakerActivity::class.java))
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            startActivity(Intent(this, RingtoneMakerActivity::class.java))
-                        }
+                        dialogLoadingAds?.dismissDialog()
+                        startActivity(Intent(this, RingtoneMakerActivity::class.java))
                     })
             }
 
@@ -405,18 +397,14 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                                 }
                             })
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            DialogTimePicker.showDialogTimePicker(
-                                this@MainActivity,
-                                object : DialogTimePickerCallback {
-                                    override fun onPickerTime(time: String) {
+                        dialogLoadingAds?.dismissDialog()
+                        DialogTimePicker.showDialogTimePicker(
+                            this@MainActivity,
+                            object : DialogTimePickerCallback {
+                                override fun onPickerTime(time: String) {
 
-                                    }
-                                })
-                        }
+                                }
+                            })
                     })
             }
 
@@ -428,12 +416,8 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     }, onAdClose = {
                         startActivity(Intent(this@MainActivity, ScanMusicActivity::class.java))
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            startActivity(Intent(this@MainActivity, ScanMusicActivity::class.java))
-                        }
+                        dialogLoadingAds?.dismissDialog()
+                        startActivity(Intent(this@MainActivity, ScanMusicActivity::class.java))
                     })
             }
 
@@ -445,12 +429,13 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     }, onAdClose = {
                         startActivity(Intent(this@MainActivity, CustomThemesActivity::class.java))
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            startActivity(Intent(this@MainActivity, CustomThemesActivity::class.java))
-                        }
+                        dialogLoadingAds?.dismissDialog()
+                        startActivity(
+                            Intent(
+                                this@MainActivity,
+                                CustomThemesActivity::class.java
+                            )
+                        )
                     })
             }
 
@@ -462,12 +447,8 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     }, onAdClose = {
                         startActivity(Intent(this@MainActivity, EqualizerActivity::class.java))
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            startActivity(Intent(this@MainActivity, EqualizerActivity::class.java))
-                        }
+                        dialogLoadingAds?.dismissDialog()
+                        startActivity(Intent(this@MainActivity, EqualizerActivity::class.java))
                     })
             }
 
@@ -491,12 +472,8 @@ class MainActivity : BaseActivity<LayoutMainActivityBinding>(), OnClickSettingLi
                     }, onAdClose = {
                         startActivity(Intent(this@MainActivity, TutorialActivity::class.java))
                     }, onAdLoadFail = {
-                        MaxIntertitial.ShowIntertitialApplovinMax(
-                            this, getString(R.string.appvolin_full)
-                        ) {
-                            dialogLoadingAds?.dismissDialog()
-                            startActivity(Intent(this@MainActivity, TutorialActivity::class.java))
-                        }
+                        dialogLoadingAds?.dismissDialog()
+                        startActivity(Intent(this@MainActivity, TutorialActivity::class.java))
                     })
             }
 

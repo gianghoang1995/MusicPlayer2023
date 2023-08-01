@@ -18,7 +18,6 @@ import androidx.core.view.get
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.aliendroid.alienads.MaxIntertitial
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.google.android.material.appbar.AppBarLayout
@@ -621,12 +620,8 @@ class ListSongActivity : BaseActivity<ActivityListBinding>(),
                 }, onAdClose = {
                     musicPlayerService?.setListSong(this@ListSongActivity, listSong, i)
                 }, onAdLoadFail = {
-                    MaxIntertitial.ShowIntertitialApplovinMax(
-                        this, getString(R.string.appvolin_full)
-                    ) {
-                        dialogLoadingAds?.dismissDialog()
-                        musicPlayerService?.setListSong(this@ListSongActivity, listSong, i)
-                    }
+                    dialogLoadingAds?.dismissDialog()
+                    musicPlayerService?.setListSong(this@ListSongActivity, listSong, i)
                 })
         }
         mLastClickTime = SystemClock.elapsedRealtime()
@@ -1027,17 +1022,13 @@ class ListSongActivity : BaseActivity<ActivityListBinding>(),
                                 )
                             )
                         }, onAdLoadFail = {
-                            MaxIntertitial.ShowIntertitialApplovinMax(
-                                this, getString(R.string.appvolin_full)
-                            ) {
-                                dialogLoadingAds?.dismissDialog()
-                                startActivity(
-                                    Intent(
-                                        this@ListSongActivity,
-                                        EqualizerActivity::class.java
-                                    )
+                            dialogLoadingAds?.dismissDialog()
+                            startActivity(
+                                Intent(
+                                    this@ListSongActivity,
+                                    EqualizerActivity::class.java
                                 )
-                            }
+                            )
                         })
                 }
 

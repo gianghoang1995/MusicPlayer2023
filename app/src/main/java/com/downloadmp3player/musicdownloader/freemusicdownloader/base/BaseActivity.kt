@@ -40,7 +40,6 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.eventbus.EventChangeNetwork
 import com.downloadmp3player.musicdownloader.freemusicdownloader.eventbus.EventDeleteSong
@@ -123,7 +122,6 @@ abstract class BaseActivity<VB : ViewBinding> : BaseFrameActivity<VB>(),
             )
         singleAdaptiveBannerManager.loadBanner(frameLayout, onAdLoader = {
         }, onAdLoadFail = {
-
         })
     }
 

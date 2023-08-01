@@ -36,6 +36,7 @@ import com.downloadmp3player.musicdownloader.freemusicdownloader.eventbus.EventD
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.ItemMusicOnline
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.MusicItem
 import com.downloadmp3player.musicdownloader.freemusicdownloader.model.PlaylistITem
+import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.permission.child.FrgPermissionMedia
 import com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.plashscreen.PlashScreenActivity
 import com.google.android.gms.ads.AdValue
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -68,18 +69,29 @@ object AppUtils {
     }
 
     fun isGrantPermission(context: Context): Boolean {
-        var isGrantPermissionMedia = true
-        val grant = PackageManager.PERMISSION_GRANTED
-        val permissionCheck1 = ActivityCompat.checkSelfPermission(
-            context, Manifest.permission.WRITE_EXTERNAL_STORAGE
-        )
-        if (permissionCheck1 != grant) {
-            isGrantPermissionMedia = false
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (isGrantPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                && isGrantPermission(context, Manifest.permission.READ_MEDIA_IMAGES)
+                && isGrantPermission(context, Manifest.permission.READ_MEDIA_VIDEO)
+            ) {
+                return true
+            }
+        } else {
+            if (isGrantPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                return true
+            }
         }
-        if (!isGrantPermissionMedia) {
-            return false
+        return false
+    }
+
+    private fun isGrantPermission(context: Context, permission: String): Boolean {
+        if (ContextCompat.checkSelfPermission(
+                context, permission
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            return true
         }
-        return true
+        return false
     }
 
     fun getVideoID(url: String): String {

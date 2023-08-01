@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.aliendroid.alienads.MaxIntertitial
 import com.downloadmp3player.musicdownloader.freemusicdownloader.R
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.PlaylistAdapter
 import com.downloadmp3player.musicdownloader.freemusicdownloader.adapter.listener.OnClickPlaylistListener
@@ -166,14 +165,10 @@ class PlaylistFragment : BaseFragment<FragmentPlaylistBinding>() {
                                 updateDataList()
                                 dialogEditText?.dismiss()
                             }, onAdLoadFail = {
-                                MaxIntertitial.ShowIntertitialApplovinMax(
-                                    requireActivity(), getString(R.string.appvolin_full)
-                                ) {
-                                    dialogLoadingAds?.dismissDialog()
-                                    showMessage(getString(R.string.success))
-                                    updateDataList()
-                                    dialogEditText?.dismiss()
-                                }
+                                dialogLoadingAds?.dismissDialog()
+                                showMessage(getString(R.string.success))
+                                updateDataList()
+                                dialogEditText?.dismiss()
                             })
                     } else {
                         getString(R.string.duplicate_playlist)
@@ -314,12 +309,8 @@ class PlaylistFragment : BaseFragment<FragmentPlaylistBinding>() {
                         }, onAdClose = {
                             startActivity(Intent(requireContext(), EqualizerActivity::class.java))
                         }, onAdLoadFail = {
-                            MaxIntertitial.ShowIntertitialApplovinMax(
-                                requireActivity(), getString(R.string.appvolin_full)
-                            ) {
-                                dialogLoadingAds?.dismissDialog()
-                                startActivity(Intent(requireContext(), EqualizerActivity::class.java))
-                            }
+                            dialogLoadingAds?.dismissDialog()
+                            startActivity(Intent(requireContext(), EqualizerActivity::class.java))
                         })
                 }
                 R.id.menuSort -> {
