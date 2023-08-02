@@ -38,6 +38,11 @@ class NativeAdsManager constructor(
             }
         }
         handler?.postDelayed(runable!!, Constants.TIME_OUT)
+
+        val requestConfiguration =
+            RequestConfiguration.Builder().setTestDeviceIds(Constants.testDevices()).build()
+        MobileAds.setRequestConfiguration(requestConfiguration)
+
         requestAds(idNativeAds01, onLoadSuccess, onLoadFail = {
             requestAds(idNativeAds02, onLoadSuccess, onLoadFail = {
                 runable?.let { handler?.removeCallbacks(it) }

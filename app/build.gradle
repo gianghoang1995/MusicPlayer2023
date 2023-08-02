@@ -8,11 +8,12 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    namespace 'com.musicplayer.mp3player.defaultmusicplayer.equalizer'
+    compileSdk 32
     defaultConfig {
-        applicationId "com.downloadmp3player.musicdownloader.freemusicdownloader"
+        applicationId "com.musicplayer.mp3player.defaultmusicplayer.equalizer"
         minSdk 21
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName 'v1.0.1'
         multiDexEnabled true
@@ -41,39 +42,39 @@ android {
             buildConfigField('String', 'full_plash_02', '"ca-app-pub-3940256099942544/1033173712"')
             buildConfigField('String', 'full_in_app_01', '"ca-app-pub-3940256099942544/1033173712"')
             buildConfigField('String', 'full_in_app_02', '"ca-app-pub-3940256099942544/1033173712"')
-            buildConfigField('String', 'full_menu_01', '"ca-app-pub-3940256099942544/1033173712')
+            buildConfigField('String', 'full_menu_01', '"ca-app-pub-3940256099942544/1033173712"')
             buildConfigField('String', 'full_menu_02', '"ca-app-pub-3940256099942544/1033173712"')
-            buildConfigField('String', 'native_ads_home_01', '"ca-app-pub-3940256099942544/2247696110"')
-            buildConfigField('String', 'native_ads_home_02', '"ca-app-pub-3940256099942544/2247696110"')
-            buildConfigField('String', 'native_ads_01', '"ca-app-pub-3940256099942544/2247696110"')
-            buildConfigField('String', 'native_ads_02', '"ca-app-pub-3940256099942544/2247696110"')
             buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3940256099942544/2247696110"')
             buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3940256099942544/2247696110"')
-            buildConfigField('String', 'full_download_01', '"ca-app-pub-3940256099942544/1033173712"')
-            buildConfigField('String', 'full_download_02', '"ca-app-pub-3940256099942544/1033173712"')
+
+            /*buildConfigField('String', 'app_open_ads', '"ca-app-pub-3943517385835088/5856139635"')
+            buildConfigField('String', 'banner_01', '"ca-app-pub-3943517385835088/9315775017"')
+            buildConfigField('String', 'banner_02', '"ca-app-pub-3943517385835088/8002693342"')
+            buildConfigField('String', 'full_plash_01', '"ca-app-pub-3943517385835088/2898023553"')
+            buildConfigField('String', 'full_plash_02', '"ca-app-pub-3943517385835088/7320167068"')
+            buildConfigField('String', 'full_in_app_01', '"ca-app-pub-3943517385835088/5361315613"')
+            buildConfigField('String', 'full_in_app_02', '"ca-app-pub-3943517385835088/4048233947"')
+            buildConfigField('String', 'full_menu_01', '"ca-app-pub-3943517385835088/7169221307"')
+            buildConfigField('String', 'full_menu_02', '"ca-app-pub-3943517385835088/1257638821"')
+            buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3943517385835088/8835636124"')
+            buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3943517385835088/8873179041"')*/
         }
 
         release {
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField('String', 'app_open_ads', '"ca-app-pub-8347077932874205/2408334316"')
-            buildConfigField('String', 'banner_01', '"ca-app-pub-8347077932874205/6161675248"')
-            buildConfigField('String', 'banner_02', '"ca-app-pub-8347077932874205/9065102387"')
-            buildConfigField('String', 'full_plash_01', '"ca-app-pub-8347077932874205/4700559382"')
-            buildConfigField('String', 'full_plash_02', '"ca-app-pub-8347077932874205/6417282968"')
-            buildConfigField('String', 'full_in_app_01', '"ca-app-pub-8347077932874205/2679797054"')
-            buildConfigField('String', 'full_in_app_02', '"ca-app-pub-8347077932874205/5389720873"')
-            buildConfigField('String', 'full_menu_01', '"ca-app-pub-8347077932874205/9053633719"')
-            buildConfigField('String', 'full_menu_02', '"ca-app-pub-8347077932874205/7740552048"')
-            buildConfigField('String', 'native_ads_home_01', '"ca-app-pub-8347077932874205/7469089304"')
-            buildConfigField('String', 'native_ads_home_02', '"ca-app-pub-8347077932874205/6156007630"')
-            buildConfigField('String', 'native_ads_01', '"ca-app-pub-8347077932874205/5104201294"')
-            buildConfigField('String', 'native_ads_02', '"ca-app-pub-8347077932874205/2825522319"')
-            buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3940256099942544/2247696110"')
-            buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3940256099942544/2247696110"')
-            buildConfigField('String', 'full_download_01', '"ca-app-pub-8347077932874205/7271199639"')
-            buildConfigField('String', 'full_download_02', '"ca-app-pub-8347077932874205/5114388706"')
+            buildConfigField('String', 'app_open_ads', '"ca-app-pub-3943517385835088/5856139635"')
+            buildConfigField('String', 'banner_01', '"ca-app-pub-3943517385835088/9315775017"')
+            buildConfigField('String', 'banner_02', '"ca-app-pub-3943517385835088/8002693342"')
+            buildConfigField('String', 'full_plash_01', '"ca-app-pub-3943517385835088/2898023553"')
+            buildConfigField('String', 'full_plash_02', '"ca-app-pub-3943517385835088/7320167068"')
+            buildConfigField('String', 'full_in_app_01', '"ca-app-pub-3943517385835088/5361315613"')
+            buildConfigField('String', 'full_in_app_02', '"ca-app-pub-3943517385835088/4048233947"')
+            buildConfigField('String', 'full_menu_01', '"ca-app-pub-3943517385835088/7169221307"')
+            buildConfigField('String', 'full_menu_02', '"ca-app-pub-3943517385835088/1257638821"')
+            buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3943517385835088/8835636124"')
+            buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3943517385835088/8873179041"')
         }
     }
 
@@ -184,11 +185,12 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2'
     implementation 'androidx.media:media:1.6.0'
 
-    implementation 'com.google.android.exoplayer:exoplayer:2.19.0'
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.19.0'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.19.0'
-    implementation 'com.google.android.exoplayer:extension-mediasession:2.19.0'
-    implementation 'com.google.android.exoplayer:extension-cast:2.19.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.1'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.18.1'
+    implementation 'com.google.android.exoplayer:extension-cast:2.18.1'
+
 
     implementation group: 'commons-io', name: 'commons-io', version: '2.6'
 

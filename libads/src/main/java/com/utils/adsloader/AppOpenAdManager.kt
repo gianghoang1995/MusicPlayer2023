@@ -7,7 +7,10 @@ import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.RequestConfiguration
 import com.google.android.gms.ads.appopen.AppOpenAd
+import com.utils.adsloader.utils.Constants
 import java.util.*
 
 
@@ -30,6 +33,9 @@ class AppOpenAdManager constructor(
         }
 
         isLoadingAd = true
+        val requestConfiguration =
+            RequestConfiguration.Builder().setTestDeviceIds(Constants.testDevices()).build()
+        MobileAds.setRequestConfiguration(requestConfiguration)
 
         loadAdsPrepare(idOpenAds01, onAdLoader = { onAdLoader?.invoke() }, onAdLoadFail = {
             onAdLoadFail?.invoke()

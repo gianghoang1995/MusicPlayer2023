@@ -1,4 +1,4 @@
-package com.downloadmp3player.nativeadsbig;
+package com.musicplayer.nativeadsbig;
 
 import android.content.Context;
 import android.content.res.TypedArray;

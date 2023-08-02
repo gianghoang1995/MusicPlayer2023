@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.downloadmp3player.musicdownloader.freemusicdownloader">
+    package="com.musicplayer.mp3player.defaultmusicplayer">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission
@@ -10,21 +10,20 @@
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
-    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
 
-    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <!--    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+        <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+        <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />-->
 
     <permission
         android:name="android.permission.MEDIA_CONTENT_CONTROL"
@@ -39,7 +38,7 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
-        android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.base.BaseApplication"
+        android:name="com.musicplayer.mp3player.defaultmusicplayer.base.BaseApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -54,7 +53,7 @@
         tools:replace="android:allowBackup"
         tools:targetApi="n">
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.plashscreen.PlashScreenActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.plashscreen.PlashScreenActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:noHistory="true"
@@ -67,20 +66,20 @@
         </activity>
 
         <activity
-            android:name=".ui.activity.language.SelectLanguageActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.language.SelectLanguageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.main.MainActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="locked" />
 
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.playing.NowPlayingActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.playing.NowPlayingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.sort_playlist.SortPlaylistActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.sort_playlist.SortPlaylistActivity"
             android:screenOrientation="portrait" />
         <!--       <activity
                    android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.lookscreen.CarPlayerActivity"
@@ -88,53 +87,53 @@
                    android:showOnLockScreen="true"
                    android:theme="@style/AppTheme.NoActionBar.ThemeLockScreen" />-->
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.ringtone.RingtoneMakerActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.ringtone.RingtoneMakerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.scaningmusic.ScanMusicActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.scaningmusic.ScanMusicActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.FullActivityBG" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.theme.CustomThemesActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.theme.CustomThemesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.FullActivityBG" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.RingdroidActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.soundeditor.RingdroidActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.equalizer.EqualizerActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.equalizer.EqualizerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.addsong.AddSongFavoriteActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.addsong.AddSongFavoriteActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.lyrics.BrowserLyricAct"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.lyrics.BrowserLyricAct"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.search.SearchActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.search.SearchActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateVisible" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.permission.PermissionActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.permission.PermissionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.TutorialActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.TutorialActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.playing.PlayerMusicActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.playing.PlayerMusicActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.setting.SettingActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.setting.SettingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.FullActivityBG" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.list.ListSongActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.list.ListSongActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.youtube_search.YoutubeSearchWebviewActivity"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.ui.activity.youtube_search.YoutubeSearchWebviewActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
@@ -142,7 +141,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <service
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.service.MusicPlayerService"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.service.MusicPlayerService"
             android:enabled="true"
             android:exported="false"
             android:label="@string/app_name">
@@ -160,7 +159,7 @@
         </receiver>
 
         <receiver
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.service.receiver.ScreenActionReceiver"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.service.receiver.ScreenActionReceiver"
             android:exported="true">
             <intent-filter android:priority="90000">
                 <action android:name="android.intent.action.USER_PRESENT" />
@@ -168,12 +167,12 @@
         </receiver>
 
         <receiver
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.service.receiver.BroadcastControl"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.service.receiver.BroadcastControl"
             android:enabled="true"
             android:exported="true" />
 
         <receiver
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.service.receiver.ShakeReceiver"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.service.receiver.ShakeReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="shake.detector" />
@@ -181,7 +180,7 @@
         </receiver>
 
         <receiver
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.service.receiver.NetworkChangeReceiver"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.service.receiver.NetworkChangeReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -192,7 +191,7 @@
         </receiver>
 
         <provider
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.utils.FileProvider"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.utils.FileProvider"
             android:authorities="${filesAuthority}"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -206,7 +205,7 @@
             android:value="@string/ads_app_id" />
 
         <service
-            android:name="com.downloadmp3player.musicdownloader.freemusicdownloader.service.MyFirebaseMessagingService"
+            android:name="com.musicplayer.mp3player.defaultmusicplayer.service.MyFirebaseMessagingService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
@@ -216,6 +215,6 @@
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="abon_music" />
+            android:value="DefaultMusicPlayer" />
     </application>
 </manifest>

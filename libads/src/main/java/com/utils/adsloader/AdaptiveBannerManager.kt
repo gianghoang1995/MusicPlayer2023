@@ -10,13 +10,17 @@ import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.RequestConfiguration
 import com.google.android.gms.ads.admanager.AdManagerAdView
+import com.utils.adsloader.utils.Constants
 import com.utils.adsloader.utils.Utils
 
 class AdaptiveBannerManager(
     private val context: Activity,
     private val mIdBanner01: String,
-    private val mIdBanner02: String
+    private val mIdBanner02: String,
+    private val isColapse: Boolean
 ) {
     var adView: AdManagerAdView? = null
     var isBannerLoaded = false
@@ -48,6 +52,10 @@ class AdaptiveBannerManager(
             onAdLoadFail?.invoke()
             return
         }
+        val requestConfiguration =
+            RequestConfiguration.Builder().setTestDeviceIds(Constants.testDevices()).build()
+        MobileAds.setRequestConfiguration(requestConfiguration)
+
         requestBannerAdsPrepare(mIdBanner01, parent, onAdLoader, onAdLoadFail = {
             requestBannerAdsPrepare(mIdBanner02, parent, onAdLoader, onAdLoadFail = {
                 onAdLoadFail?.invoke()
@@ -81,12 +89,16 @@ class AdaptiveBannerManager(
         adView?.setOnPaidEventListener {
             Utils.postRevenueAdjust(context, it, adView?.adUnitId)
         }
-        val adRequest = AdRequest
-            .Builder()
-            .addNetworkExtrasBundle(AdMobAdapter::class.java, Bundle().apply {
-                putString("collapsible", "bottom")
-            })
-            .build()
+        val adRequest = if (isColapse) {
+            AdRequest
+                .Builder()
+                .addNetworkExtrasBundle(AdMobAdapter::class.java, Bundle().apply {
+                    putString("collapsible", "bottom")
+                })
+                .build()
+        } else {
+            AdRequest.Builder().build()
+        }
         adView?.loadAd(adRequest)
     }
 

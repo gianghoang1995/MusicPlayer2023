@@ -29,6 +29,9 @@ class InterstitialPreloadAdManager constructor(
             onAdLoadFail?.invoke()
             return
         }
+        val requestConfiguration =
+            RequestConfiguration.Builder().setTestDeviceIds(Constants.testDevices()).build()
+        MobileAds.setRequestConfiguration(requestConfiguration)
         requestAdsPrepare(mIdAdsFull01, onAdLoader, onAdLoadFail = {
             requestAdsPrepare(mIdAdsFull02, onAdLoader, onAdLoadFail = {
                 onAdLoadFail?.invoke()

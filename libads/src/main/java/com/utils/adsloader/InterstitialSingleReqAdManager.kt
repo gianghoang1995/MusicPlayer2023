@@ -31,8 +31,6 @@ class InterstitialSingleReqAdManager constructor(
         onAdClose: (() -> Unit)? = null,
         onAdLoadFail: (() -> Unit)? = null,
     ) {
-        val requestConfiguration = RequestConfiguration.Builder().build()
-        MobileAds.setRequestConfiguration(requestConfiguration)
         if (!Utils.isOnline(context)) {
             onAdLoadFail?.invoke()
             return
@@ -47,6 +45,10 @@ class InterstitialSingleReqAdManager constructor(
         }
         handler?.postDelayed(runable!!, Constants.TIME_OUT)
 
+        val requestConfiguration =
+            RequestConfiguration.Builder().setTestDeviceIds(Constants.testDevices()).build()
+        MobileAds.setRequestConfiguration(requestConfiguration)
+
         loadAds(onAdLoader = {
             onLoadAdSuccess?.invoke()
             show(activity, object : OnShowInterstitialCallBack {
@@ -60,6 +62,7 @@ class InterstitialSingleReqAdManager constructor(
     fun loadAds(
         onAdLoader: (() -> Unit)? = null, onAdLoadFail: (() -> Unit)? = null
     ) {
+
         requestAdsPrepare(mIdAdsFull01, onAdLoader, onAdLoadFail = {
             requestAdsPrepare(mIdAdsFull02, onAdLoader, onAdLoadFail = {
                 runable?.let { handler?.removeCallbacks(it) }

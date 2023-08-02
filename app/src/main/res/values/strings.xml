@@ -2,19 +2,6 @@
     <string name="app_name" translatable="false">Default Music Player</string>
     <string name="ads_app_id" translatable="false">ca-app-pub-3943517385835088~5755803950</string>
 
-    <string name="category_edm" translatable="false">EDM</string>
-    <string name="category_acoustic" translatable="false">Acoustic</string>
-    <string name="category_carmusic" translatable="false">Car EDM</string>
-    <string name="category_chill" translatable="false">Chill</string>
-    <string name="category_indie" translatable="false">Indie</string>
-    <string name="category_piano" translatable="false">Piano</string>
-    <string name="category_rain" translatable="false">Rain</string>
-    <string name="category_rock" translatable="false">Rock</string>
-    <string name="category_tiktok_remix" translatable="false">Tiktok Remix</string>
-    <string name="category_toursim" translatable="false">Toursim</string>
-    <string name="category_workout" translatable="false">Workout</string>
-    <string name="category_hiphop" translatable="false">Hiphop</string>
-
     <string name="allowed_caller_log" translatable="false">
         Caller has a valid certificate, but its package doesn\'t match any expected package for the
         given certificate. To allow this caller, add the following to the allowed callers list:\n
@@ -195,15 +182,6 @@
     <string name="blank_title_song">The song title cannot be left blank</string>
     <string name="rename_successfull">Renamed successfully</string>
     <string name="add_to">Add to</string>
-    <string name="browse_all">Browse all</string>
-    <string name="content_search_online">Artist, song, or podcast</string>
-    <string name="no_result">No result!</string>
-    <string name="load_more">Load more …</string>
-    <string name="please_try_again">Please try again !</string>
-    <string name="move_to_priority">( Move the song to the first position to prioritize )</string>
-    <string name="downloading">Downloading …</string>
-    <string name="download_success">Download file successful !</string>
-    <string name="recent_played_stream">Recently played stream</string>
     <string name="wellcome_back">Welcome back!</string>
     <string name="internet_disconected">Internet disconnected</string>
     <string name="exit_app">Exit</string>
@@ -235,17 +213,11 @@
     <string name="hour">hours</string>
     <string name="could_not_find_right_lyric">Couldn\'t find the right lyrics .</string>
     <string name="please_wait">Please wait …</string>
-    <string name="online">Online</string>
     <string name="number_of_shake">Number of shakes</string>
     <string name="set_ringtone_success">Set ringtone success</string>
     <string name="ringtone_option">Ringtone option</string>
     <string name="delete_success">Delete file successful</string>
     <string name="off">Off</string>
-    <string name="lockscreen_play">Lockscreen Play</string>
-    <string name="slide_to_unlock">Slide to unlock</string>
-    <string name="backgroud_lockscreen">Background lock screen</string>
-    <string name="time_format">Time format</string>
-    <string name="tittle_off_lockscreen">Turn off play on lock screen</string>
     <string name="change_font_size">Change font size</string>
     <string name="large_font">Large font</string>
     <string name="send_feedback">Send feedback</string>
@@ -256,14 +228,7 @@
     <string name="normal_font">Normal</string>
     <string name="shake_one">Shake once</string>
     <string name="shake_twice">Shake twice</string>
-    <string name="please_check_internet_connection">Please check  your internet connection !</string>
-    <string name="error_please_try_again">Something went wrong, please try again</string>
-    <string name="you_in_online_mode">Unsuccessful! You are in online music playback mode.</string>
     <string name="this_action_can_contain_ads">This action can contains ads.</string>
-    <string name="message_off_lockscreen">You can enable this feature from: Settings -> Lock screen</string>
-    <string name="cover_album">Cover album</string>
-    <string name="format_12h">12 hour</string>
-    <string name="format_24h">24 hour</string>
     <string name="shuffle_on">Shuffle</string>
     <string name="loop_all">Loop all</string>
     <string name="loop_one">Loop one</string>
@@ -272,13 +237,10 @@
     <string name="overlay">Overlay</string>
     <string name="no">No</string>
     <string name="ask_cancel">Do you want to cancel the theme?</string>
-    <string name="waiting">Waiting …</string>
-    <string name="car_play">Carplay</string>
     <string name="language">Language</string>
     <string name="apply">Apply</string>
     <string name="use_device_language">Phone language</string>
     <string name="english">English</string>
-    <string name="vietnamese">Vietnamese</string>
     <string name="hindi">Hindi</string>
     <string name="spanish">Spanish</string>
     <string name="french">French</string>
@@ -289,6 +251,5 @@
     <string name="indonesia">Indonesia</string>
     <string name="german">German</string>
     <string name="korean">Korean</string>
-    <string name="default_1">Default</string>
     <string name="japanese">Japanese</string>
 </resources>

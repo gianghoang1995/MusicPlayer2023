@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "723039855265",
-    "project_id": "music-downloader-2023---v1",
-    "storage_bucket": "music-downloader-2023---v1.appspot.com"
+    "project_number": "316004586460",
+    "project_id": "music-player-2023-44616",
+    "storage_bucket": "music-player-2023-44616.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:723039855265:android:73c1d25c8dad46c97f86e0",
+        "mobilesdk_app_id": "1:316004586460:android:9066fe183c1005159db519",
         "android_client_info": {
-          "package_name": "com.downloadmp3player.musicdownloader.freemusicdownloader"
+          "package_name": "com.musicplayer.mp3player.defaultmusicplayer.equalizer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "723039855265-7kv23ddqn4ti6uan0gounvpj0a9p5197.apps.googleusercontent.com",
+          "client_id": "316004586460-0ivnqkukkignfb2aib1gprrjm1njqohq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.downloadmp3player.musicdownloader.freemusicdownloader",
-            "certificate_hash": "6a4d67bdd7657d9e54c48b03d1cd28dc4473fa42"
+            "package_name": "com.musicplayer.mp3player.defaultmusicplayer.equalizer",
+            "certificate_hash": "e1ce604e589ddb841c80a1321628075ca62a0452"
           }
         },
         {
-          "client_id": "723039855265-2gbgaucnlq566cjr37imkjtlnf9cu80m.apps.googleusercontent.com",
+          "client_id": "316004586460-adflgh4jgfnp613mpecquslq0rb81v9g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBMVd0wQDJNE8d0C1Fa9tfkPinct9nNEco"
+          "current_key": "AIzaSyDX1nQxWmuy6FP821bd4wzqMj1VBawCBw0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "723039855265-2gbgaucnlq566cjr37imkjtlnf9cu80m.apps.googleusercontent.com",
+              "client_id": "316004586460-adflgh4jgfnp613mpecquslq0rb81v9g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

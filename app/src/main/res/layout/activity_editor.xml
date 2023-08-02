@@ -75,7 +75,7 @@
             android:layout_weight="0.5"
             android:background="@color/editor_waveform_bg_color">
 
-            <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.WaveformView
+            <com.musicplayer.mp3player.defaultmusicplayer.ui.activity.soundeditor.widget.WaveformView
                 android:id="@+id/waveform"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -83,13 +83,13 @@
                 android:layout_marginEnd="@dimen/Editor_Waveform_MarginRight"
                 android:layout_marginBottom="@dimen/Editor_Waveform_MarginBottom" />
 
-            <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.MarkerView
+            <com.musicplayer.mp3player.defaultmusicplayer.ui.activity.soundeditor.widget.MarkerView
                 android:id="@+id/startmarker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:nextFocusDown="@+id/endmarker" />
 
-            <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.MarkerView
+            <com.musicplayer.mp3player.defaultmusicplayer.ui.activity.soundeditor.widget.MarkerView
                 android:id="@+id/endmarker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1">
 
-                    <com.downloadmp3player.musicdownloader.freemusicdownloader.ui.activity.soundeditor.widget.PlayPauseView
+                    <com.musicplayer.mp3player.defaultmusicplayer.ui.activity.soundeditor.widget.PlayPauseView
                         android:id="@+id/Play_Pause_View"
                         android:layout_width="@dimen/_60sdp"
                         android:layout_height="@dimen/_60sdp"
