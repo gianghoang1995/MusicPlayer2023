@@ -32,10 +32,48 @@ android {
     }
 
     buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField('String', 'app_open_ads', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'banner_01', '"ca-app-pub-3940256099942544/6300978111"')
+            buildConfigField('String', 'banner_02', '"ca-app-pub-3940256099942544/6300978111"')
+            buildConfigField('String', 'full_plash_01', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'full_plash_02', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'full_in_app_01', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'full_in_app_02', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'full_menu_01', '"ca-app-pub-3940256099942544/1033173712')
+            buildConfigField('String', 'full_menu_02', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'native_ads_home_01', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_ads_home_02', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_ads_01', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_ads_02', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'full_download_01', '"ca-app-pub-3940256099942544/1033173712"')
+            buildConfigField('String', 'full_download_02', '"ca-app-pub-3940256099942544/1033173712"')
+        }
+
         release {
             shrinkResources true
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField('String', 'app_open_ads', '"ca-app-pub-8347077932874205/2408334316"')
+            buildConfigField('String', 'banner_01', '"ca-app-pub-8347077932874205/6161675248"')
+            buildConfigField('String', 'banner_02', '"ca-app-pub-8347077932874205/9065102387"')
+            buildConfigField('String', 'full_plash_01', '"ca-app-pub-8347077932874205/4700559382"')
+            buildConfigField('String', 'full_plash_02', '"ca-app-pub-8347077932874205/6417282968"')
+            buildConfigField('String', 'full_in_app_01', '"ca-app-pub-8347077932874205/2679797054"')
+            buildConfigField('String', 'full_in_app_02', '"ca-app-pub-8347077932874205/5389720873"')
+            buildConfigField('String', 'full_menu_01', '"ca-app-pub-8347077932874205/9053633719"')
+            buildConfigField('String', 'full_menu_02', '"ca-app-pub-8347077932874205/7740552048"')
+            buildConfigField('String', 'native_ads_home_01', '"ca-app-pub-8347077932874205/7469089304"')
+            buildConfigField('String', 'native_ads_home_02', '"ca-app-pub-8347077932874205/6156007630"')
+            buildConfigField('String', 'native_ads_01', '"ca-app-pub-8347077932874205/5104201294"')
+            buildConfigField('String', 'native_ads_02', '"ca-app-pub-8347077932874205/2825522319"')
+            buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3940256099942544/2247696110"')
+            buildConfigField('String', 'full_download_01', '"ca-app-pub-8347077932874205/7271199639"')
+            buildConfigField('String', 'full_download_02', '"ca-app-pub-8347077932874205/5114388706"')
         }
     }
 
