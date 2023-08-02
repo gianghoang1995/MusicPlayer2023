@@ -64,7 +64,6 @@ class AddSongFavoriteActivity : BaseActivity<ActivityAddSongFavoriteBinding>(), 
     private var mSongListDao: PlaylistSongDaoDB? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_song_favorite)
         init()
     }
 

@@ -35,6 +35,7 @@ android {
     buildTypes {
         debug {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+/*
             buildConfigField('String', 'app_open_ads', '"ca-app-pub-3940256099942544/1033173712"')
             buildConfigField('String', 'banner_01', '"ca-app-pub-3940256099942544/6300978111"')
             buildConfigField('String', 'banner_02', '"ca-app-pub-3940256099942544/6300978111"')
@@ -46,8 +47,9 @@ android {
             buildConfigField('String', 'full_menu_02', '"ca-app-pub-3940256099942544/1033173712"')
             buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3940256099942544/2247696110"')
             buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3940256099942544/2247696110"')
+*/
 
-            /*buildConfigField('String', 'app_open_ads', '"ca-app-pub-3943517385835088/5856139635"')
+            buildConfigField('String', 'app_open_ads', '"ca-app-pub-3943517385835088/5856139635"')
             buildConfigField('String', 'banner_01', '"ca-app-pub-3943517385835088/9315775017"')
             buildConfigField('String', 'banner_02', '"ca-app-pub-3943517385835088/8002693342"')
             buildConfigField('String', 'full_plash_01', '"ca-app-pub-3943517385835088/2898023553"')
@@ -57,7 +59,7 @@ android {
             buildConfigField('String', 'full_menu_01', '"ca-app-pub-3943517385835088/7169221307"')
             buildConfigField('String', 'full_menu_02', '"ca-app-pub-3943517385835088/1257638821"')
             buildConfigField('String', 'native_ads_language_01', '"ca-app-pub-3943517385835088/8835636124"')
-            buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3943517385835088/8873179041"')*/
+            buildConfigField('String', 'native_ads_language_02', '"ca-app-pub-3943517385835088/8873179041"')
         }
 
         release {
