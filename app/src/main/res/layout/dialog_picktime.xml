@@ -5,7 +5,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.musicplayer.mp3player.defaultmusicplayer.widget.TimePickerView
+    <com.musicplayer.mp3player.playermusic.widget.TimePickerView
         android:id="@+id/timePicker"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -63,7 +63,7 @@
                 app:layout_constraintStart_toStartOf="@id/bassSlider"
                 app:layout_constraintTop_toTopOf="@id/bassSlider" />
 
-            <com.musicplayer.mp3player.defaultmusicplayer.widget.bassview.Croller
+            <com.musicplayer.mp3player.playermusic.widget.bassview.Croller
                 android:id="@+id/bassSlider"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -107,7 +107,7 @@
                 app:layout_constraintStart_toStartOf="@id/virtualSlider"
                 app:layout_constraintTop_toTopOf="@id/virtualSlider" />
 
-            <com.musicplayer.mp3player.defaultmusicplayer.widget.bassview.Croller
+            <com.musicplayer.mp3player.playermusic.widget.bassview.Croller
                 android:id="@+id/virtualSlider"
                 android:layout_width="0dp"
                 android:layout_height="0dp"

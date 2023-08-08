@@ -89,7 +89,7 @@
                 tools:ignore="ContentDescription" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.SwipeViewPager
+        <com.musicplayer.mp3player.playermusic.widget.SwipeViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="0dp"

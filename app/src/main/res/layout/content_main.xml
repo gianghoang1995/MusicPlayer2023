@@ -99,7 +99,7 @@
                     app:tabTextAppearance="@style/TabLayoutTextAppearance"
                     app:tabTextColor="#fff" />
 
-                <com.musicplayer.mp3player.defaultmusicplayer.widget.SwipeViewPager
+                <com.musicplayer.mp3player.playermusic.widget.SwipeViewPager
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -112,7 +112,7 @@
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.PlayerView
+        <com.musicplayer.mp3player.playermusic.widget.PlayerView
             android:id="@+id/playerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

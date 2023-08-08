@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@id/top">
 
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.TitleBarEqualizer
+        <com.musicplayer.mp3player.playermusic.widget.TitleBarEqualizer
             android:id="@+id/titleTop"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_20"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:listTitle="@array/lisTitleTopEqua" />
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.SeekBarEqualizer
+        <com.musicplayer.mp3player.playermusic.widget.SeekBarEqualizer
             android:id="@+id/slider1"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -96,7 +96,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titleTop" />
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.SeekBarEqualizer
+        <com.musicplayer.mp3player.playermusic.widget.SeekBarEqualizer
             android:id="@+id/slider2"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -105,7 +105,7 @@
             app:layout_constraintStart_toEndOf="@id/slider1"
             app:layout_constraintTop_toBottomOf="@id/titleTop" />
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.SeekBarEqualizer
+        <com.musicplayer.mp3player.playermusic.widget.SeekBarEqualizer
             android:id="@+id/slider3"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -114,7 +114,7 @@
             app:layout_constraintStart_toEndOf="@id/slider2"
             app:layout_constraintTop_toBottomOf="@id/titleTop" />
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.SeekBarEqualizer
+        <com.musicplayer.mp3player.playermusic.widget.SeekBarEqualizer
             android:id="@+id/slider4"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -123,7 +123,7 @@
             app:layout_constraintStart_toEndOf="@id/slider3"
             app:layout_constraintTop_toBottomOf="@id/titleTop" />
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.SeekBarEqualizer
+        <com.musicplayer.mp3player.playermusic.widget.SeekBarEqualizer
             android:id="@+id/slider5"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -133,7 +133,7 @@
             app:layout_constraintTop_toBottomOf="@id/titleTop" />
 
 
-        <com.musicplayer.mp3player.defaultmusicplayer.widget.TitleBarEqualizer
+        <com.musicplayer.mp3player.playermusic.widget.TitleBarEqualizer
             android:id="@+id/titleBottom"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_20"

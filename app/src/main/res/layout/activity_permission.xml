@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.permission.PermissionActivity">
 
-    <com.musicplayer.mp3player.defaultmusicplayer.widget.SwipeViewPager
+    <com.musicplayer.mp3player.playermusic.widget.SwipeViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
